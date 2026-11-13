@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import requests
@@ -13,6 +12,21 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# =========================================================
+# VÉRIFICATION DU MOT DE PASSE COMMISSAIRE
+# =========================================================
+MOT_DE_PASSE_SECRET = "nhlq2026"  # 👈 Mot de passe secret pour modifier la ligue
+
+with st.sidebar:
+    st.markdown("### 🔐 Accès Direction")
+    mdp_entre = st.text_input("Mot de passe commissaire :", type="password")
+    is_admin = (mdp_entre == MOT_DE_PASSE_SECRET)
+    
+    if is_admin:
+        st.success("🟢 Mode Commissaire Déverrouillé")
+    elif mdp_entre != "":
+        st.error("Mot de passe incorrect")
 
 # =========================================================
 # 1. OUTILS DE NETTOYAGE INTELLIGENTS & FORMATAGE
@@ -354,6 +368,17 @@ def match_team_name(val):
         return ABBR_TO_TEAM[abbr]
     return None
 
+def find_sheet_by_keyword(path, keywords):
+    try:
+        xls = pd.ExcelFile(path)
+        for s in xls.sheet_names:
+            s_clean = clean_str(s)
+            if any(k in s_clean for k in keywords):
+                return s
+    except Exception:
+        pass
+    return None
+
 def init_rosters_from_csv():
     path = get_file_path("alignements_nhlq.csv")
     if not os.path.exists(path): return False
@@ -403,7 +428,6 @@ def init_rosters_from_csv():
     return True
 
 def init_recrues_from_csv():
-    # Détection automatique de recrues_nhlq.csv ou recrues_phdm.csv
     path = get_file_path("recrues_nhlq.csv")
     if not os.path.exists(path):
         path = get_file_path("recrues_phdm.csv")
@@ -478,7 +502,10 @@ def import_excel_transactions():
     path = get_file_path("gestion_nhlq.xlsx")
     if not os.path.exists(path): return False
     try:
-        df_t = pd.read_excel(path, sheet_name="Transactions")
+        sheet_name = find_sheet_by_keyword(path, ["transaction", "echange", "trade"])
+        if not sheet_name: return False
+
+        df_t = pd.read_excel(path, sheet_name=sheet_name)
         df_t = clean_excel_dataframe(df_t)
         st.session_state["trade_history"] = []
         for _, row in df_t.iterrows():
@@ -623,7 +650,7 @@ if "df_all_recrues" not in st.session_state: init_recrues_from_csv()
 for slug in SLUG_MAP.values(): enforce_roster_limits(slug)
 
 # =========================================================
-# 5. INITIALISATION DU THÈME DYNAMIQUE DE L'ÉQUIPE (DARK MODE)
+# 5. THÈME DYNAMIQUE DE L'ÉQUIPE (DARK MODE)
 # =========================================================
 team_totals = []
 for t_name in POOLERS.keys():
@@ -637,7 +664,7 @@ rank_general = sorted(team_totals, key=lambda x: x["total"], reverse=True)
 premier_general = rank_general[0]["team"] if rank_general else ""
 rank_att = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["att"], reverse=True)
 rank_def = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["def"], reverse=True)
-rank_gard = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["gard"], reverse=True)
+rank_gard = sorted([t for t in team_totals if t["team"] not in [premier_general, (rank_def[0]["team"] if rank_def else "")]], key=lambda x: x["gard"], reverse=True)
 
 draft_base_order = sorted(team_totals, key=lambda x: (x["total"], x["team"]), reverse=False)
 
@@ -650,85 +677,73 @@ THEMES = {
     "Vancouver Canucks": {
         "bg_top": "#0A1C2A", "bg_bottom": "#051012",
         "primary": "#10B981", "primary_glow": "rgba(16,185,129,0.4)",
-        "accent": "#3B82F6",
-        "btn_grad": "linear-gradient(135deg, #3B82F6, #10B981)",
+        "accent": "#3B82F6", "btn_grad": "linear-gradient(135deg, #3B82F6, #10B981)",
         "card_bg": "rgba(10, 25, 30, 0.6)"
     },
     "Edmonton Oilers": {
         "bg_top": "#2A1405", "bg_bottom": "#050A14",
         "primary": "#F97316", "primary_glow": "rgba(249,115,22,0.4)",
-        "accent": "#0284C7",
-        "btn_grad": "linear-gradient(135deg, #F97316, #0284C7)",
+        "accent": "#0284C7", "btn_grad": "linear-gradient(135deg, #F97316, #0284C7)",
         "card_bg": "rgba(35, 20, 10, 0.6)"
     },
     "Colorado Avalanche": {
         "bg_top": "#2D0A14", "bg_bottom": "#080F1D",
         "primary": "#A855F7", "primary_glow": "rgba(168,85,247,0.4)",
-        "accent": "#67E8F9",
-        "btn_grad": "linear-gradient(135deg, #6F263D, #236192)",
+        "accent": "#67E8F9", "btn_grad": "linear-gradient(135deg, #6F263D, #236192)",
         "card_bg": "rgba(35, 12, 20, 0.6)"
     },
     "Utah Mammoth": {
         "bg_top": "#0B1E2E", "bg_bottom": "#05080E",
         "primary": "#71AFE5", "primary_glow": "rgba(113,175,229,0.4)",
-        "accent": "#E2E8F0",
-        "btn_grad": "linear-gradient(135deg, #71AFE5, #0F172A)",
+        "accent": "#E2E8F0", "btn_grad": "linear-gradient(135deg, #71AFE5, #0F172A)",
         "card_bg": "rgba(15, 25, 40, 0.6)"
     },
     "Toronto Maple Leafs": {
         "bg_top": "#0A1930", "bg_bottom": "#030A14",
         "primary": "#38BDF8", "primary_glow": "rgba(56,189,248,0.4)",
-        "accent": "#FFFFFF",
-        "btn_grad": "linear-gradient(135deg, #00205B, #0284C7)",
+        "accent": "#FFFFFF", "btn_grad": "linear-gradient(135deg, #00205B, #0284C7)",
         "card_bg": "rgba(10, 20, 45, 0.6)"
     },
     "Detroit Red Wings": {
         "bg_top": "#2A0A0A", "bg_bottom": "#0B0404",
         "primary": "#EF4444", "primary_glow": "rgba(239,68,68,0.4)",
-        "accent": "#F8FAFC",
-        "btn_grad": "linear-gradient(135deg, #CE1126, #991B1B)",
+        "accent": "#F8FAFC", "btn_grad": "linear-gradient(135deg, #CE1126, #991B1B)",
         "card_bg": "rgba(35, 10, 10, 0.6)"
     },
     "Boston Bruins": {
         "bg_top": "#261D08", "bg_bottom": "#0A0803",
         "primary": "#FACC15", "primary_glow": "rgba(250,204,21,0.4)",
-        "accent": "#FFFFFF",
-        "btn_grad": "linear-gradient(135deg, #FACC15, #111111)",
+        "accent": "#FFFFFF", "btn_grad": "linear-gradient(135deg, #FACC15, #111111)",
         "card_bg": "rgba(35, 25, 10, 0.6)"
     },
     "Montréal Canadiens": {
         "bg_top": "#2E0F15", "bg_bottom": "#0B1121",
         "primary": "#EF4444", "primary_glow": "rgba(239,68,68,0.4)",
-        "accent": "#60A5FA",
-        "btn_grad": "linear-gradient(135deg, #EF4444, #1E3A8A)",
+        "accent": "#60A5FA", "btn_grad": "linear-gradient(135deg, #EF4444, #1E3A8A)",
         "card_bg": "rgba(30, 15, 20, 0.6)"
     },
     "Seattle Kraken": {
         "bg_top": "#081E2D", "bg_bottom": "#030B14",
         "primary": "#67E8F9", "primary_glow": "rgba(103,232,249,0.4)",
-        "accent": "#F97316",
-        "btn_grad": "linear-gradient(135deg, #06B6D4, #0369A1)",
+        "accent": "#F97316", "btn_grad": "linear-gradient(135deg, #06B6D4, #0369A1)",
         "card_bg": "rgba(10, 25, 40, 0.6)"
     },
     "San Jose Sharks": {
         "bg_top": "#062226", "bg_bottom": "#030D0F",
         "primary": "#0D9488", "primary_glow": "rgba(13,148,136,0.4)",
-        "accent": "#EA580C",
-        "btn_grad": "linear-gradient(135deg, #006D75, #042F2E)",
+        "accent": "#EA580C", "btn_grad": "linear-gradient(135deg, #006D75, #042F2E)",
         "card_bg": "rgba(8, 30, 35, 0.6)"
     },
     "Minnesota Wild": {
         "bg_top": "#0C2318", "bg_bottom": "#040D09",
         "primary": "#10B981", "primary_glow": "rgba(16,185,129,0.4)",
-        "accent": "#FACC15",
-        "btn_grad": "linear-gradient(135deg, #154734, #10B981)",
+        "accent": "#FACC15", "btn_grad": "linear-gradient(135deg, #154734, #10B981)",
         "card_bg": "rgba(12, 35, 24, 0.6)"
     },
     "New York Rangers": {
         "bg_top": "#0A1930", "bg_bottom": "#050814",
         "primary": "#3B82F6", "primary_glow": "rgba(59,130,246,0.4)",
-        "accent": "#EF4444",
-        "btn_grad": "linear-gradient(135deg, #3B82F6, #1E3A8A)",
+        "accent": "#EF4444", "btn_grad": "linear-gradient(135deg, #3B82F6, #1E3A8A)",
         "card_bg": "rgba(10, 20, 40, 0.6)"
     }
 }
@@ -736,8 +751,7 @@ THEMES = {
 DEFAULT_THEME = {
     "bg_top": "#1E293B", "bg_bottom": "#0B1120",
     "primary": "#38BDF8", "primary_glow": "rgba(56,189,248,0.4)",
-    "accent": "#94A3B8",
-    "btn_grad": "linear-gradient(135deg, #0284C7, #0369A1)",
+    "accent": "#94A3B8", "btn_grad": "linear-gradient(135deg, #0284C7, #0369A1)",
     "card_bg": "rgba(30, 41, 59, 0.5)"
 }
 
@@ -800,10 +814,10 @@ with tab_equipes:
         st.markdown("<h4 style='margin:0 0 8px 0; text-align:center; color: #94A3B8; font-weight: 800; letter-spacing: 1px;'>💰 PRIX OFFICIELS & TOP 5 (NHLQ)</h4>", unsafe_allow_html=True)
         cl1, cl2, cl3, cl4 = st.columns(4)
         card_style = "background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"
-        with cl1: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #F59E0B; font-size: 0.75rem; border-bottom: 2px solid #F59E0B; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>1. GAGNANT DU POOL</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_general, 'total', 5)}</div></div>", unsafe_allow_html=True)
-        with cl2: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #EF4444; font-size: 0.75rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>2. MEILLEURS ATTAQUANTS</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_att, 'att', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
-        with cl3: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #38BDF8; font-size: 0.75rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>3. MEILLEURS DÉFENSEURS</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_def, 'def', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
-        with cl4: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #10B981; font-size: 0.75rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>4. MEILLEURS GARDIENS</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_gard, 'gard', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+        with cl1: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #F59E0B; font-size: 0.8rem; border-bottom: 2px solid #F59E0B; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>1. GAGNANT DU POOL</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_general, 'total', 5)}</div></div>", unsafe_allow_html=True)
+        with cl2: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #EF4444; font-size: 0.8rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>2. MEILLEURS ATT</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_att, 'att', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+        with cl3: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #38BDF8; font-size: 0.8rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>3. MEILLEURS DÉF</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_def, 'def', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+        with cl4: st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #10B981; font-size: 0.8rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>4. MEILLEURS GARD</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_gard, 'gard', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ Exclus si prix préc.</span></div></div>", unsafe_allow_html=True)
 
     st.divider()
     df_att, df_banc_att = st.session_state[f"{team_slug}_df_att"], st.session_state[f"{team_slug}_df_banc_att"]
@@ -839,92 +853,111 @@ with tab_equipes:
     r_def, g_def = find_1_to_1_swaps(df_def, df_banc_def)
     r_gard, g_gard = find_1_to_1_swaps(df_gard, df_banc_gard)
 
+    # =========================================================
+    # BARRE D'ACTION (VERROUILLÉE POUR LES VISITEURS)
+    # =========================================================
     c1, c2, c3 = st.columns([4, 1.2, 1.2])
     with c1: st.info(f"🟢 **Statut API LNH** : {api_status}")
+    
     with c2:
-        if st.button("🔄 ACTUALISER API", use_container_width=True):
-            st.cache_data.clear()
-            for slg in SLUG_MAP.values():
-                for role, pos_cat in [("att", "ATT"), ("def", "DEF"), ("gard", "GARD"), ("banc_att", "ATT"), ("banc_def", "DEF"), ("banc_gard", "GARD")]:
-                    if f"{slg}_df_{role}" in st.session_state:
-                        cur_df = st.session_state[f"{slg}_df_{role}"]
-                        for idx_p, row_p in cur_df.iterrows():
-                            t_r, age_r, pj_r, pts_r = get_player_live_stats(row_p["Joueurs"], row_p["T"], row_p.get("A", 0), pos_cat)
-                            cur_df.at[idx_p, "T"] = t_r; cur_df.at[idx_p, "A"] = age_r; cur_df.at[idx_p, "PJ"] = pj_r; cur_df.at[idx_p, "Pts"] = pts_r
-                        st.session_state[f"{slg}_df_{role}"] = cur_df.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-            for slg in SLUG_MAP.values(): enforce_roster_limits(slg)
-            save_state()
-            st.rerun()
+        if is_admin:
+            if st.button("🔄 ACTUALISER API", use_container_width=True):
+                st.cache_data.clear()
+                for slg in SLUG_MAP.values():
+                    for role, pos_cat in [("att", "ATT"), ("def", "DEF"), ("gard", "GARD"), ("banc_att", "ATT"), ("banc_def", "DEF"), ("banc_gard", "GARD")]:
+                        if f"{slg}_df_{role}" in st.session_state:
+                            cur_df = st.session_state[f"{slg}_df_{role}"]
+                            for idx_p, row_p in cur_df.iterrows():
+                                t_r, age_r, pj_r, pts_r = get_player_live_stats(row_p["Joueurs"], row_p["T"], row_p.get("A", 0), pos_cat)
+                                cur_df.at[idx_p, "T"] = t_r; cur_df.at[idx_p, "A"] = age_r; cur_df.at[idx_p, "PJ"] = pj_r; cur_df.at[idx_p, "Pts"] = pts_r
+                            st.session_state[f"{slg}_df_{role}"] = cur_df.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                for slg in SLUG_MAP.values(): enforce_roster_limits(slg)
+                save_state()
+                st.rerun()
+        else:
+            st.button("🔄 ACTUALISER API", use_container_width=True, disabled=True, help="🔒 Réservé au commissaire.")
             
     with c3:
-        if st.button("📥 RECHARGER BASE", use_container_width=True, type="primary"):
-            init_rosters_from_csv()
-            init_recrues_from_csv()
-            abbrs = list(TEAM_ABBR_MAP.values())
-            for annee in ["2026", "2027", "2028"]:
-                st.session_state[f"df_draft_{annee}"] = pd.DataFrame({t: [t]*15 for t in abbrs}, index=[f"Ronde {i}" for i in range(1, 16)])
-            import_excel_transactions()
-            for slg in SLUG_MAP.values(): enforce_roster_limits(slg)
-            save_state()
-            st.success("✅ Base de données rechargée avec succès !")
-            st.rerun()
+        if is_admin:
+            if st.button("📥 RECHARGER BASE", use_container_width=True, type="primary"):
+                init_rosters_from_csv()
+                init_recrues_from_csv()
+                abbrs = list(TEAM_ABBR_MAP.values())
+                for annee in ["2026", "2027", "2028"]:
+                    st.session_state[f"df_draft_{annee}"] = pd.DataFrame({t: [t]*15 for t in abbrs}, index=[f"Ronde {i}" for i in range(1, 16)])
+                import_excel_transactions()
+                for slg in SLUG_MAP.values(): enforce_roster_limits(slg)
+                save_state()
+                st.success("✅ Base de données rechargée avec succès !")
+                st.rerun()
+        else:
+            st.button("📥 RECHARGER BASE", use_container_width=True, disabled=True, help="🔒 Réservé au commissaire.")
 
     c_tog, c_btn = st.columns(2)
     with c_tog: afficher_couleurs = st.toggle("🎨 **Afficher les couleurs d'alerte de remplacement**", value=True)
     with c_btn:
-        if st.button("⚡ **APPLIQUER LES PERMUTATIONS (1 POUR 1)**", use_container_width=True):
-            for a_df, b_df, rl, gl, ka, kb in [(df_att, df_banc_att, r_att, g_att, f"{team_slug}_df_att", f"{team_slug}_df_banc_att"), (df_def, df_banc_def, r_def, g_def, f"{team_slug}_df_def", f"{team_slug}_df_banc_def"), (df_gard, df_banc_gard, r_gard, g_gard, f"{team_slug}_df_gard", f"{team_slug}_df_banc_gard")]:
-                if rl and gl:
-                    st.session_state[ka] = pd.concat([a_df[~a_df["Joueurs"].isin(rl)], b_df[b_df["Joueurs"].isin(gl)]]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    st.session_state[kb] = pd.concat([b_df[~b_df["Joueurs"].isin(gl)], a_df[a_df["Joueurs"].isin(rl)]]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    st.session_state[ka]["No"], st.session_state[kb]["No"] = range(1, len(st.session_state[ka])+1), range(1, len(st.session_state[kb])+1)
-            save_state()
-            st.rerun()
+        if is_admin:
+            if st.button("⚡ **APPLIQUER LES PERMUTATIONS (1 POUR 1)**", use_container_width=True):
+                for a_df, b_df, rl, gl, ka, kb in [(df_att, df_banc_att, r_att, g_att, f"{team_slug}_df_att", f"{team_slug}_df_banc_att"), (df_def, df_banc_def, r_def, g_def, f"{team_slug}_df_def", f"{team_slug}_df_banc_def"), (df_gard, df_banc_gard, r_gard, g_gard, f"{team_slug}_df_gard", f"{team_slug}_df_banc_gard")]:
+                    if rl and gl:
+                        st.session_state[ka] = pd.concat([a_df[~a_df["Joueurs"].isin(rl)], b_df[b_df["Joueurs"].isin(gl)]]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        st.session_state[kb] = pd.concat([b_df[~b_df["Joueurs"].isin(gl)], a_df[a_df["Joueurs"].isin(rl)]]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        st.session_state[ka]["No"], st.session_state[kb]["No"] = range(1, len(st.session_state[ka])+1), range(1, len(st.session_state[kb])+1)
+                save_state()
+                st.rerun()
+        else:
+            st.button("⚡ **APPLIQUER LES PERMUTATIONS (1 POUR 1)**", use_container_width=True, disabled=True, help="🔒 Réservé au commissaire.")
 
-    with st.expander("🛠️ PERMUTATION MANUELLE (Monter, descendre ou combler)"):
-        pos_choix = st.radio("Position à modifier :", ["Attaquants", "Défenseurs", "Gardiens"], horizontal=True, key=f"man_pos_{team_slug}")
-        if pos_choix == "Attaquants": 
-            df_p, df_b, k_p, k_b, min_p, max_p = df_att, df_banc_att, f"{team_slug}_df_att", f"{team_slug}_df_banc_att", 19, 25
-        elif pos_choix == "Défenseurs": 
-            df_p, df_b, k_p, k_b, min_p, max_p = df_def, df_banc_def, f"{team_slug}_df_def", f"{team_slug}_df_banc_def", 7, 11
-        else: 
-            df_p, df_b, k_p, k_b, min_p, max_p = df_gard, df_banc_gard, f"{team_slug}_df_gard", f"{team_slug}_df_banc_gard", 2, 4
+    # =========================================================
+    # PERMUTATION MANUELLE (MASQUÉE POUR LES VISITEURS)
+    # =========================================================
+    if is_admin:
+        with st.expander("🛠️ PERMUTATION MANUELLE (Monter, descendre ou combler)"):
+            pos_choix = st.radio("Position à modifier :", ["Attaquants", "Défenseurs", "Gardiens"], horizontal=True, key=f"man_pos_{team_slug}")
+            if pos_choix == "Attaquants": 
+                df_p, df_b, k_p, k_b, min_p, max_p = df_att, df_banc_att, f"{team_slug}_df_att", f"{team_slug}_df_banc_att", 19, 25
+            elif pos_choix == "Défenseurs": 
+                df_p, df_b, k_p, k_b, min_p, max_p = df_def, df_banc_def, f"{team_slug}_df_def", f"{team_slug}_df_banc_def", 7, 11
+            else: 
+                df_p, df_b, k_p, k_b, min_p, max_p = df_gard, df_banc_gard, f"{team_slug}_df_gard", f"{team_slug}_df_banc_gard", 2, 4
+                
+            real_p_list = [p for p in df_p["Joueurs"].tolist() if p != "[Carreau Libre]"]
+            real_b_list = df_b["Joueurs"].tolist()
             
-        real_p_list = [p for p in df_p["Joueurs"].tolist() if p != "[Carreau Libre]"]
-        real_b_list = df_b["Joueurs"].tolist()
-        
-        p_choices = real_p_list.copy()
-        if len(real_p_list) < max_p: p_choices = ["[Combler un carreau libre (Aucun départ)]"] + p_choices
-        b_choices = real_b_list.copy()
-        if len(real_p_list) > min_p: b_choices = ["[Laisser un carreau libre (Aucune montée)]"] + b_choices
-            
-        col_m1, col_m2, col_m3 = st.columns([2.5, 2.5, 1.2], vertical_alignment="bottom")
-        with col_m1: p_sel = st.selectbox("📉 Joueur partant à descendre au banc :", p_choices, key=f"p_sel_{team_slug}")
-        with col_m2: b_sel = st.selectbox("📈 Joueur du banc à monter partant :", b_choices, key=f"b_sel_{team_slug}")
-        with col_m3:
-            if st.button("🔄 EXÉCUTER", key=f"btn_perm_{team_slug}", use_container_width=True):
-                if p_sel.startswith("[Combler") and not b_sel.startswith("[Laisser"):
-                    row_b = df_b[df_b["Joueurs"] == b_sel].copy()
-                    new_b = df_b[df_b["Joueurs"] != b_sel].reset_index(drop=True)
-                    new_p = pd.concat([df_p[df_p["Joueurs"] != "[Carreau Libre]"], row_b]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    new_p["No"], new_b["No"] = range(1, len(new_p) + 1), range(1, len(new_b) + 1)
-                    st.session_state[k_p], st.session_state[k_b] = new_p, new_b
-                    save_state(); st.rerun()
-                elif b_sel.startswith("[Laisser") and not p_sel.startswith("[Combler"):
-                    row_p = df_p[df_p["Joueurs"] == p_sel].copy()
-                    new_p = df_p[df_p["Joueurs"] != p_sel].sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    new_b = pd.concat([df_b, row_p]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    new_p["No"], new_b["No"] = range(1, len(new_p) + 1), range(1, len(new_b) + 1)
-                    st.session_state[k_p], st.session_state[k_b] = new_p, new_b
-                    save_state(); st.rerun()
-                elif not p_sel.startswith("[Combler") and not b_sel.startswith("[Laisser"):
-                    row_p = df_p[df_p["Joueurs"] == p_sel].copy()
-                    row_b = df_b[df_b["Joueurs"] == b_sel].copy()
-                    new_p = pd.concat([df_p[df_p["Joueurs"] != p_sel], row_b]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    new_b = pd.concat([df_b[df_b["Joueurs"] != b_sel], row_p]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                    new_p["No"], new_b["No"] = range(1, len(new_p) + 1), range(1, len(new_b) + 1)
-                    st.session_state[k_p], st.session_state[k_b] = new_p, new_b
-                    save_state(); st.rerun()
+            p_choices = real_p_list.copy()
+            if len(real_p_list) < max_p: p_choices = ["[Combler un carreau libre (Aucun départ)]"] + p_choices
+            b_choices = real_b_list.copy()
+            if len(real_p_list) > min_p: b_choices = ["[Laisser un carreau libre (Aucune montée)]"] + b_choices
+                
+            col_m1, col_m2, col_m3 = st.columns([2.5, 2.5, 1.2], vertical_alignment="bottom")
+            with col_m1: p_sel = st.selectbox("📉 Joueur partant à descendre au banc :", p_choices, key=f"p_sel_{team_slug}")
+            with col_m2: b_sel = st.selectbox("📈 Joueur du banc à monter partant :", b_choices, key=f"b_sel_{team_slug}")
+            with col_m3:
+                if st.button("🔄 EXÉCUTER", key=f"btn_perm_{team_slug}", use_container_width=True):
+                    if p_sel.startswith("[Combler") and not b_sel.startswith("[Laisser"):
+                        row_b = df_b[df_b["Joueurs"] == b_sel].copy()
+                        new_b = df_b[df_b["Joueurs"] != b_sel].reset_index(drop=True)
+                        new_p = pd.concat([df_p[df_p["Joueurs"] != "[Carreau Libre]"], row_b]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_p["No"], new_b["No"] = range(1, len(new_p) + 1), range(1, len(new_b) + 1)
+                        st.session_state[k_p], st.session_state[k_b] = new_p, new_b
+                        save_state(); st.rerun()
+                    elif b_sel.startswith("[Laisser") and not p_sel.startswith("[Combler"):
+                        row_p = df_p[df_p["Joueurs"] == p_sel].copy()
+                        new_p = df_p[df_p["Joueurs"] != p_sel].sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_b = pd.concat([df_b, row_p]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_p["No"], new_b["No"] = range(1, len(new_p) + 1), range(1, len(new_b) + 1)
+                        st.session_state[k_p], st.session_state[k_b] = new_p, new_b
+                        save_state(); st.rerun()
+                    elif not p_sel.startswith("[Combler") and not b_sel.startswith("[Laisser"):
+                        row_p = df_p[df_p["Joueurs"] == p_sel].copy()
+                        row_b = df_b[df_b["Joueurs"] == b_sel].copy()
+                        new_p = pd.concat([df_p[df_p["Joueurs"] != p_sel], row_b]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_b = pd.concat([df_b[df_b["Joueurs"] != b_sel], row_p]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_p["No"], new_b["No"] = range(1, len(new_p) + 1), range(1, len(new_b) + 1)
+                        st.session_state[k_p], st.session_state[k_b] = new_p, new_b
+                        save_state(); st.rerun()
+    else:
+        st.info("ℹ️ **Mode Consultation (Lecture seule)** : L'alignement et les permutations sont réservés au commissaire.")
 
     def fill_empty(df, m):
         if len(df) < m: return pd.concat([df, pd.DataFrame([{"No": i, "Joueurs": "[Carreau Libre]", "T": "—", "A": 0, "EXP": 0, "PJ": 0, "Pts": 0} for i in range(len(df)+1, m+1)])], ignore_index=True)
@@ -968,35 +1001,44 @@ with tab_equipes:
 with tab_transactions:
     st.markdown(f"<h1 style='color:{t['primary']};'>🔄 CENTRE OFFICIEL DES TRANSACTIONS</h1>", unsafe_allow_html=True)
     path_excel = get_file_path("gestion_nhlq.xlsx")
+    
     if os.path.exists(path_excel):
         try:
-            df_t_show = pd.read_excel(path_excel, sheet_name="Transactions")
-            df_t_show = clean_excel_dataframe(df_t_show)
+            xls = pd.ExcelFile(path_excel)
+            sheet_name = find_sheet_by_keyword(path_excel, ["transaction", "echange", "trade"])
 
-            cols_date = [c for c in df_t_show.columns if "date" in str(c).lower()]
-            col_target = cols_date[0] if cols_date else (df_t_show.columns[0] if len(df_t_show.columns) > 0 else None)
-            
-            if col_target:
-                df_t_show[col_target] = df_t_show[col_target].apply(format_date_fr)
+            if sheet_name:
+                df_t_show = pd.read_excel(path_excel, sheet_name=sheet_name)
+                df_t_show = clean_excel_dataframe(df_t_show)
 
-            styler_t = df_t_show.style
-            try: styler_t = styler_t.map(color_empty_cells)
-            except AttributeError: styler_t = styler_t.applymap(color_empty_cells)
-            st.dataframe(styler_t, use_container_width=True, hide_index=True, height=680)
+                cols_date = [c for c in df_t_show.columns if "date" in str(c).lower()]
+                col_target = cols_date[0] if cols_date else (df_t_show.columns[0] if len(df_t_show.columns) > 0 else None)
+                
+                if col_target:
+                    df_t_show[col_target] = df_t_show[col_target].apply(format_date_fr)
+
+                styler_t = df_t_show.style
+                try: styler_t = styler_t.map(color_empty_cells)
+                except AttributeError: styler_t = styler_t.applymap(color_empty_cells)
+                st.dataframe(styler_t, use_container_width=True, hide_index=True)
+            else:
+                st.warning(f"⚠️ Aucun onglet de transactions détecté dans `{os.path.basename(path_excel)}`.")
+                st.info(f"📋 **Onglets présents :** {', '.join([f'`{s}`' for s in xls.sheet_names])}")
+                
         except PermissionError:
             st.error("⚠️ Le fichier Excel est actuellement ouvert ! Fermez Microsoft Excel puis rafraîchissez la page.")
         except Exception as e:
-            st.warning(f"Impossible de lire l'onglet 'Transactions' : {e}")
+            st.warning(f"Impossible de lire le fichier de transactions : {e}")
     else: 
         st.info("Fichier `gestion_nhlq.xlsx` introuvable.")
 
 # =========================================================
-# ONGLET 3 : RÈGLEMENTS OFFICIELS DU POOL
+# ONGLET 3 : RÈGLEMENTS DU POOL
 # =========================================================
 with tab_reglements:
     st.markdown(f"""
     <div style='background: linear-gradient(135deg, #1E1B4B, #0F172A); border: 2px solid {t['primary']}; padding: 20px; border-radius: 14px; margin-bottom: 25px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.5);'>
-        <h1 style='margin:0; font-weight:900; color: #FFFFFF; font-size: 2.3rem; letter-spacing: 2px;'>📜 RÈGLEMENTS OFFICIELS - POOL NHLQ</h1>
+        <h1 style='margin:0; font-weight:900; color: #FFFFFF; font-size: 2.3rem; letter-spacing: 2px;'>📜 RÈGLEMENTS DU POOL NHLQ</h1>
         <div style='background: #EA580C; color: #FFFFFF; font-weight: 900; display: inline-block; padding: 6px 20px; border-radius: 20px; font-size: 1.1rem; margin-top: 10px; letter-spacing: 1px;'>
             SAISON OFFICIELLE 2026-2027
         </div>
