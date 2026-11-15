@@ -22,7 +22,7 @@ with st.sidebar:
     st.markdown("### 🔐 Accès Direction")
     mdp_entre = st.text_input("Mot de passe commissaire :", type="password")
     is_admin = (mdp_entre == MOT_DE_PASSE_SECRET)
-    
+
     if is_admin:
         st.success("🟢 Mode Commissaire Déverrouillé")
     elif mdp_entre != "":
@@ -114,7 +114,7 @@ def fetch_nhl_stats():
                 nom_clean = clean_str(p.get("skaterFullName", ""))
                 if nom_clean not in skaters: skaters[nom_clean] = []
                 skaters[nom_clean].append({"pj": p.get("gamesPlayed", 0), "pts": p.get("points", 0), "team": p.get("teamAbbrevs", ""), "age": None, "posCode": p.get("positionCode", "")})
-        
+
         url_sk_bio = f"https://api.nhle.com/stats/rest/en/skater/bios?limit=-1&cayenneExp=seasonId={SAISON}%20and%20gameTypeId={GAME_TYPE}"
         r_sk_bio = requests.get(url_sk_bio, headers=headers, timeout=10)
         if r_sk_bio.status_code == 200:
@@ -138,7 +138,7 @@ def fetch_nhl_stats():
                 nom_clean = clean_str(g.get("goalieFullName", ""))
                 if nom_clean not in goalies: goalies[nom_clean] = []
                 goalies[nom_clean].append({"pj": g.get("gamesPlayed", 0), "pts": (v * 2) + (otl * 1) + (so * 1), "team": g.get("teamAbbrevs", ""), "age": None, "posCode": "G"})
-                
+
         url_g_bio = f"https://api.nhle.com/stats/rest/en/goalie/bios?limit=-1&cayenneExp=seasonId={SAISON}%20and%20gameTypeId={GAME_TYPE}"
         r_g_bio = requests.get(url_g_bio, headers=headers, timeout=10)
         if r_g_bio.status_code == 200:
@@ -158,7 +158,7 @@ def fetch_nhl_stats():
 
 nhl_skaters, nhl_goalies, api_status = fetch_nhl_stats()
 
-SPECIAL_OVERRIDE = {"bowman braeden": {"pts": 6, "pj": 0, "team": "VGK", "age": 20}, "braeden bowman": {"pts": 6, "pj": 0, "team": "VGK", "age": 20}}
+SPECIAL_OVERRIDE = {}
 ALIASES = {
     "vilardi gabe": "gabriel vilardi", "gabe vilardi": "gabriel vilardi",
     "frederick gaudreau": "freddy gaudreau", "gaudreau frederick": "freddy gaudreau",
@@ -197,7 +197,7 @@ ALIASES = {
 
 def get_player_live_stats(nom_excel, team_defaut, age_defaut, pos_cat):
     nom_clean = clean_str(nom_excel)
-    if nom_clean in SPECIAL_OVERRIDE: 
+    if nom_clean in SPECIAL_OVERRIDE:
         return (SPECIAL_OVERRIDE[nom_clean]["team"] or team_defaut), SPECIAL_OVERRIDE[nom_clean].get("age", age_defaut), SPECIAL_OVERRIDE[nom_clean]["pj"], SPECIAL_OVERRIDE[nom_clean]["pts"]
     is_goalie = (pos_cat == "GARD")
     db = nhl_goalies if is_goalie else nhl_skaters
@@ -218,12 +218,12 @@ def get_player_live_stats(nom_excel, team_defaut, age_defaut, pos_cat):
     parts = nom_clean.split()
     if len(parts) >= 3:
         n2 = f"{' '.join(parts[1:])} {parts[0]}"
-        if n2 in db: 
+        if n2 in db:
             match = pick_best(db[n2])
             if match: return match["team"] or team_defaut, match.get("age") or age_defaut, match["pj"], match["pts"]
     if len(parts) >= 2:
         n3 = f"{parts[-1]} {' '.join(parts[:-1])}"
-        if n3 in db: 
+        if n3 in db:
             match = pick_best(db[n3])
             if match: return match["team"] or team_defaut, match.get("age") or age_defaut, match["pj"], match["pts"]
     return team_defaut, age_defaut, 0, 0
@@ -282,10 +282,10 @@ def to_team_abbr(val):
     if not val: return None
     s = clean_str(str(val))
     s_upper = str(val).strip().upper()
-    
+
     if s_upper in TEAM_ABBR_MAP.values(): return s_upper
     if s_upper == "UTA": return "UTH"
-    
+
     words = s.split()
     if "van" in words or any(w in s for w in ["vancouver", "canuck"]): return "VAN"
     if "edm" in words or any(w in s for w in ["edmonton", "oiler"]): return "EDM"
@@ -414,7 +414,7 @@ def init_rosters_from_csv():
                 except: age_csv = 0
                 try: exp = int(r[col_exp])
                 except: exp = 0
-                
+
                 t_reel, age_reel, pj, pts = get_player_live_stats(nom, t_init, age_csv, pos_cat)
                 rows.append([0, nom, t_reel, age_reel, exp, pj, pts])
 
@@ -429,9 +429,9 @@ def init_recrues_from_csv():
     path = get_file_path("recrues_nhlq.csv")
     if not os.path.exists(path):
         path = get_file_path("recrues_phdm.csv")
-    
+
     cols_master = ["No", "Joueurs", "Pos", "Année", "Ronde", "Rang", "Cotes", "Club Junior", "Ligue", "Équipe LNH (Réelle)", "Équipe NHLQ"]
-    
+
     if not os.path.exists(path):
         st.session_state["df_all_recrues"] = pd.DataFrame(columns=cols_master)
         for slug in SLUG_MAP.values(): st.session_state[f"{slug}_df_recrues"] = pd.DataFrame(columns=cols_master)
@@ -442,37 +442,37 @@ def init_recrues_from_csv():
 
     rows_master = []
     current_nhl_team = "Libre / Non repêché"
-    
+
     for i, r in df_raw.iterrows():
         val_a = str(r.iloc[0]).strip() if len(r) > 0 and pd.notna(r.iloc[0]) else ""
         val_b = str(r.iloc[1]).strip() if len(r) > 1 and pd.notna(r.iloc[1]) else ""
-        
+
         if val_a == "" and val_b == "": continue
         if val_a.lower() in ["no", "num", "numéro", "numero"] or val_b.lower() in ["joueurs", "joueur", "nom", "noms"]: continue
-            
+
         if val_a.isdigit() and val_b != "" and val_b.lower() != "nan":
             nom = val_b
             pos = str(r.iloc[2]).strip() if len(r) > 2 and pd.notna(r.iloc[2]) else ""
             annee = str(r.iloc[3]).strip() if len(r) > 3 and pd.notna(r.iloc[3]) else ""
             ronde = str(r.iloc[4]).strip() if len(r) > 4 and pd.notna(r.iloc[4]) else ""
             rang = str(r.iloc[5]).strip() if len(r) > 5 and pd.notna(r.iloc[5]) else ""
-            
+
             c1 = str(r.iloc[6]).strip() if len(r) > 6 and pd.notna(r.iloc[6]) else ""
             c2 = str(r.iloc[7]).strip() if len(r) > 7 and pd.notna(r.iloc[7]) else ""
             c3 = str(r.iloc[8]).strip() if len(r) > 8 and pd.notna(r.iloc[8]) else ""
             cotes = f"{c1}-{c2}-{c3}".strip('-')
             if cotes == "--": cotes = ""
-            
+
             club = str(r.iloc[9]).strip() if len(r) > 9 and pd.notna(r.iloc[9]) else ""
             ligue = str(r.iloc[10]).strip() if len(r) > 10 and pd.notna(r.iloc[10]) else ""
-            
+
             proprio = ""
             if len(r) > 14 and pd.notna(r.iloc[14]):
                 proprio = str(r.iloc[14]).strip()
             if proprio.lower() in ["nan", "none"]: proprio = ""
-            
+
             rows_master.append([len(rows_master)+1, nom, pos, annee, ronde, rang, cotes, club, ligue, current_nhl_team, proprio])
-        
+
         elif not val_a.isdigit() and val_a.lower() not in ["nan", ""]:
             if "ronde" not in val_a.lower():
                 if "canadien" in val_a.lower() and "montr" in val_a.lower():
@@ -484,7 +484,7 @@ def init_recrues_from_csv():
 
     df_master = pd.DataFrame(rows_master, columns=cols_master)
     st.session_state["df_all_recrues"] = df_master
-    
+
     df_master["Standard_NHLQ"] = df_master["Équipe NHLQ"].apply(match_team_name)
     for team_name in POOLERS.keys():
         slug = SLUG_MAP[team_name]
@@ -493,7 +493,7 @@ def init_recrues_from_csv():
         sub = sub.sort_values(by="Joueurs").reset_index(drop=True)
         sub["No"] = range(1, len(sub) + 1)
         st.session_state[f"{slug}_df_recrues"] = sub
-        
+
     return True
 
 def import_excel_transactions():
@@ -512,15 +512,15 @@ def import_excel_transactions():
             eq2_name = match_team_name(str(row.iloc[2]))
             if not eq1_name or not eq2_name: continue
             slug1, slug2 = SLUG_MAP[eq1_name], SLUG_MAP[eq2_name]
-            
+
             def parse_col(idx):
                 val = str(row.iloc[idx])
                 if pd.isna(row.iloc[idx]) or val.strip().lower() in ['nan', 'none', '']: return []
                 return [i.strip() for i in val.split(',') if i.strip()]
-                
+
             j1_list, c1_list = parse_col(3) if len(row) > 3 else [], parse_col(4) if len(row) > 4 else []
             j2_list, c2_list = parse_col(5) if len(row) > 5 else [], parse_col(6) if len(row) > 6 else []
-            
+
             def move_players(j_list, s_src, s_dest):
                 moved = []
                 for nom in j_list:
@@ -542,9 +542,9 @@ def import_excel_transactions():
                                 moved.append(row_j.iloc[0]["Joueurs"])
                                 break
                 return moved
-                
+
             m_j1, m_j2 = move_players(j1_list, slug1, slug2), move_players(j2_list, slug2, slug1)
-            
+
             def parse_picks(c_list, a_src, a_dest):
                 moved = []
                 for c in c_list:
@@ -568,7 +568,7 @@ def import_excel_transactions():
                                 if m_gen:
                                     val = int(m_gen.group(1))
                                     if 1 <= val <= 15: rd_num = val
-                    
+
                     if rd_num and 1 <= rd_num <= 15:
                         rd = f"Ronde {rd_num}"
                         m_slot = re.search(r'\((.*?)\)', c_str)
@@ -583,10 +583,10 @@ def import_excel_transactions():
 
             m_c1 = parse_picks(c1_list, TEAM_ABBR_MAP[eq1_name], TEAM_ABBR_MAP[eq2_name])
             m_c2 = parse_picks(c2_list, TEAM_ABBR_MAP[eq2_name], TEAM_ABBR_MAP[eq1_name])
-            
+
             date_clean = format_date_fr(row.iloc[0])
             date_str = date_clean if date_clean else "N/A"
-            
+
             st.session_state["trade_history"].insert(0, {
                 "Date": date_str, "Équipe A Name": eq1_name, "Équipe B Name": eq2_name,
                 "A cédé": ", ".join(m_j1 + m_c1) or "Rien", "B a cédé": ", ".join(m_j2 + m_c2) or "Rien"
@@ -614,7 +614,7 @@ def load_state():
         for slug, roles in state_data.get("rosters", {}).items():
             for role, records in roles.items(): st.session_state[f"{slug}_df_{role}"] = pd.DataFrame(records)
             st.session_state[f"{slug}_init"] = True
-        for annee, records in state_data.get("drafts", {}).items(): 
+        for annee, records in state_data.get("drafts", {}).items():
             st.session_state[f"df_draft_{annee}"] = pd.DataFrame.from_dict(records, orient="index")
         st.session_state["trade_history"] = state_data.get("trade_history", [])
         return True
@@ -662,11 +662,11 @@ rank_general = sorted(team_totals, key=lambda x: x["total"], reverse=True)
 premier_general = rank_general[0]["team"] if rank_general else ""
 rank_att = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["att"], reverse=True)
 rank_def = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["def"], reverse=True)
-rank_gard = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["gard"], reverse=True)
+rank_gard = sorted([t for t in team_totals if t["team"] not in [premier_general, (rank_def[0]["team"] if rank_def else "")]], key=lambda x: x["gard"], reverse=True)
 
 draft_base_order = sorted(team_totals, key=lambda x: (x["total"], x["team"]), reverse=False)
 
-if "current_team" not in st.session_state: 
+if "current_team" not in st.session_state:
     st.session_state["current_team"] = rank_general[0]["team"] if rank_general else list(POOLERS.keys())[0]
 active_team_name = st.session_state["current_team"]
 team_slug = SLUG_MAP[active_team_name]
@@ -778,7 +778,7 @@ st.markdown(f"""
 </style>
 """, unsafe_allow_html=True)
 
-def build_ranking_html(rank_list, score_key, top_n=12):
+def build_ranking_html(rank_list, score_key, top_n=5):
     html = ""
     for i in range(min(top_n, len(rank_list))):
         team, pts = rank_list[i]['team'], rank_list[i][score_key]
@@ -794,7 +794,7 @@ tab_equipes, tab_transactions, tab_reglements, tab_repechage, tab_recrues = st.t
 # ONGLET 1 : ÉQUIPES & PRIX
 # =========================================================
 with tab_equipes:
-    top_gauche, top_droite = st.columns([0.95, 2.05], vertical_alignment="top")
+    top_gauche, top_droite = st.columns([1.1, 1.9], vertical_alignment="top")
     with top_gauche:
         c_logo, c_title = st.columns([1, 4], vertical_alignment="center")
         with c_logo: st.image(TEAM_LOGOS[active_team_name], width=90)
@@ -809,61 +809,29 @@ with tab_equipes:
             st.rerun()
 
     with top_droite:
-        st.markdown("<h4 style='margin:0 0 10px 0; text-align:center; color: #94A3B8; font-weight: 800; font-size: 1.15rem; letter-spacing: 1px;'>💰 PRIX OFFICIELS & CLASSEMENT COMPLET (NHLQ)</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='margin:0 0 8px 0; text-align:center; color: #94A3B8; font-weight: 800; letter-spacing: 1px;'>💰 PRIX OFFICIELS & CLASSEMENTS (NHLQ)</h4>", unsafe_allow_html=True)
         cl1, cl2, cl3, cl4 = st.columns(4)
-        
-        card_style = "background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); min-height: 360px;"
-        
+        card_style = "background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"
+
+        # --- CARRÉ 1 : TOUTES LES ÉQUIPES DU POOL (1 à 12) ---
         with cl1:
             st.markdown(f"""
-            <div style='{card_style}'>
-                <div style='font-weight: 900; color: #F59E0B; font-size: 1.02rem; border-bottom: 2px solid #F59E0B; padding-bottom: 6px; text-align: center; letter-spacing: 0.5px;'>
-                    1. GAGNANT DU POOL
+            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #F59E0B; font-size: 0.8rem; border-bottom: 2px solid #F59E0B; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    1. GAGNANT DU POOL ({len(rank_general)})
                 </div>
-                <div style='margin-top: 10px; font-size: 0.92rem; line-height: 1.5;'>
-                    {build_ranking_html(rank_general, 'total', 12)}
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
-
-        with cl2: 
-            st.markdown(f"""
-            <div style='{card_style}'>
-                <div style='font-weight: 900; color: #EF4444; font-size: 1.02rem; border-bottom: 2px solid #EF4444; padding-bottom: 6px; text-align: center; letter-spacing: 0.5px;'>
-                    2. MEILLEURS ATT
-                </div>
-                <div style='margin-top: 10px; font-size: 0.92rem; line-height: 1.5;'>
-                    {build_ranking_html(rank_att, 'att', 12)}
-                    <span style='color: #94A3B8; font-size: 0.82rem;'><br>❌ 1er Général exclu</span>
+                <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
+                    {build_ranking_html(rank_general, 'total', len(rank_general))}
                 </div>
             </div>
             """, unsafe_allow_html=True)
 
-        with cl3: 
-            st.markdown(f"""
-            <div style='{card_style}'>
-                <div style='font-weight: 900; color: #38BDF8; font-size: 1.02rem; border-bottom: 2px solid #38BDF8; padding-bottom: 6px; text-align: center; letter-spacing: 0.5px;'>
-                    3. MEILLEURS DÉF
-                </div>
-                <div style='margin-top: 10px; font-size: 0.92rem; line-height: 1.5;'>
-                    {build_ranking_html(rank_def, 'def', 12)}
-                    <span style='color: #94A3B8; font-size: 0.82rem;'><br>❌ 1er Général exclu</span>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
-
-        with cl4: 
-            st.markdown(f"""
-            <div style='{card_style}'>
-                <div style='font-weight: 900; color: #10B981; font-size: 1.02rem; border-bottom: 2px solid #10B981; padding-bottom: 6px; text-align: center; letter-spacing: 0.5px;'>
-                    4. MEILLEURS GARD
-                </div>
-                <div style='margin-top: 10px; font-size: 0.92rem; line-height: 1.5;'>
-                    {build_ranking_html(rank_gard, 'gard', 12)}
-                    <span style='color: #94A3B8; font-size: 0.82rem;'><br>❌ 1er Général exclu</span>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+        with cl2:
+            st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #EF4444; font-size: 0.8rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>2. MEILLEURS ATT</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_att, 'att', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+        with cl3:
+            st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #38BDF8; font-size: 0.8rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>3. MEILLEURS DÉF</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_def, 'def', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+        with cl4:
+            st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #10B981; font-size: 0.8rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>4. MEILLEURS GARD</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_gard, 'gard', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ Exclus si prix préc.</span></div></div>", unsafe_allow_html=True)
 
     st.divider()
     df_att, df_banc_att = st.session_state[f"{team_slug}_df_att"], st.session_state[f"{team_slug}_df_banc_att"]
@@ -874,12 +842,12 @@ with tab_equipes:
     nb_def_tot = len(df_def) + len(df_banc_def)
     nb_gard_tot = len(df_gard) + len(df_banc_gard)
     nb_tot_concession = nb_att_tot + nb_def_tot + nb_gard_tot
-    
+
     # 1. Vérification stricte des barèmes par position
     stat_att = (19 <= len(df_att) <= 25) and (nb_att_tot <= 80)
     stat_def = (7 <= len(df_def) <= 11) and (nb_def_tot <= 30)
     stat_gard = (2 <= len(df_gard) <= 4) and (nb_gard_tot <= 18)
-    
+
     # 2. Total Concession conforme UNIQUEMENT si toutes les positions sont conformes
     stat_globale = (nb_tot_concession <= 128) and stat_att and stat_def and stat_gard
 
@@ -950,7 +918,7 @@ with tab_equipes:
     # =========================================================
     c1, c2, c3 = st.columns([4, 1.2, 1.2])
     with c1: st.info(f"🟢 **Statut API LNH** : {api_status}")
-    
+
     with c2:
         if is_admin:
             if st.button("🔄 ACTUALISER API", use_container_width=True):
@@ -968,7 +936,7 @@ with tab_equipes:
                 st.rerun()
         else:
             st.button("🔄 ACTUALISER API", use_container_width=True, disabled=True, help="🔒 Réservé au commissaire.")
-            
+
     with c3:
         if is_admin:
             if st.button("📥 RECHARGER BASE", use_container_width=True, type="primary"):
@@ -1006,21 +974,21 @@ with tab_equipes:
     if is_admin:
         with st.expander("🛠️ PERMUTATION MANUELLE (Monter, descendre ou combler)"):
             pos_choix = st.radio("Position à modifier :", ["Attaquants", "Défenseurs", "Gardiens"], horizontal=True, key=f"man_pos_{team_slug}")
-            if pos_choix == "Attaquants": 
+            if pos_choix == "Attaquants":
                 df_p, df_b, k_p, k_b, min_p, max_p = df_att, df_banc_att, f"{team_slug}_df_att", f"{team_slug}_df_banc_att", 19, 25
-            elif pos_choix == "Défenseurs": 
+            elif pos_choix == "Défenseurs":
                 df_p, df_b, k_p, k_b, min_p, max_p = df_def, df_banc_def, f"{team_slug}_df_def", f"{team_slug}_df_banc_def", 7, 11
-            else: 
+            else:
                 df_p, df_b, k_p, k_b, min_p, max_p = df_gard, df_banc_gard, f"{team_slug}_df_gard", f"{team_slug}_df_banc_gard", 2, 4
-                
+
             real_p_list = [p for p in df_p["Joueurs"].tolist() if p != "[Carreau Libre]"]
             real_b_list = df_b["Joueurs"].tolist()
-            
+
             p_choices = real_p_list.copy()
             if len(real_p_list) < max_p: p_choices = ["[Combler un carreau libre (Aucun départ)]"] + p_choices
             b_choices = real_b_list.copy()
             if len(real_p_list) > min_p: b_choices = ["[Laisser un carreau libre (Aucune montée)]"] + b_choices
-                
+
             col_m1, col_m2, col_m3 = st.columns([2.5, 2.5, 1.2], vertical_alignment="bottom")
             with col_m1: p_sel = st.selectbox("📉 Joueur partant à descendre au banc :", p_choices, key=f"p_sel_{team_slug}")
             with col_m2: b_sel = st.selectbox("📈 Joueur du banc à monter partant :", b_choices, key=f"b_sel_{team_slug}")
@@ -1093,7 +1061,7 @@ with tab_equipes:
 with tab_transactions:
     st.markdown(f"<h1 style='color:{t['primary']};'>🔄 CENTRE OFFICIEL DES TRANSACTIONS</h1>", unsafe_allow_html=True)
     path_excel = get_file_path("gestion_nhlq.xlsx")
-    
+
     if os.path.exists(path_excel):
         try:
             xls = pd.ExcelFile(path_excel)
@@ -1105,7 +1073,7 @@ with tab_transactions:
 
                 cols_date = [c for c in df_t_show.columns if "date" in str(c).lower()]
                 col_target = cols_date[0] if cols_date else (df_t_show.columns[0] if len(df_t_show.columns) > 0 else None)
-                
+
                 if col_target:
                     df_t_show[col_target] = df_t_show[col_target].apply(format_date_fr)
 
@@ -1116,12 +1084,12 @@ with tab_transactions:
             else:
                 st.warning(f"⚠️ Aucun onglet de transactions détecté dans `{os.path.basename(path_excel)}`.")
                 st.info(f"📋 **Onglets présents :** {', '.join([f'`{s}`' for s in xls.sheet_names])}")
-                
+
         except PermissionError:
             st.error("⚠️ Le fichier Excel est actuellement ouvert ! Fermez Microsoft Excel puis rafraîchissez la page.")
         except Exception as e:
             st.warning(f"Impossible de lire le fichier de transactions : {e}")
-    else: 
+    else:
         st.info("Fichier `gestion_nhlq.xlsx` introuvable.")
 
 # =========================================================
@@ -1206,38 +1174,38 @@ DRAFT_TEAM_STYLES = {
 
 with tab_repechage:
     c_head, c_ctrl1, c_ctrl2 = st.columns([1.5, 1.4, 1.1], vertical_alignment="center")
-    with c_head: 
+    with c_head:
         st.markdown("<h2 style='margin: 0; padding: 0; font-weight: 900; color: #F8FAFC; text-shadow: 0 0 10px rgba(255,255,255,0.2);'>🎟️ CENTRE DU REPÊCHAGE</h2>", unsafe_allow_html=True)
-    
+
     path_excel = get_file_path("gestion_nhlq.xlsx")
     excel_draft_found = False
-    
+
     if os.path.exists(path_excel):
         try:
             xls = pd.ExcelFile(path_excel)
             draft_sheets = [s for s in xls.sheet_names if "repechage" in clean_str(s) or "draft" in clean_str(s)]
-            
+
             if draft_sheets:
                 excel_draft_found = True
                 draft_sheets.sort()
-                
-                with c_ctrl1: 
+
+                with c_ctrl1:
                     onglet_choisi = st.radio("Sélectionnez la cohorte :", draft_sheets, horizontal=True, label_visibility="collapsed")
-                with c_ctrl2: 
+                with c_ctrl2:
                     e_filtre = st.selectbox("🔎 Mettre en valeur (DG) :", ["Toutes les équipes"] + list(TEAM_ABBR_MAP.values()), label_visibility="collapsed", key="filt_draft_excel")
-                
+
                 m_yr = re.search(r'(2026|2027|2028)', str(onglet_choisi))
                 annee_cohorte = m_yr.group(1) if m_yr else "2026"
-                
+
                 df_raw = pd.read_excel(path_excel, sheet_name=onglet_choisi, header=None)
-                
+
                 header_idx = 0
                 for idx, row in df_raw.head(10).iterrows():
                     row_vals = [str(x).upper().strip() for x in row.values]
                     if sum(1 for tm in row_vals if to_team_abbr(tm) is not None) >= 3 or any("RONDE" in v for v in row_vals):
                         header_idx = idx
                         break
-                
+
                 new_cols = []
                 for i, val in enumerate(df_raw.iloc[header_idx]):
                     val_str = str(val).strip()
@@ -1248,18 +1216,18 @@ with tab_repechage:
                         new_cols.append(abbr)
                     else:
                         new_cols.append(val_str.upper() if val_str and val_str.upper() not in ['NAN', 'NONE'] else f"Col_{i}")
-                
+
                 df_draft_excel = df_raw.iloc[header_idx+1:].copy()
                 df_draft_excel.columns = new_cols
                 df_draft_excel = df_draft_excel.dropna(how='all').reset_index(drop=True)
-                
+
                 for col in df_draft_excel.columns:
                     df_draft_excel[col] = df_draft_excel[col].astype(str).str.replace(r'\.0$', '', regex=True).str.strip().str.upper()
                     df_draft_excel[col] = df_draft_excel[col].replace(['NAN', 'NONE', ''], '')
 
                 # --- CARTE DE POSSESSION DES CHOIX ---
                 draft_ownership_map = {}
-                
+
                 for idx_r, row_d in df_draft_excel.iterrows():
                     m_r = re.search(r'\d+', str(row_d.get("Ronde", "")))
                     rd_num = int(m_r.group(0)) if m_r else (idx_r + 1)
@@ -1300,20 +1268,20 @@ with tab_repechage:
 
                 all_owned_picks = list(draft_ownership_map.values())
                 counts = pd.Series(all_owned_picks).value_counts()
-                
+
                 st.markdown("---")
-                
+
                 # Badges
                 titre_dash = "CAPITAL DE REPÊCHAGE GLOBAL" if e_filtre == "Toutes les équipes" else f"CAPITAL DE REPÊCHAGE : {e_filtre}"
                 st.markdown(f"<h4 style='color:{t['primary']}; font-weight:900; text-transform:uppercase; margin-bottom:15px; font-size:1.05rem; letter-spacing:1px;'>📊 {titre_dash} ({onglet_choisi.upper()})</h4>", unsafe_allow_html=True)
-                
+
                 badges_list = []
-                for team_abbr in TEAM_ABBR_MAP.values(): 
+                for team_abbr in TEAM_ABBR_MAP.values():
                     count = counts.get(team_abbr, 0)
                     info = DRAFT_TEAM_STYLES.get(team_abbr, {"bg": "#334155", "color": "#FFFFFF", "border": "#475569"})
                     opacity = "1.0" if (e_filtre == "Toutes les équipes" or team_abbr == e_filtre) else "0.25"
                     box_shadow = f"box-shadow: 0 0 20px {info['bg']}; transform: scale(1.05);" if (e_filtre == team_abbr) else "box-shadow: 0 4px 10px rgba(0,0,0,0.4);"
-                    
+
                     badge_item = (
                         f"<div style='background-color:{info['bg']}; color:{info['color']}; border:1px solid {info['border']}; "
                         f"border-radius:12px; padding:10px 15px; display:inline-flex; flex-direction:column; align-items:center; "
@@ -1341,9 +1309,9 @@ with tab_repechage:
                         owner_team = ABBR_TO_TEAM.get(owner_abbr, owner_abbr)
                         owner_dg = POOLERS.get(owner_team, "N/A")
                         is_traded = (owner_abbr != orig_abbr)
-                        
+
                         statut = f"🔁 Acquis de {orig_abbr}" if is_traded else "✅ Choix d'origine"
-                        
+
                         chrono_rows.append({
                             "Choix": pick_overall,
                             "Ronde": f"Ronde {r_num}",
@@ -1365,7 +1333,7 @@ with tab_repechage:
                     <p style='color:#94A3B8; margin:0 0 15px 0; font-size:0.95rem;'>L'ordre officiel de repêchage commence par l'équipe ayant le <b>moins de points</b> au classement général (#1) et termine par la championne (#12).</p>
                 </div>
                 """, unsafe_allow_html=True)
-                
+
                 col_sel_ronde, col_info_rep = st.columns([1.5, 2.5], vertical_alignment="center")
                 with col_sel_ronde:
                     options_rondes = ["Toutes les rondes (1 à 15)"] + [f"Ronde {i}" for i in range(1, total_rounds + 1)]
@@ -1404,14 +1372,14 @@ with tab_repechage:
 
                 # Matrice
                 st.markdown(f"<h3 style='color:{t['primary']}; font-weight:900; margin: 20px 0 10px 0;'>📊 GRILLE MATRICIELLE DU FICHIER EXCEL ({onglet_choisi.upper()})</h3>", unsafe_allow_html=True)
-                
+
                 def premium_draft_style(val):
                     s = str(val).strip().upper()
-                    if s in ["", "NAN", "NONE"]: 
+                    if s in ["", "NAN", "NONE"]:
                         return "background-color: transparent; color: transparent;"
                     is_highlighted = (e_filtre != "Toutes les équipes" and s == e_filtre)
                     is_faded = (e_filtre != "Toutes les équipes" and s != e_filtre and s in TEAM_ABBR_MAP.values())
-                    
+
                     if is_highlighted:
                         info = DRAFT_TEAM_STYLES.get(s, {"bg": "#FACC15", "color": "#000000", "border": "#CA8A04"})
                         return f"background-color: {info['bg']}; color: {info['color']}; font-weight: 900; border: 2px solid #FFFFFF; text-align: center; box-shadow: inset 0 0 20px rgba(255,255,255,0.6);"
@@ -1420,21 +1388,21 @@ with tab_repechage:
                     elif s in DRAFT_TEAM_STYLES:
                         info = DRAFT_TEAM_STYLES[s]
                         return f"background-color: {info['bg']}; color: {info['color']}; font-weight: 800; border: 1px solid {info['border']}; text-align: center;"
-                    
+
                     return f"background-color: {t['card_bg']}; color: {t['primary']}; text-align: center; font-weight: 900;"
 
                 styler = df_draft_excel.style
                 try: styler = styler.map(premium_draft_style)
                 except AttributeError: styler = styler.applymap(premium_draft_style)
-                
+
                 cols_config = {col: st.column_config.TextColumn(col, alignment="center") for col in df_draft_excel.columns}
                 st.dataframe(styler, use_container_width=True, hide_index=True, height=580, column_config=cols_config)
 
-        except PermissionError: 
+        except PermissionError:
             st.error("⚠️ Le fichier Excel est actuellement ouvert ! Fermez Microsoft Excel puis rafraîchissez la page.")
-        except Exception as e: 
+        except Exception as e:
             st.error(f"⚠️ Erreur lors de la lecture de l'onglet dans Excel : {e}")
-            
+
     if not excel_draft_found:
         st.warning("⚠️ Aucun onglet de repêchage trouvé dans `gestion_nhlq.xlsx`.")
 
@@ -1452,10 +1420,10 @@ with tab_recrues:
             t_lower = str(team_name).lower()
             if "draft" in t_lower or "libre" in t_lower or "non rep" in t_lower: return "zzzz_" + t_lower
             return "".join([c for c in unicodedata.normalize('NFKD', str(team_name)) if not unicodedata.combining(c)]).lower()
-            
+
         vrais_lnh = sorted(vrais_lnh, key=sort_teams_key)
         filtre = st.selectbox("🔎 SÉLECTIONNER UNE ÉQUIPE DE LA LNH :", ["Toutes les recrues"] + vrais_lnh)
-        
+
         CONF_REC = {
             "No": st.column_config.NumberColumn("No", width="small", alignment="center"),
             "Joueurs": st.column_config.TextColumn("Nom du Joueur", width="medium"),
