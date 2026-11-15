@@ -815,9 +815,9 @@ with tab_equipes:
 
         with cl1:
             st.markdown(f"""
-            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
-                <div style='font-weight: 900; color: #F59E0B; font-size: 0.8rem; border-bottom: 2px solid #F59E0B; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
-                    1. GAGNANT DU POOL ({len(rank_general)})
+            <div style='{card_style} max-height: 300px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #F59E0B; font-size: 0.78rem; border-bottom: 2px solid #F59E0B; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    1. GAGNANT DU POOL
                 </div>
                 <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
                     {build_ranking_html(rank_general, 'total', len(rank_general))}
@@ -827,39 +827,39 @@ with tab_equipes:
 
         with cl2:
             st.markdown(f"""
-            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
-                <div style='font-weight: 900; color: #EF4444; font-size: 0.8rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
-                    2. MEILLEURS ATTAQUANTS ({len(rank_att)})
+            <div style='{card_style} max-height: 300px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #EF4444; font-size: 0.78rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    2. MEILLEURS ATTAQUANTS
                 </div>
                 <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
                     {build_ranking_html(rank_att, 'att', len(rank_att))}
-                    <span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span>
+                    <span style='color: #94A3B8; font-size: 0.68rem;'>❌ 1er Général exclu</span>
                 </div>
             </div>
             """, unsafe_allow_html=True)
 
         with cl3:
             st.markdown(f"""
-            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
-                <div style='font-weight: 900; color: #38BDF8; font-size: 0.8rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
-                    3. MEILLEURS DÉFENSEURS ({len(rank_def)})
+            <div style='{card_style} max-height: 300px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #38BDF8; font-size: 0.78rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    3. MEILLEURS DÉFENSEURS
                 </div>
                 <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
                     {build_ranking_html(rank_def, 'def', len(rank_def))}
-                    <span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span>
+                    <span style='color: #94A3B8; font-size: 0.68rem;'>❌ 1er Général exclu</span>
                 </div>
             </div>
             """, unsafe_allow_html=True)
 
         with cl4:
             st.markdown(f"""
-            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
-                <div style='font-weight: 900; color: #10B981; font-size: 0.8rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
-                    4. MEILLEURS GARDIENS ({len(rank_gard)})
+            <div style='{card_style} max-height: 300px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #10B981; font-size: 0.78rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    4. MEILLEURS GARDIENS
                 </div>
                 <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
                     {build_ranking_html(rank_gard, 'gard', len(rank_gard))}
-                    <span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span>
+                    <span style='color: #94A3B8; font-size: 0.68rem;'>❌ 1er Général exclu</span>
                 </div>
             </div>
             """, unsafe_allow_html=True)
