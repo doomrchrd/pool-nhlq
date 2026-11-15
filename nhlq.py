@@ -662,7 +662,7 @@ rank_general = sorted(team_totals, key=lambda x: x["total"], reverse=True)
 premier_general = rank_general[0]["team"] if rank_general else ""
 rank_att = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["att"], reverse=True)
 rank_def = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["def"], reverse=True)
-rank_gard = sorted([t for t in team_totals if t["team"] not in [premier_general, (rank_def[0]["team"] if rank_def else "")]], key=lambda x: x["gard"], reverse=True)
+rank_gard = sorted([t for t in team_totals if t["team"] != premier_general], key=lambda x: x["gard"], reverse=True)
 
 draft_base_order = sorted(team_totals, key=lambda x: (x["total"], x["team"]), reverse=False)
 
@@ -778,7 +778,7 @@ st.markdown(f"""
 </style>
 """, unsafe_allow_html=True)
 
-def build_ranking_html(rank_list, score_key, top_n=5):
+def build_ranking_html(rank_list, score_key, top_n=12):
     html = ""
     for i in range(min(top_n, len(rank_list))):
         team, pts = rank_list[i]['team'], rank_list[i][score_key]
@@ -813,7 +813,6 @@ with tab_equipes:
         cl1, cl2, cl3, cl4 = st.columns(4)
         card_style = "background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"
 
-        # --- CARRÉ 1 : TOUTES LES ÉQUIPES DU POOL (1 à 12) ---
         with cl1:
             st.markdown(f"""
             <div style='{card_style} max-height: 280px; overflow-y: auto;'>
@@ -827,11 +826,43 @@ with tab_equipes:
             """, unsafe_allow_html=True)
 
         with cl2:
-            st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #EF4444; font-size: 0.8rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>2. MEILLEURS ATT</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_att, 'att', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #EF4444; font-size: 0.8rem; border-bottom: 2px solid #EF4444; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    2. MEILLEURS ATTAQUANTS ({len(rank_att)})
+                </div>
+                <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
+                    {build_ranking_html(rank_att, 'att', len(rank_att))}
+                    <span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
         with cl3:
-            st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #38BDF8; font-size: 0.8rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>3. MEILLEURS DÉF</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_def, 'def', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span></div></div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #38BDF8; font-size: 0.8rem; border-bottom: 2px solid #38BDF8; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    3. MEILLEURS DÉFENSEURS ({len(rank_def)})
+                </div>
+                <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
+                    {build_ranking_html(rank_def, 'def', len(rank_def))}
+                    <span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
         with cl4:
-            st.markdown(f"<div style='{card_style}'><div style='font-weight: 900; color: #10B981; font-size: 0.8rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>4. MEILLEURS GARD</div><div style='margin-top: 8px; font-size: 0.8rem; line-height: 1.4;'>{build_ranking_html(rank_gard, 'gard', 5)}<span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ Exclus si prix préc.</span></div></div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div style='{card_style} max-height: 280px; overflow-y: auto;'>
+                <div style='font-weight: 900; color: #10B981; font-size: 0.8rem; border-bottom: 2px solid #10B981; padding-bottom: 4px; text-align: center; letter-spacing: 0.5px;'>
+                    4. MEILLEURS GARDIENS ({len(rank_gard)})
+                </div>
+                <div style='margin-top: 8px; font-size: 0.76rem; line-height: 1.45;'>
+                    {build_ranking_html(rank_gard, 'gard', len(rank_gard))}
+                    <span style='color: #94A3B8; font-size: 0.68rem;'><br>❌ 1er Général exclu</span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
 
     st.divider()
     df_att, df_banc_att = st.session_state[f"{team_slug}_df_att"], st.session_state[f"{team_slug}_df_banc_att"]
@@ -844,12 +875,21 @@ with tab_equipes:
     nb_tot_concession = nb_att_tot + nb_def_tot + nb_gard_tot
 
     # 1. Vérification stricte des barèmes par position
-    stat_att = (19 <= len(df_att) <= 25) and (nb_att_tot <= 80)
-    stat_def = (7 <= len(df_def) <= 11) and (nb_def_tot <= 30)
-    stat_gard = (2 <= len(df_gard) <= 4) and (nb_gard_tot <= 18)
+    part_att_ok = (19 <= len(df_att) <= 25)
+    tot_att_ok = (nb_att_tot <= 80)
+    stat_att = part_att_ok and tot_att_ok
+
+    part_def_ok = (7 <= len(df_def) <= 11)
+    tot_def_ok = (nb_def_tot <= 30)
+    stat_def = part_def_ok and tot_def_ok
+
+    part_gard_ok = (2 <= len(df_gard) <= 4)
+    tot_gard_ok = (nb_gard_tot <= 18)
+    stat_gard = part_gard_ok and tot_gard_ok
 
     # 2. Total Concession conforme UNIQUEMENT si toutes les positions sont conformes
-    stat_globale = (nb_tot_concession <= 128) and stat_att and stat_def and stat_gard
+    tot_glob_ok = (nb_tot_concession <= 128)
+    stat_globale = tot_glob_ok and stat_att and stat_def and stat_gard
 
     # 3. Fonction de style pour les alertes rouges
     def get_card_style(is_ok):
@@ -863,8 +903,8 @@ with tab_equipes:
         st.markdown(f"""
         <div style="{get_card_style(stat_att)}">
             <div style="font-size: 0.85rem; font-weight: 900; color:{'#34D399' if stat_att else '#FCA5A5'};">🏒 ATTAQUANTS {'✅' if stat_att else '⚠️'}</div>
-            <div style="font-size: 1rem; margin-top: 4px; color:#F8FAFC;"><b>Partants :</b> {len(df_att)} / [19-25]</div>
-            <div style="font-size: 0.85rem; color: #94A3B8;"><b>Total Concession :</b> {nb_att_tot} / 80 max</div>
+            <div style="font-size: 1rem; margin-top: 4px; color:{'#F8FAFC' if part_att_ok else '#EF4444'}; font-weight:{'400' if part_att_ok else '900'};"><b>Partants :</b> {len(df_att)} / [19-25]</div>
+            <div style="font-size: 0.85rem; color: {'#94A3B8' if tot_att_ok else '#EF4444'}; font-weight:{'400' if tot_att_ok else '900'};"><b>Total Concession :</b> {nb_att_tot} / 80 max</div>
             <div style="font-size: 0.8rem; font-weight: 800; margin-top: 4px; color: {'#34D399' if stat_att else '#EF4444'}; text-decoration: {'none' if stat_att else 'underline'};">{'✅ Conforme' if stat_att else '⚠️ Quota dépassé'}</div>
         </div>
         """, unsafe_allow_html=True)
@@ -873,8 +913,8 @@ with tab_equipes:
         st.markdown(f"""
         <div style="{get_card_style(stat_def)}">
             <div style="font-size: 0.85rem; font-weight: 900; color:{'#34D399' if stat_def else '#FCA5A5'};">🛡️ DÉFENSEURS {'✅' if stat_def else '⚠️'}</div>
-            <div style="font-size: 1rem; margin-top: 4px; color:#F8FAFC;"><b>Partants :</b> {len(df_def)} / [7-11]</div>
-            <div style="font-size: 0.85rem; color: #94A3B8;"><b>Total Concession :</b> {nb_def_tot} / 30 max</div>
+            <div style="font-size: 1rem; margin-top: 4px; color:{'#F8FAFC' if part_def_ok else '#EF4444'}; font-weight:{'400' if part_def_ok else '900'};"><b>Partants :</b> {len(df_def)} / [7-11]</div>
+            <div style="font-size: 0.85rem; color: {'#94A3B8' if tot_def_ok else '#EF4444'}; font-weight:{'400' if tot_def_ok else '900'};"><b>Total Concession :</b> {nb_def_tot} / 30 max</div>
             <div style="font-size: 0.8rem; font-weight: 800; margin-top: 4px; color: {'#34D399' if stat_def else '#EF4444'}; text-decoration: {'none' if stat_def else 'underline'};">{'✅ Conforme' if stat_def else '⚠️ Quota dépassé'}</div>
         </div>
         """, unsafe_allow_html=True)
@@ -883,8 +923,8 @@ with tab_equipes:
         st.markdown(f"""
         <div style="{get_card_style(stat_gard)}">
             <div style="font-size: 0.85rem; font-weight: 900; color:{'#34D399' if stat_gard else '#FCA5A5'};">🥅 GARDIENS {'✅' if stat_gard else '⚠️'}</div>
-            <div style="font-size: 1rem; margin-top: 4px; color:#F8FAFC;"><b>Partants :</b> {len(df_gard)} / [2-4]</div>
-            <div style="font-size: 0.85rem; color: #94A3B8;"><b>Total Concession :</b> {nb_gard_tot} / 18 max</div>
+            <div style="font-size: 1rem; margin-top: 4px; color:{'#F8FAFC' if part_gard_ok else '#EF4444'}; font-weight:{'400' if part_gard_ok else '900'};"><b>Partants :</b> {len(df_gard)} / [2-4]</div>
+            <div style="font-size: 0.85rem; color: {'#94A3B8' if tot_gard_ok else '#EF4444'}; font-weight:{'400' if tot_gard_ok else '900'};"><b>Total Concession :</b> {nb_gard_tot} / 18 max</div>
             <div style="font-size: 0.8rem; font-weight: 800; margin-top: 4px; color: {'#34D399' if stat_gard else '#EF4444'}; text-decoration: {'none' if stat_gard else 'underline'};">{'✅ Conforme' if stat_gard else '⚠️ Quota dépassé'}</div>
         </div>
         """, unsafe_allow_html=True)
@@ -893,7 +933,7 @@ with tab_equipes:
         st.markdown(f"""
         <div style="{get_card_style(stat_globale)}">
             <div style="font-size: 0.85rem; font-weight: 900; color:{'#34D399' if stat_globale else '#FCA5A5'};">🏢 TOTAL CONCESSION {'✅' if stat_globale else '⚠️'}</div>
-            <div style="font-size: 1rem; margin-top: 4px; color:#F8FAFC;"><b>Effectif :</b> {nb_tot_concession} / 128 max</div>
+            <div style="font-size: 1rem; margin-top: 4px; color:{'#F8FAFC' if tot_glob_ok else '#EF4444'}; font-weight:{'400' if tot_glob_ok else '900'};"><b>Effectif :</b> {nb_tot_concession} / 128 max</div>
             <div style="font-size: 0.85rem; color: #94A3B8;"><b>Statut global :</b></div>
             <div style="font-size: 0.82rem; font-weight: 900; margin-top: 2px; color: {'#34D399' if stat_globale else '#EF4444'}; text-decoration: {'none' if stat_globale else 'underline'};">{'✅ Conforme' if stat_globale else '⚠️ Quota non conforme'}</div>
         </div>
