@@ -1,1502 +1,1501 @@
-﻿Équipe_pool;Statut;Position;joueurs;T;A;Exp
-Vancouver Canucks;Partant;ATT;Benn Jamie;DAL;37;4
-Vancouver Canucks;Partant;ATT;Bennett Sam;FLA;30;2
-Vancouver Canucks;Partant;ATT;Connor Kyle;WIN;30;2
-Vancouver Canucks;Partant;ATT;DeBrincat Alex;DET;29;1
-Vancouver Canucks;Partant;ATT;Eller Lars;FLA;37;4
-Vancouver Canucks;Partant;ATT;Forsberg Filip;NSH;32;3
-Vancouver Canucks;Partant;ATT;Gallagher Branden;VAN;34;0
-Vancouver Canucks;Partant;ATT;Giroux Claude;OTT;39;3
-Vancouver Canucks;Partant;ATT;Granlund Mikael;ANA;35;2
-Vancouver Canucks;Partant;ATT;Haula Erik;LA;34;4
-Vancouver Canucks;Partant;ATT;Jenner Boone;WSH;33;4
-Vancouver Canucks;Partant;ATT;Kane Patrick;CHI;38;3
-Vancouver Canucks;Partant;ATT;Lehkonen Artturi;COL;31;2
-Vancouver Canucks;Partant;ATT;Mackinnon Nathan;COL;31;2
-Vancouver Canucks;Partant;ATT;Malkin Evgeni;PIT;40;3
-Vancouver Canucks;Partant;ATT;McDavid Connor;EDM;30;4
-Vancouver Canucks;Partant;ATT;Ovechkin Alex;WSH;40;0
-Vancouver Canucks;Partant;ATT;Rust Brian;PIT;34;4
-Vancouver Canucks;Partant;ATT;Scheifele Mark;WIN;33;2
-Vancouver Canucks;Partant;ATT;Seguin Taylor;DAL;35;3
-Vancouver Canucks;Partant;ATT;Vilardi Gabriel;WIN;27;4
-Vancouver Canucks;Partant;ATT;Tavares John;TOR;36;2
-Vancouver Canucks;Partant;ATT;Verhaeghe Carter;FLA;31;1
-Vancouver Canucks;Partant;DEF;Bouchard Evan;EDM;27;1
-Vancouver Canucks;Partant;DEF;Carlson John;TPB;36;2
-Vancouver Canucks;Partant;DEF;Demelo Dylan;WIN;33;1
-Vancouver Canucks;Partant;DEF;Ekblad Aaron;FLA;31;2
-Vancouver Canucks;Partant;DEF;Hanifin Noah;VGK;30;4
-Vancouver Canucks;Partant;DEF;Hutson Lane;MTL;23;4
-Vancouver Canucks;Partant;DEF;LaCombe Jackson;ANA;25;4
-Vancouver Canucks;Partant;DEF;Letang Khris;PIT;39;4
-Vancouver Canucks;Partant;GARD;Bussi Brandon;CAR;28;1
-Vancouver Canucks;Partant;GARD;Oettinger Jake;DAL;28;4
-Vancouver Canucks;Partant;GARD;Thompson Logan;WSH;29;1
-Vancouver Canucks;Banc;ATT;Arcuri Francesco;COL;23;4
-Vancouver Canucks;Banc;ATT;Barratt Evan;;27;4
-Vancouver Canucks;Banc;ATT;Barron Morgan;WIN;28;4
-Vancouver Canucks;Banc;ATT;Beaucage Alex;;25;4
-Vancouver Canucks;Banc;ATT;Bicker Kevin;DET;22;3
-Vancouver Canucks;Banc;ATT;Brazeau Justin;PIT;28;1
-Vancouver Canucks;Banc;ATT;Caggiula Drake;;32;4
-Vancouver Canucks;Banc;ATT;Dach Colton;EDM;24;0
-Vancouver Canucks;Banc;ATT;Dagenais Maddox;STL;18;0
-Vancouver Canucks;Banc;ATT;Damiani Riley;;26;4
-Vancouver Canucks;Banc;ATT;Danault Phillip;MTL;34;4
-Vancouver Canucks;Banc;ATT;Desnoyers Elliot;;25;4
-Vancouver Canucks;Banc;ATT;Dowd Nic;VGK;36;4
-Vancouver Canucks;Banc;ATT;Drouin Jonathan;;31;2
-Vancouver Canucks;Banc;ATT;Foegele Warren;OTT;30;4
-Vancouver Canucks;Banc;ATT;Fontaine Gunnar;;26;4
-Vancouver Canucks;Banc;ATT;Foudy Jean-Luc;;24;4
-Vancouver Canucks;Banc;ATT;Iskhakov Ruslan;NYI;26;4
-Vancouver Canucks;Banc;ATT;Jarventie Emil;PIT;21;3
-Vancouver Canucks;Banc;ATT;Jones Max;EDM;29;4
-Vancouver Canucks;Banc;ATT;Kallionkieli Marcus;;25;4
-Vancouver Canucks;Banc;ATT;Kilpinen Maximilian;;23;2
-Vancouver Canucks;Banc;ATT;Kulich Jiri ;BUF;22;4
-Vancouver Canucks;Banc;ATT;Konecny Jakub;;24;4
-Vancouver Canucks;Banc;ATT;Kotkaniemi Jesperi;CAR;26;4
-Vancouver Canucks;Banc;ATT;Kuznetsov Evgeni;;34;1
-Vancouver Canucks;Banc;ATT;Lane Aiden;CGY;19;1
-Vancouver Canucks;Banc;ATT;Lawrence Tynan;STL;18;0
-Vancouver Canucks;Banc;ATT;Lemieux Brendan;;30;4
-Vancouver Canucks;Banc;ATT;Ljungman Daniel;;24;4
-Vancouver Canucks;Banc;ATT;Ludtke Tanner;UTH;22;3
-Vancouver Canucks;Banc;ATT;Marchand Brad;FLA;38;3
-Vancouver Canucks;Banc;ATT;Marchessault Jonathan;NSH;36;4
-Vancouver Canucks;Banc;ATT;Morin Zachary;;19;1
-Vancouver Canucks;Banc;ATT;Mrsic Tomas;STL;20;2
-Vancouver Canucks;Banc;ATT;Namestnikov Vladislav;WIN;34;2
-Vancouver Canucks;Banc;ATT;Nedopekin Nikita;;21;3
-Vancouver Canucks;Banc;ATT;Nehring Zachary;WIN;21;3
-Vancouver Canucks;Banc;ATT;Perevalov Alexander;CAR;22;4
-Vancouver Canucks;Banc;ATT;Petrovsky Servac;;22;4
-Vancouver Canucks;Banc;ATT;Pilgrim Carson;;20;2
-Vancouver Canucks;Banc;ATT;Powell Noah;PHI;22;2
-Vancouver Canucks;Banc;ATT;Ranta Sampo;COL;26;4
-Vancouver Canucks;Banc;ATT;Schultz Ashton;BUF;20;1
-Vancouver Canucks;Banc;ATT;Shaw Mason;MIN;28;4
-Vancouver Canucks;Banc;ATT;Simoneau Xavier;;25;4
-Vancouver Canucks;Banc;ATT;Simontaival Kasper;;25;4
-Vancouver Canucks;Banc;ATT;Skinner Jeff;;34;4
-Vancouver Canucks;Banc;ATT;Sumpf Julius;CHI;21;1
-Vancouver Canucks;Banc;ATT;Suvanto Oliver;WSH;18;0
-Vancouver Canucks;Banc;ATT;Tatar Tomas;;36;3
-Vancouver Canucks;Banc;ATT;Thoreson Gavyn;;21;2
-Vancouver Canucks;Banc;ATT;Vanriemsdyk James;;37;3
-Vancouver Canucks;Banc;ATT;Wise Jake;;26;4
-Vancouver Canucks;Banc;ATT;Zadina Filip;;27;3
-Vancouver Canucks;Banc;ATT;Zimmer Max;CAR;29;4
-Vancouver Canucks;Banc;ATT;Zucker Jason;BUF;35;1
-Vancouver Canucks;Banc;DEF;Barnhill Sean;NYR;20;1
-Vancouver Canucks;Banc;DEF;Barrie Tyson;RET;35;4
-Vancouver Canucks;Banc;DEF;Bear Ethan;NYI;29;4
-Vancouver Canucks;Banc;DEF;Boltmann Jake;SJ;25;4
-Vancouver Canucks;Banc;DEF;Drysdale Jamie;PHI;24;1
-Vancouver Canucks;Banc;DEF;Goljer Adam;LA;18;0
-Vancouver Canucks;Banc;DEF;Grudinin Vladimir;CAR;23;4
-Vancouver Canucks;Banc;DEF;Gudbranson Erik;CLB;34;4
-Vancouver Canucks;Banc;DEF;Kokkonen Mikko;;26;4
-Vancouver Canucks;Banc;DEF;Kurtz Jayden;ANA;19;0
-Vancouver Canucks;Banc;DEF;Larsson Adam;SEA;34;1
-Vancouver Canucks;Banc;DEF;Leddy Nick;SJ;35;4
-Vancouver Canucks;Banc;DEF;Myers Tyler;DAL;37;4
-Vancouver Canucks;Banc;DEF;Nurse Darnell;SJ;32;4
-Vancouver Canucks;Banc;DEF;Olsson Anton;;24;4
-Vancouver Canucks;Banc;DEF;Petry Jeff;;39;4
-Vancouver Canucks;Banc;DEF;Piiparinen Juho;VGK;18;0
-Vancouver Canucks;Banc;DEF;Skahan Will;UTH;20;2
-Vancouver Canucks;Banc;DEF;Sokolovskii Maksim;PHI;18;0
-Vancouver Canucks;Banc;DEF;Suter Ryan;;42;4
-Vancouver Canucks;Banc;DEF;Viro Eemil;DET;23;4
-Vancouver Canucks;Banc;DEF;Zanetti Brian;;23;4
-Vancouver Canucks;Banc;GARD;Alexander Gage;;24;4
-Vancouver Canucks;Banc;GARD;Delia Collin;;32;4
-Vancouver Canucks;Banc;GARD;Gibson John;DET;33;4
-Vancouver Canucks;Banc;GARD;Lankinen Kevin;VAN;31;2
-Vancouver Canucks;Banc;GARD;Lindgren Charlie ;WSH;33;3
-Vancouver Canucks;Banc;GARD;Mandolese Kevin;;26;4
-Vancouver Canucks;Banc;GARD;Mann Strauss;;28;4
-Vancouver Canucks;Banc;GARD;Mrazek Petr;;35;1
-Vancouver Canucks;Banc;GARD;Reimer James;NYR;38;4
-Vancouver Canucks;Banc;GARD;Rousseau William;;24;3
-Vancouver Canucks;Banc;GARD;Tomek Matej;;29;4
-Vancouver Canucks;Banc;GARD;Vanecek Vitek;NYI;31;2
-Vancouver Canucks;Banc;GARD;Zherenko Vadim;OTT;25;4
-Edmonton Oilers;Partant;ATT;Benson Zach;BUF;21;3
-Edmonton Oilers;Partant;ATT;Carlsson Leo;ANA;21;2
-Edmonton Oilers;Partant;ATT;Caufield Cole;MTL;26;4
-Edmonton Oilers;Partant;ATT;Coleman Blake;MIN;35;1
-Edmonton Oilers;Partant;ATT;Debrusk Jake;VAN;30;4
-Edmonton Oilers;Partant;ATT;Draisaitl Leon;EDM;31;4
-Edmonton Oilers;Partant;ATT;Frondell Anton;CHI;19;1
-Edmonton Oilers;Partant;ATT;Greer A.J.;ANA;29;4
-Edmonton Oilers;Partant;ATT;Hall Taylor;CAR;35;3
-Edmonton Oilers;Partant;ATT;Iafallo Alex;WIN;33;2
-Edmonton Oilers;Partant;ATT;Khusnutdinov Marat;BOS;24;4
-Edmonton Oilers;Partant;ATT;Killorn Alexander;ANA ;37;1
-Edmonton Oilers;Partant;ATT;Marner Mitch;VGK;29;4
-Edmonton Oilers;Partant;ATT;Mikheyev Ilya;TPB;31;1
-Edmonton Oilers;Partant;ATT;Monahan Sean;CLB;32;3
-Edmonton Oilers;Partant;ATT;Neighbours Jake;STL;24;2
-Edmonton Oilers;Partant;ATT;Palmieri Kyle;NYI;35;1
-Edmonton Oilers;Partant;ATT;Suter Pius;STL;30;2
-Edmonton Oilers;Partant;ATT;Teravainen Teuvo;CHI;32;1
-Edmonton Oilers;Partant;ATT;Tkachuk Matthew;FLA;29;1
-Edmonton Oilers;Partant;ATT;Yamamoto Kailer;UTH;28;1
-Edmonton Oilers;Partant;ATT;Zegras Trevor;PHI;25;4
-Edmonton Oilers;Partant;DEF;Dickinson Sam;SJ;20;2
-Edmonton Oilers;Partant;DEF;Doughty Drew;LA;36;2
-Edmonton Oilers;Partant;DEF;Hamilton Dougie;NJ;33;3
-Edmonton Oilers;Partant;DEF;Hughes Quinton;MIN;27;4
-Edmonton Oilers;Partant;DEF;Sanheim Travis;PHI;30;4
-Edmonton Oilers;Partant;DEF;Schmidt Nate;UTH;34;1
-Edmonton Oilers;Partant;DEF;Slavin Jaccob;CAR;32;3
-Edmonton Oilers;Partant;DEF;Valimaki Juuso;CAR;28;1
-Edmonton Oilers;Partant;GARD;Greaves Jet;CLB;24;3
-Edmonton Oilers;Partant;GARD;Hart Carter;VGK;28;0
-Edmonton Oilers;Partant;GARD;Hofer Joel;STL;26;3
-Edmonton Oilers;Banc;ATT;Afanasyev Yegor;;26;4
-Edmonton Oilers;Banc;ATT;Armia Joel;LA;33;2
-Edmonton Oilers;Banc;ATT;Avramov Fyodor;CAR;20;2
-Edmonton Oilers;Banc;ATT;Barkov Alexander;FLA;31;4
-Edmonton Oilers;Banc;ATT;Basha Andrew;CGY;21;2
-Edmonton Oilers;Banc;ATT;Beauvillier Anthony;WSH;29;2
-Edmonton Oilers;Banc;ATT;Boilard Raoul;NYR;21;2
-Edmonton Oilers;Banc;ATT;Cajkovic Maxim;;26;4
-Edmonton Oilers;Banc;ATT;Cali Ryder;FLA;18;0
-Edmonton Oilers;Banc;ATT;Cerrato Charlie;CAR;21;0
-Edmonton Oilers;Banc;ATT;Compher J.T;DET;31;1
-Edmonton Oilers;Banc;ATT;Couturier Sean;PHI;34;2
-Edmonton Oilers;Banc;ATT;Cullen Wyatt;NSH;18;0
-Edmonton Oilers;Banc;ATT;Danielson Nate;DET;22;2
-Edmonton Oilers;Banc;ATT;Desnoyers Caleb;UTH;19;1
-Edmonton Oilers;Banc;ATT;Domi Max;TOR;31;3
-Edmonton Oilers;Banc;ATT;Fix-Wolansky Trey;VAN;27;4
-Edmonton Oilers;Banc;ATT;Frederic Trent;EDM;29;4
-Edmonton Oilers;Banc;ATT;Gard Matthew;PHI;19;1
-Edmonton Oilers;Banc;ATT;Hemming Emil;DAL;20;2
-Edmonton Oilers;Banc;ATT;Hermansson Elton;LA;18;0
-Edmonton Oilers;Banc;ATT;Hopkins Tyler;TOR;20;1
-Edmonton Oilers;Banc;ATT;Horcoff Will;PIT;20;1
-Edmonton Oilers;Banc;ATT;Huberdeau Jonathan;CGY;33;2
-Edmonton Oilers;Banc;ATT;Hughes D Jack;;23;1
-Edmonton Oilers;Banc;ATT;Ignatavicius Simas;FLA;19;0
-Edmonton Oilers;Banc;ATT;Isayev Dmitri;OTT;19;1
-Edmonton Oilers;Banc;ATT;Janmark Mattias;EDM;34;4
-Edmonton Oilers;Banc;ATT;Kane Evander;;35;1
-Edmonton Oilers;Banc;ATT;Kayumov Artur;CHI;29;4
-Edmonton Oilers;Banc;ATT;Kilfoil Liam;;19;1
-Edmonton Oilers;Banc;ATT;Klepov Nikita;ANA;18;0
-Edmonton Oilers;Banc;ATT;Kulebyakin Oleg;TPB;19;0
-Edmonton Oilers;Banc;ATT;Lafreniere Tommy;EDM;20;1
-Edmonton Oilers;Banc;ATT;Lavoie Raphael;VGK;26;2
-Edmonton Oilers;Banc;ATT;Lee Ryker;NSH;20;1
-Edmonton Oilers;Banc;ATT;Lorenz Reiger;MIN;22;4
-Edmonton Oilers;Banc;ATT;Malhotra Caleb;VAN;18;0
-Edmonton Oilers;Banc;ATT;Mercuri Lucas;TPB;24;4
-Edmonton Oilers;Banc;ATT;Morozov D. Ilya;BUF;18;0
-Edmonton Oilers;Banc;ATT;Murtagh Jack;PHI;19;1
-Edmonton Oilers;Banc;ATT;Nelson Danny;NYI;21;3
-Edmonton Oilers;Banc;ATT;Niederreiter Nino;WIN;34;4
-Edmonton Oilers;Banc;ATT;Nizameyev Artemi;;21;1
-Edmonton Oilers;Banc;ATT;O'Reilly Samuel;TPB;20;2
-Edmonton Oilers;Banc;ATT;Patterson Riley;VAN;20;2
-Edmonton Oilers;Banc;ATT;Paupanekis Hayden;MTL;19;1
-Edmonton Oilers;Banc;ATT;Plante Victor;DET;18;0
-Edmonton Oilers;Banc;ATT;Reichel Lukas;BOS;24;4
-Edmonton Oilers;Banc;ATT;Salminen Samu;FLA;23;4
-Edmonton Oilers;Banc;ATT;Spence Malcolm;NYR;20;1
-Edmonton Oilers;Banc;ATT;Spicer Cole;BOS;22;4
-Edmonton Oilers;Banc;ATT;Traff Herman;ANA;21;2
-Edmonton Oilers;Banc;ATT;Vatrano Frank;ANA;32;3
-Edmonton Oilers;Banc;ATT;Vrana Jakub;;31;2
-Edmonton Oilers;Banc;ATT;Vuollet Oskar;CAR;21;2
-Edmonton Oilers;Banc;ATT;Willhoft Dustin;;19;1
-Edmonton Oilers;Banc;ATT;Wisdom Zaccharya;SEA;22;3
-Edmonton Oilers;Banc;DEF;Aitcheson Kashawn;NYI;20;1
-Edmonton Oilers;Banc;DEF;Blankenburg Nick;TOR;28;3
-Edmonton Oilers;Banc;DEF;Boelius Lasse;ANA;19;1
-Edmonton Oilers;Banc;DEF;Doyle Eddy;;19;0
-Edmonton Oilers;Banc;DEF;Emberson Ty;EDM;26;4
-Edmonton Oilers;Banc;DEF;Forsmark Simon;;23;4
-Edmonton Oilers;Banc;DEF;Jokiharju Henri;BOS;27;2
-Edmonton Oilers;Banc;DEF;Jones Caleb;BUF;29;1
-Edmonton Oilers;Banc;DEF;Klimpke Brayden;MTL;19;0
-Edmonton Oilers;Banc;DEF;Knyzhov Nikolai;;28;3
-Edmonton Oilers;Banc;DEF;Lavoie Tomas;UTH;20;2
-Edmonton Oilers;Banc;DEF;Lin Ryan;SJ;18;0
-Edmonton Oilers;Banc;DEF;Mackenzie Ethan;TOR;20;0
-Edmonton Oilers;Banc;DEF;Meehan Ben;;25;4
-Edmonton Oilers;Banc;DEF;Pylenkov Daniil;TPB;26;0
-Edmonton Oilers;Banc;DEF;Ristolainen Rasmus;PHI;32;3
-Edmonton Oilers;Banc;DEF;Salin Otto;LA;22;4
-Edmonton Oilers;Banc;DEF;Shcherbakov Nikita;NJ;19;0
-Edmonton Oilers;Banc;DEF;Soderstrom Victor;;26;2
-Edmonton Oilers;Banc;DEF;Svozil Stanislav;;24;4
-Edmonton Oilers;Banc;DEF;York Cam;PHI;26;2
-Edmonton Oilers;Banc;GARD;Bernstein Thatcher;;20;2
-Edmonton Oilers;Banc;GARD;Boettinger Harrison;;19;0
-Edmonton Oilers;Banc;GARD;Dipietro Michael;BOS;27;3
-Edmonton Oilers;Banc;GARD;George Carter;LA;20;2
-Edmonton Oilers;Banc;GARD;Goos Mans;DAL;19;1
-Edmonton Oilers;Banc;GARD;Malik Nick;;25;4
-Edmonton Oilers;Banc;GARD;Merilainen Leevi;VAN;23;4
-Edmonton Oilers;Banc;GARD;Miller Landon;;21;2
-Edmonton Oilers;Banc;GARD;Moysevich Pavel;VGK;22;2
-Edmonton Oilers;Banc;GARD;Nabokov Ilya;COL;23;2
-Edmonton Oilers;Banc;GARD;Rimpinen Petteri;LA;20;1
-Edmonton Oilers;Banc;GARD;Sergeyev Arseni;CGY;24;0
-Edmonton Oilers;Banc;GARD;Slukynsky Hampton;LA;21;0
-Edmonton Oilers;Banc;GARD;Stierngranat Joel;;21;2
-Edmonton Oilers;Banc;GARD;Zavragin Yegor;PHI;23;3
-Colorado Avalanches;Partant;ATT;Boeser Brock;VAN;30;4
-Colorado Avalanches;Partant;ATT;Farabee Joel;CGY;27;4
-Colorado Avalanches;Partant;ATT;Gaudreau Freddy;SEA;33;4
-Colorado Avalanches;Partant;ATT;Hagel Brandon;TPB;28;4
-Colorado Avalanches;Partant;ATT;Horvat Bo;NYI;31;4
-Colorado Avalanches;Partant;ATT;Kucherov Nikita;TPB;33;4
-Colorado Avalanches;Partant;ATT;Marchment Mason;SJ;31;4
-Colorado Avalanches;Partant;ATT;Martinook Jordan;CAR;34;4
-Colorado Avalanches;Partant;ATT;McLeod Ryan;BUF;27;4
-Colorado Avalanches;Partant;ATT;Minten Fraser;BOS;22;3
-Colorado Avalanches;Partant;ATT;Moore Trevor;LA;32;4
-Colorado Avalanches;Partant;ATT;Novak Tommy;PIT;29;4
-Colorado Avalanches;Partant;ATT;O'Connor Drew;VAN;28;2
-Colorado Avalanches;Partant;ATT;Olofsson Victor;VGK;32;3
-Colorado Avalanches;Partant;ATT;Protas Ilya;WSH;20;1
-Colorado Avalanches;Partant;ATT;Rodrigues Evan;NJ;33;1
-Colorado Avalanches;Partant;ATT;Schwartz Jaden;COL;34;1
-Colorado Avalanches;Partant;ATT;Smith William;SJ;21;3
-Colorado Avalanches;Partant;ATT;Svechkov Fedor;COL;23;3
-Colorado Avalanches;Partant;ATT;Svechnikov Andrei;CAR;26;4
-Colorado Avalanches;Partant;ATT;Texier Alexandre;MTL;27;4
-Colorado Avalanches;Partant;ATT;Tuch Alex;WSH;30;3
-Colorado Avalanches;Partant;DEF;Dumoulin Brian;LA;35;4
-Colorado Avalanches;Partant;DEF;Ferraro Mario;WIN;28;4
-Colorado Avalanches;Partant;DEF;Fowler Cam;STL;35;3
-Colorado Avalanches;Partant;DEF;Heiskanen Miro;DAL;27;1
-Colorado Avalanches;Partant;DEF;Kuznetsov Yan;CGY;24;4
-Colorado Avalanches;Partant;DEF;Makar Cale;COL;27;4
-Colorado Avalanches;Partant;DEF;Miller K'Andre;CAR;27;4
-Colorado Avalanches;Partant;DEF;Spence Jordan;OTT;26;4
-Colorado Avalanches;Partant;DEF;Toews Devon;COL;33;1
-Colorado Avalanches;Partant;GARD;Shesterkin Igor;NYR;31;4
-Colorado Avalanches;Partant;GARD;Ullmark Linus;OTT;33;0
-Colorado Avalanches;Partant;GARD;Vejmelka Karel;UTH;30;3
-Colorado Avalanches;Banc;ATT;Andersson Ludvig;;18;0
-Colorado Avalanches;Banc;ATT;Bartholdsson Nils;BOS;18;0
-Colorado Avalanches;Banc;ATT;Boldy Matthew;MIN;25;4
-Colorado Avalanches;Banc;ATT;Brabenec Jakub;;23;4
-Colorado Avalanches;Banc;ATT;Burrows Hagen;TPB;21;2
-Colorado Avalanches;Banc;ATT;Busch Shea;FLA;20;0
-Colorado Avalanches;Banc;ATT;Cataford Mathieu;VGK;21;3
-Colorado Avalanches;Banc;ATT;Chibrikov Nikita;WIN;24;3
-Colorado Avalanches;Banc;ATT;Chmelevski Alex;SJ;27;4
-Colorado Avalanches;Banc;ATT;Chromiak Martin;LA;24;4
-Colorado Avalanches;Banc;ATT;Czata Ethan;TPB;19;1
-Colorado Avalanches;Banc;ATT;Dickinson Jason;EDM;31;4
-Colorado Avalanches;Banc;ATT;Di Iorio Alessandro;CLB;18;0
-Colorado Avalanches;Banc;ATT;Edstrom David;NSH;22;2
-Colorado Avalanches;Banc;ATT;Engvall Pierre;NYI;30;4
-Colorado Avalanches;Banc;ATT;Epperson Kristian;LA;20;1
-Colorado Avalanches;Banc;ATT;Gauthier Ethan;TPB;22;3
-Colorado Avalanches;Banc;ATT;Greene Ryan;CHI;23;4
-Colorado Avalanches;Banc;ATT;Gustafsson David;PIT;26;4
-Colorado Avalanches;Banc;ATT;Hafele Landon;WIN;19;0
-Colorado Avalanches;Banc;ATT;Hextall Jack;CGY;18;0
-Colorado Avalanches;Banc;ATT;Holtz Alexander;VGK;25;3
-Colorado Avalanches;Banc;ATT;Humphreys Christian;COL;21;2
-Colorado Avalanches;Banc;ATT;Iginla Tij;UTH;20;2
-Colorado Avalanches;Banc;ATT;Isaksson Max;;19;0
-Colorado Avalanches;Banc;ATT;Jardine Evan;CLB;19;0
-Colorado Avalanches;Banc;ATT;Kaskimaki Aleksanteri;STL;23;4
-Colorado Avalanches;Banc;ATT;Katzin Lev;;19;1
-Colorado Avalanches;Banc;ATT;Kidney Riley;;23;4
-Colorado Avalanches;Banc;ATT;Klimovich Danila;PHI;24;4
-Colorado Avalanches;Banc;ATT;Knuble Cole;PHI;22;3
-Colorado Avalanches;Banc;ATT;Kupari Rasmus;WIN;26;3
-Colorado Avalanches;Banc;ATT;Kurashev Philipp;;27;4
-Colorado Avalanches;Banc;ATT;Loponen Markus;WIN;20;2
-Colorado Avalanches;Banc;ATT;Lucius Cruz;ANA;22;4
-Colorado Avalanches;Banc;ATT;Martino Ayrton;DAL;23;4
-Colorado Avalanches;Banc;ATT;Mateiko Eriks;WSH;21;2
-Colorado Avalanches;Banc;ATT;McKinney Cole;SJ;19;1
-Colorado Avalanches;Banc;ATT;Moe Mason;NJ;18;1
-Colorado Avalanches;Banc;ATT;Musty Quentin;SJ;21;3
-Colorado Avalanches;Banc;ATT;Nesbitt Jack;PHI;20;1
-Colorado Avalanches;Banc;ATT;Olausson Oskar;;24;3
-Colorado Avalanches;Banc;ATT;Raddysh Taylor;NYR;29;3
-Colorado Avalanches;Banc;ATT;Robidas Justin;CAR;23;4
-Colorado Avalanches;Banc;ATT;Rogowski Brooks;VAN;18;0
-Colorado Avalanches;Banc;ATT;Romano Luca;NYI;19;1
-Colorado Avalanches;Banc;ATT;Saad Brandon;;34;3
-Colorado Avalanches;Banc;ATT;Sawyer Logan;MTL;20;2
-Colorado Avalanches;Banc;ATT;Steiner Lars;STL;19;0
-Colorado Avalanches;Banc;ATT;Slaggert Landon;CHI;24;2
-Colorado Avalanches;Banc;ATT;Stromgren William;CGY;23;4
-Colorado Avalanches;Banc;ATT;Suzuki Ryan;OTT;25;4
-Colorado Avalanches;Banc;ATT;Tippett Owen;PHI;27;4
-Colorado Avalanches;Banc;ATT;Turcotte Alex;LA;26;1
-Colorado Avalanches;Banc;ATT;Vanacker Marek; CHI;20;2
-Colorado Avalanches;Banc;ATT;Walton Kieron;WIN;20;1
-Colorado Avalanches;Banc;ATT;Westergard Max;PHI;19;1
-Colorado Avalanches;Banc;ATT;Wood Miles;TOR;31;4
-Colorado Avalanches;Banc;DEF;Allen Cameron;WSH;22;3
-Colorado Avalanches;Banc;DEF;Bleyl Tommy;NSH;19;0
-Colorado Avalanches;Banc;DEF;Cameron Carson;;19;1
-Colorado Avalanches;Banc;DEF;Croskery Callum;;19;0
-Colorado Avalanches;Banc;DEF;Fischer Lukas;STL;20;2
-Colorado Avalanches;Banc;DEF;Gustafsson Malte;NYI;18;0
-Colorado Avalanches;Banc;DEF;Handel Carlos;MTL;19;1
-Colorado Avalanches;Banc;DEF;Kleber Adam;BUF;20;2
-Colorado Avalanches;Banc;DEF;Mania Matthew;;22;3
-Colorado Avalanches;Banc;DEF;Nause Evan;WIN;24;4
-Colorado Avalanches;Banc;DEF;Osburn Luke;BUF;19;0
-Colorado Avalanches;Banc;DEF;Pickford Bryce;MTL;20;1
-Colorado Avalanches;Banc;DEF;Price Caden;SEA;21;3
-Colorado Avalanches;Banc;DEF;Pulock Ryan;NYI;32;4
-Colorado Avalanches;Banc;DEF;Ralph Colin;STL;21;2
-Colorado Avalanches;Banc;DEF;Reinbacher David;MTL;22;3
-Colorado Avalanches;Banc;DEF;Romanov Alex;NYI;27;3
-Colorado Avalanches;Banc;DEF;Roy Matt;WSH;31;4
-Colorado Avalanches;Banc;DEF;Sahlin Wallenius Leo;SJ;20;2
-Colorado Avalanches;Banc;DEF;Smith Jackson;CLB;20;1
-Colorado Avalanches;Banc;DEF;Thompson Jack;VAN;24;1
-Colorado Avalanches;Banc;GARD;Bjorklund Garin;WSH;24;4
-Colorado Avalanches;Banc;GARD;Brennan Tyler;;23;4
-Colorado Avalanches;Banc;GARD;Cloutier Louka;COL;21;0
-Colorado Avalanches;Banc;GARD;Dyck Reid;;23;4
-Colorado Avalanches;Banc;GARD;Gardner Evan;CLB;21;2
-Colorado Avalanches;Banc;GARD;Gerasimyuk Kirill;FLA;23;4
-Colorado Avalanches;Banc;GARD;Gustavsson Filip;MIN;28;4
-Colorado Avalanches;Banc;GARD;Hellnemo Alex;;23;3
-Colorado Avalanches;Banc;GARD;Haider Ethan;;25;4
-Colorado Avalanches;Banc;GARD;Matecha Lukas;;21;2
-Colorado Avalanches;Banc;GARD;Milota Jakub;NSH;20;2
-Colorado Avalanches;Banc;GARD;Nilsson Douglas;;18;0
-Colorado Avalanches;Banc;GARD;Ravensbergen Josh;SJ;20;1
-Colorado Avalanches;Banc;GARD;Reidler Kevin;OTT;22;4
-Colorado Avalanches;Banc;GARD;Tvrznik Tobias;COL;18;0
-utah Mammouth;Partant;ATT;Aho Sebastian;CAR;29;4
-utah Mammouth;Partant;ATT;Bertuzzi Tyler;CHI;32;1
-utah Mammouth;Partant;ATT;Coyle Charlie;CLB;34;3
-utah Mammouth;Partant;ATT;Dewar Connor  ;PIT;27;4
-utah Mammouth;Partant;ATT;Dorofeyev Pavel;NYR;26;1
-utah Mammouth;Partant;ATT;Eberle Jordan;SEA;36;4
-utah Mammouth;Partant;ATT;Ehlers Nikolaj;CAR;31;2
-utah Mammouth;Partant;ATT;Karlsson William;VGK;34;4
-utah Mammouth;Partant;ATT;Knies Matthew;CLB;24;0
-utah Mammouth;Partant;ATT;Larkin Dylan;DET;30;4
-utah Mammouth;Partant;ATT;Lowry Adam;WIN;32;4
-utah Mammouth;Partant;ATT;Mantha Anthony;NJ;32;0
-utah Mammouth;Partant;ATT;Martone Porter;PHI;20;0
-utah Mammouth;Partant;ATT;Nelson Brock;COL;35;1
-utah Mammouth;Partant;ATT;Panarin Artemi;LA;35;4
-utah Mammouth;Partant;ATT;Paul Nicolas;TOR;31;4
-utah Mammouth;Partant;ATT;Reinhart Sam;FLA;31;2
-utah Mammouth;Partant;ATT;Trocheck Vince;UTH;33;4
-utah Mammouth;Partant;ATT;Wilson Thomas;WSH;32;1
-utah Mammouth;Partant;ATT;Zibanejad Mika;NYR;33;1
-utah Mammouth;Partant;DEF;Barron Justin;STL;25;0
-utah Mammouth;Partant;DEF;Chychrun Jakob;WSH;28;4
-utah Mammouth;Partant;DEF;DeAngelo Anthony;NYI;31;1
-utah Mammouth;Partant;DEF;Dunn Vince;SEA;30;4
-utah Mammouth;Partant;DEF;Faulk Justin;DET;34;3
-utah Mammouth;Partant;DEF;Hronek Filip;VAN;29;4
-utah Mammouth;Partant;DEF;Jones Seth;FLA;32;1
-utah Mammouth;Partant;DEF;Marino John;UTH;29;1
-utah Mammouth;Partant;DEF;Parayko Colton;STL;33;1
-utah Mammouth;Partant;GARD;Bobrovsky Sergei;TOR;37;4
-utah Mammouth;Partant;GARD;Sorokin Ilya;NYI;31;1
-utah Mammouth;Partant;GARD;Vasilevskiy Andrei;TPB;31;4
-utah Mammouth;Banc;ATT;Andersson Adam;MIN;18;0
-utah Mammouth;Banc;ATT;Belle William;TOR;20;1
-utah Mammouth;Banc;ATT;Benson Tyler;;28;4
-utah Mammouth;Banc;ATT;Bernat Lucian;VAN;18;0
-utah Mammouth;Banc;ATT;Berzkalns Rudolfs;EDM;18;0
-utah Mammouth;Banc;ATT;Bjorck Wilson;VAN;21;1
-utah Mammouth;Banc;ATT;Bowes Spencer;NYR;19;0
-utah Mammouth;Banc;ATT;Chudzinski Rian;ANA;19;0
-utah Mammouth;Banc;ATT;Costmar Arvid;;25;4
-utah Mammouth;Banc;ATT;Dach Kale;PIT;19;1
-utah Mammouth;Banc;ATT;Denisenko Grigori;;26;2
-utah Mammouth;Banc;ATT;Drott Arvid;FLA;19;1
-utah Mammouth;Banc;ATT;Dvorak Christian;PHI;31;1
-utah Mammouth;Banc;ATT;Edmonds Lucas;;25;4
-utah Mammouth;Banc;ATT;Fischer Christian;RET;29;4
-utah Mammouth;Banc;ATT;Foligno Marcus;MIN;35;1
-utah Mammouth;Banc;ATT;Fortier Gabriel;;27;4
-utah Mammouth;Banc;ATT;Fyodorov Viktor;SEA;18;0
-utah Mammouth;Banc;ATT;Groshev Maxim;TPB;25;4
-utah Mammouth;Banc;ATT;Gurianov Denis;;29;3
-utah Mammouth;Banc;ATT;Harkins Jansen;TPB;29;4
-utah Mammouth;Banc;ATT;Henriksson Karl;NYR;26;4
-utah Mammouth;Banc;ATT;Hillstrom Gustav;NJ;19;1
-utah Mammouth;Banc;ATT;Jarvis Seth;CAR;24;4
-utah Mammouth;Banc;ATT;Johansson Marcus;;36;1
-utah Mammouth;Banc;ATT;Jost Tyson;NSH;28;4
-utah Mammouth;Banc;ATT;Katchouk Boris;;28;4
-utah Mammouth;Banc;ATT;Konecny Travis;PHI;29;1
-utah Mammouth;Banc;ATT;Kostov Alex;LA;20;0
-utah Mammouth;Banc;ATT;Laughton Scott;LA;32;4
-utah Mammouth;Banc;ATT;Lazar Curtis;;31;4
-utah Mammouth;Banc;ATT;Lefebvre Liam;LA;19;0
-utah Mammouth;Banc;ATT;McGinn Brock;;33;4
-utah Mammouth;Banc;ATT;Milne Mikey;;24;4
-utah Mammouth;Banc;ATT;Mooney LJ John;MTL;19;0
-utah Mammouth;Banc;ATT;Mutryn Edward Teddy;SJ;19;1
-utah Mammouth;Banc;ATT;Nikolayev Ilya;;25;4
-utah Mammouth;Banc;ATT;Nugent-Hop Ryan;EDM;33;1
-utah Mammouth;Banc;ATT;Olsen Zachery;TOR;18;0
-utah Mammouth;Banc;ATT;Oshie TJ;RET;40;4
-utah Mammouth;Banc;ATT;Pavelski Joe;RET;42;3
-utah Mammouth;Banc;ATT;Pearson Tanner;;34;1
-utah Mammouth;Banc;ATT;Pettersen Mathias;;26;4
-utah Mammouth;Banc;ATT;Pitlick Rem;;29;4
-utah Mammouth;Banc;ATT;Pivonka Jacob;;27;4
-utah Mammouth;Banc;ATT;Pobezal Tomas;;20;1
-utah Mammouth;Banc;ATT;Pugachyov Gleb;MTL;18;0
-utah Mammouth;Banc;ATT;Rashevsky Dmitri;WIN;26;4
-utah Mammouth;Banc;ATT;Sanford Zach;;32;4
-utah Mammouth;Banc;ATT;Savage Redmond;;23;4
-utah Mammouth;Banc;ATT;Schwindt Cole;FLA;25;4
-utah Mammouth;Banc;ATT;Sjoberg Albert;;23;4
-utah Mammouth;Banc;ATT;Smith Givani;;29;4
-utah Mammouth;Banc;ATT;Vandenberg Thomas;LA;18;0
-utah Mammouth;Banc;ATT;Wennberg Alex;SJ;32;1
-utah Mammouth;Banc;ATT;Tanev Brandon;UTH;35;3
-utah Mammouth;Banc;ATT;Terry Troy;ANA;29;1
-utah Mammouth;Banc;ATT;Tieksola Tuukka;;25;4
-utah Mammouth;Banc;DEF;Addison Calen;;26;2
-utah Mammouth;Banc;DEF;Agafonov Maxim;SEA;19;1
-utah Mammouth;Banc;DEF;Alalauri Samu;CHI;18;0
-utah Mammouth;Banc;DEF;Amico Carter;PHI;19;1
-utah Mammouth;Banc;DEF;Bilecki Alexander;TOR;18;0
-utah Mammouth;Banc;DEF;Brodin Jonas;MIN;33;4
-utah Mammouth;Banc;DEF;Edvinsson Simon;DET;24;0
-utah Mammouth;Banc;DEF;Ekman-Larsson O;TOR;35;3
-utah Mammouth;Banc;DEF;Floris Jakub;NSH;19;0
-utah Mammouth;Banc;DEF;Forbort Derek;CGY;34;4
-utah Mammouth;Banc;DEF;Gustafsson Erik;LA;33;3
-utah Mammouth;Banc;DEF;Iorio Vincent;NYR;24;4
-utah Mammouth;Banc;DEF;Kettles Peyton;PIT;19;1
-utah Mammouth;Banc;DEF;Lindell Esa;DAL;32;4
-utah Mammouth;Banc;DEF;Maatta Olli;MIN;32;2
-utah Mammouth;Banc;DEF;Merkley Ryan;;26;4
-utah Mammouth;Banc;DEF;Olofsson Axel;COL;18;0
-utah Mammouth;Banc;DEF;Robertson Matt;NYR;25;2
-utah Mammouth;Banc;DEF;Seeley Ronan;CAR;24;4
-utah Mammouth;Banc;DEF;Vanriemsdyk Trevor;PIT;35;3
-utah Mammouth;Banc;GARD;Andersen Fred;EDM;37;2
-utah Mammouth;Banc;GARD;DiVincentiis Domenic;WIN;22;2
-utah Mammouth;Banc;GARD;Fanti Ryan;CLB;27;4
-utah Mammouth;Banc;GARD;Fetterolf Ryder;CAR;19;0
-utah Mammouth;Banc;GARD;Kerkola Patrik;;19;1
-utah Mammouth;Banc;GARD;Pickard Calvin;MIN;33;1
-utah Mammouth;Banc;GARD;Plumins Patriks;TOR;19;0
-utah Mammouth;Banc;GARD;Pradel Michal;DET;19;1
-utah Mammouth;Banc;GARD;Psohlavec Martin;PHI;18;0
-utah Mammouth;Banc;GARD;Rittich David;NJ;33;4
-utah Mammouth;Banc;GARD;Shurygin Stepan;TPB;19;0
-utah Mammouth;Banc;GARD;Sorqvist Isak;;19;1
-utah Mammouth;Banc;GARD;Vermirovsky David;;18;0
-utah Mammouth;Banc;GARD;Vondras Jakub;;22;4
-utah Mammouth;Banc;GARD;Wedgewood Scott;COL;34;1
-Toronto Maple Leafs;Partant;ATT;Anderson Josh;MTL;32;4
-Toronto Maple Leafs;Partant;ATT;Boqvist Jesper;NJ;28;4
-Toronto Maple Leafs;Partant;ATT;Bratt Jesper;NJ;28;4
-Toronto Maple Leafs;Partant;ATT;Carrier William;CAR;31;4
-Toronto Maple Leafs;Partant;ATT;Cirelli Anthony;TPB;29;2
-Toronto Maple Leafs;Partant;ATT;Eichel Jack;VGK;30;4
-Toronto Maple Leafs;Partant;ATT;Guentzel Jake;TPB;32;3
-Toronto Maple Leafs;Partant;ATT;Hertl Tomas;VGK;33;2
-Toronto Maple Leafs;Partant;ATT;Kadri Nazem;COL;36;4
-Toronto Maple Leafs;Partant;ATT;Keller Clayton;UTH;28;4
-Toronto Maple Leafs;Partant;ATT;Lee Anders;UTH;36;2
-Toronto Maple Leafs;Partant;ATT;Matthews Auston;TOR;29;2
-Toronto Maple Leafs;Partant;ATT;Meier Timo;NJ;30;4
-Toronto Maple Leafs;Partant;ATT;Pastrnak David;BOS;30;4
-Toronto Maple Leafs;Partant;ATT;Pettersson Elias;VAN;27;2
-Toronto Maple Leafs;Partant;ATT;Peterka J-J;BOS;25;4
-Toronto Maple Leafs;Partant;ATT;Point Brayden;TPB;30;4
-Toronto Maple Leafs;Partant;ATT;Raymond Lucas;DET;24;4
-Toronto Maple Leafs;Partant;ATT;Strome Dylan;WSH;29;2
-Toronto Maple Leafs;Partant;ATT;Suzuki Nick;MTL;27;1
-Toronto Maple Leafs;Partant;ATT;Toffoli Tyler;SJ;34;4
-Toronto Maple Leafs;Partant;ATT;Zacha Pavel;BOS;29;4
-Toronto Maple Leafs;Partant;DEF;Andersson Rasmus;VGK;30;4
-Toronto Maple Leafs;Partant;DEF;Carrier Alexandre;MTL;30;4
-Toronto Maple Leafs;Partant;DEF;Ekholm Mattias;EDM;36;4
-Toronto Maple Leafs;Partant;DEF;Fox Adam;NYR;29;2
-Toronto Maple Leafs;Partant;DEF;Karlsson Erik;PIT;36;4
-Toronto Maple Leafs;Partant;DEF;Montour Brandon;SEA;32;4
-Toronto Maple Leafs;Partant;DEF;Samuelsson Mattias;BUF;26;4
-Toronto Maple Leafs;Partant;DEF;Sanderson Jake;OTT;24;4
-Toronto Maple Leafs;Partant;DEF;Wilsby Adam;NSH;26;4
-Toronto Maple Leafs;Partant;GARD;Daccord Joel;SEA;30;4
-Toronto Maple Leafs;Partant;GARD;Daws Nico;WIN;26;4
-Toronto Maple Leafs;Partant;GARD;Skinner Stuart;WIN;28;4
-Toronto Maple Leafs;Banc;ATT;Anoshko Ivan;;22;3
-Toronto Maple Leafs;Banc;ATT;Bains Arshdeep;VAN;25;4
-Toronto Maple Leafs;Banc;ATT;Blueger Teodors;TOR;32;4
-Toronto Maple Leafs;Banc;ATT;Brindley Gavin;COL;22;3
-Toronto Maple Leafs;Banc;ATT;Bump Alex;PHI;23;4
-Toronto Maple Leafs;Banc;ATT;Carlsson Kalle;;21;3
-Toronto Maple Leafs;Banc;ATT;Chovan Jan;LA;20;1
-Toronto Maple Leafs;Banc;ATT;Ciernik Alex;PHI;22;3
-Toronto Maple Leafs;Banc;ATT;Cover Jaxon;OTT;18;0
-Toronto Maple Leafs;Banc;ATT;Drury Jack;NSH;27;4
-Toronto Maple Leafs;Banc;ATT;Evans Jake;MTL;30;4
-Toronto Maple Leafs;Banc;ATT;Fabbri Robby;;31;4
-Toronto Maple Leafs;Banc;ATT;Fitzgerald Colin;STL;18;0
-Toronto Maple Leafs;Banc;ATT;Galimov Artyom;ANA;27;4
-Toronto Maple Leafs;Banc;ATT;Gendron Alexis;;23;4
-Toronto Maple Leafs;Banc;ATT;He Kevin;WIN;20;2
-Toronto Maple Leafs;Banc;ATT;Kahkonen Viljo;;18;0
-Toronto Maple Leafs;Banc;ATT;Karabela Jake;;22;4
-Toronto Maple Leafs;Banc;ATT;Karmiris Lucas;;20;1
-Toronto Maple Leafs;Banc;ATT;Klingsell Viktor;WIN;19;1
-Toronto Maple Leafs;Banc;ATT;Korczak Ryder;;24;4
-Toronto Maple Leafs;Banc;ATT;Kurth Connor;TPB;23;4
-Toronto Maple Leafs;Banc;ATT;Lagerberg Hoen Jonas;OTT;19;0
-Toronto Maple Leafs;Banc;ATT;Lind Kole;;27;4
-Toronto Maple Leafs;Banc;ATT;Lombardi Jimmy;LA;19;1
-Toronto Maple Leafs;Banc;ATT;Lundell Anton;FLA;25;4
-Toronto Maple Leafs;Banc;ATT;Lundestrom Isac;CLB;27;4
-Toronto Maple Leafs;Banc;ATT;Martin Owen;WIN;19;1
-Toronto Maple Leafs;Banc;ATT;Miettinen Julius;SEA;21;2
-Toronto Maple Leafs;Banc;ATT;Nilson Eric;ANA;19;1
-Toronto Maple Leafs;Banc;ATT;Noesen Stefan;NJ;33;4
-Toronto Maple Leafs;Banc;ATT;Novotny Adam;VAN;19;0
-Toronto Maple Leafs;Banc;ATT;Nybeck Zion;;24;4
-Toronto Maple Leafs;Banc;ATT;O'neil Andrew;;20;0
-Toronto Maple Leafs;Banc;ATT;Pahlsson Erik;NSH;22;2
-Toronto Maple Leafs;Banc;ATT;Pautov Ilya;PHI;20;2
-Toronto Maple Leafs;Banc;ATT;Perry Corey;LA;41;4
-Toronto Maple Leafs;Banc;ATT;Pettersson Lucas;ANA;20;2
-Toronto Maple Leafs;Banc;ATT;Pitre Coulson;ANA;22;3
-Toronto Maple Leafs;Banc;ATT;Pospisil Martin;CGY;27;4
-Toronto Maple Leafs;Banc;ATT;Puistola Patrik ;;26;4
-Toronto Maple Leafs;Banc;ATT;Reschny Cole;CGY;19;1
-Toronto Maple Leafs;Banc;ATT;Rybinski Henrik;TOR;25;4
-Toronto Maple Leafs;Banc;ATT;Schaefer Reid;NSH;23;4
-Toronto Maple Leafs;Banc;ATT;Sedlacek David;;19;0
-Toronto Maple Leafs;Banc;ATT;Shafigullin Bulat;LA;27;4
-Toronto Maple Leafs;Banc;ATT;Shaikhlislamov Alan;CGY;18;0
-Toronto Maple Leafs;Banc;ATT;Sivertson Jonah;VGK;18;0
-Toronto Maple Leafs;Banc;ATT;Sorensson Wiggo;CAR;18;0
-Toronto Maple Leafs;Banc;ATT;Studnicka Jack;PHI;28;4
-Toronto Maple Leafs;Banc;ATT;Szturc Gabriel;TPB;23;3
-Toronto Maple Leafs;Banc;ATT;Teply Michal;;25;4
-Toronto Maple Leafs;Banc;ATT;Trenin Yakov;MIN;30;4
-Toronto Maple Leafs;Banc;ATT;Trineyev Bogdan;WSH;24;4
-Toronto Maple Leafs;Banc;ATT;Valentini Adam;UTH;19;0
-Toronto Maple Leafs;Banc;ATT;Veilleux Philippe;;19;1
-Toronto Maple Leafs;Banc;ATT;Vlasov Alexei;;19;0
-Toronto Maple Leafs;Banc;ATT;Zuccarello Matts;LA;39;2
-Toronto Maple Leafs;Banc;DEF;Akey Beau;EDM;22;3
-Toronto Maple Leafs;Banc;DEF;Badinka Dominik;CAR;21;2
-Toronto Maple Leafs;Banc;DEF;Beauchesne Quinn;PIT;19;1
-Toronto Maple Leafs;Banc;DEF;Behrens Sean;COL;24;4
-Toronto Maple Leafs;Banc;DEF;Byram Bowen;CHI;25;4
-Toronto Maple Leafs;Banc;DEF;Cernak Erik;TPB;29;4
-Toronto Maple Leafs;Banc;DEF;Chisholm Declan;NJ;27;4
-Toronto Maple Leafs;Banc;DEF;Forsling Gustav;FLA;30;4
-Toronto Maple Leafs;Banc;DEF;Hallquisth Theodor;MIN;19;1
-Toronto Maple Leafs;Banc;DEF;Kiviharju Aron;MIN;21;1
-Toronto Maple Leafs;Banc;DEF;Leslie Mazden;;21;3
-Toronto Maple Leafs;Banc;DEF;Lundkvist Nils;DAL;26;4
-Toronto Maple Leafs;Banc;DEF;Muggli Leon;WSH;20;2
-Toronto Maple Leafs;Banc;DEF;Nousiainen Kim;;26;4
-Toronto Maple Leafs;Banc;DEF;Palme Ola;SEA;19;0
-Toronto Maple Leafs;Banc;DEF;Roberts Colton;SJ;20;2
-Toronto Maple Leafs;Banc;DEF;Sharpe Will;LA;19;1
-Toronto Maple Leafs;Banc;DEF;Thornton Hudson;;23;3
-Toronto Maple Leafs;Banc;DEF;Wallinder William;DET;24;4
-Toronto Maple Leafs;Banc;DEF;Walman Jake;EDM;30;4
-Toronto Maple Leafs;Banc;DEF;Warren Noah;ANA;22;4
-Toronto Maple Leafs;Banc;GARD;Bilic Marko;;20;2
-Toronto Maple Leafs;Banc;GARD;Blomquist Ian;;23;3
-Toronto Maple Leafs;Banc;GARD;Cowan Dawson;;21;2
-Toronto Maple Leafs;Banc;GARD;Ersson Samuel;OTT;27;4
-Toronto Maple Leafs;Banc;GARD;Hellebuyck Connor;NJ;33;4
-Toronto Maple Leafs;Banc;GARD;Ivanov Sergei;CLB;22;4
-Toronto Maple Leafs;Banc;GARD;Jones Martin;;37;3
-Toronto Maple Leafs;Banc;GARD;Jonsson Samuel;EDM;23;4
-Toronto Maple Leafs;Banc;GARD;Lehner Robin;;35;4
-Toronto Maple Leafs;Banc;GARD;Mayorov Maxim;DAL;22;4
-Toronto Maple Leafs;Banc;GARD;Murray Matt;;32;2
-Toronto Maple Leafs;Banc;GARD;Stebetak Ondrej;;19;1
-Toronto Maple Leafs;Banc;GARD;Suchanek Tomas;ANA;23;3
-Toronto Maple Leafs;Banc;GARD;Thiessen Matthew;;26;4
-Toronto Maple Leafs;Banc;GARD;Vikman Jesper;;24;4
-Detroit Red Wings;Partant;ATT;Arvidsson Viktor;DET;33;4
-Detroit Red Wings;Partant;ATT;Barbashev Ivan;VGK;31;0
-Detroit Red Wings;Partant;ATT;Blake Jackson;CAR;23;4
-Detroit Red Wings;Partant;ATT;Bowman Braeden;VGK;22;0
-Detroit Red Wings;Partant;ATT;Celebrini Macklin;SJ;20;2
-Detroit Red Wings;Partant;ATT;Crosby Sydney;PIT;39;0
-Detroit Red Wings;Partant;ATT;Evangelista Luke;NJ;25;3
-Detroit Red Wings;Partant;ATT;Frost Morgan;CGY;27;4
-Detroit Red Wings;Partant;ATT;Gauthier Cutter;ANA;23;3
-Detroit Red Wings;Partant;ATT;Holmstrom Simon;NYI;25;4
-Detroit Red Wings;Partant;ATT;Johnson Kent;CLB;24;4
-Detroit Red Wings;Partant;ATT;kakko Kaapo;SEA;26;4
-Detroit Red Wings;Partant;ATT;Kaprizov Kirill;MIN;29;1
-Detroit Red Wings;Partant;ATT;Kerfoot Alexander;NSH;32;4
-Detroit Red Wings;Partant;ATT;Miller J.T.;NYR;33;0
-Detroit Red Wings;Partant;ATT;Necas Martin;COL;27;1
-Detroit Red Wings;Partant;ATT;O'Reilly Ryan;NSH;36;0
-Detroit Red Wings;Partant;ATT;Pageau J.G.;NYI;34;0
-Detroit Red Wings;Partant;ATT;Perfetti Cole;WIN;25;3
-Detroit Red Wings;Partant;ATT;Pinto Shane;OTT;26;1
-Detroit Red Wings;Partant;ATT;Rakell Rickard;PIT;33;0
-Detroit Red Wings;Partant;ATT;Stamkos Steven;NSH;37;0
-Detroit Red Wings;Partant;ATT;Stankoven Logan;CAR;24;4
-Detroit Red Wings;Partant;ATT;Thompson Tage;BUF;29;4
-Detroit Red Wings;Partant;ATT;Stone Mark;VGK;34;3
-Detroit Red Wings;Partant;DEF;Harley Thomas;DAL;25;4
-Detroit Red Wings;Partant;DEF;Parekh Zayne;CGY;21;2
-Detroit Red Wings;Partant;DEF;Pionk Neal;WIN;30;0
-Detroit Red Wings;Partant;DEF;Power Owen;BUF;24;4
-Detroit Red Wings;Partant;DEF;Rielly Morgan;TOR;32;0
-Detroit Red Wings;Partant;DEF;Seider Moritz;DET;25;4
-Detroit Red Wings;Partant;DEF;Sergachev Mikhail;UTH ;28;1
-Detroit Red Wings;Partant;DEF;Simashev Dmitri;UTH;22;3
-Detroit Red Wings;Partant;DEF;Walker Sean;CAR;32;0
-Detroit Red Wings;Partant;DEF;Weegar MacKenzie;UTH;33;0
-Detroit Red Wings;Partant;DEF;Zellweger Olen;BUF;23;4
-Detroit Red Wings;Partant;GARD;Dostal Lukas;ANA;26;4
-Detroit Red Wings;Partant;GARD;Grubauer Philipp;SEA;35;0
-Detroit Red Wings;Partant;GARD;Levi Devon;EDM;24;4
-Detroit Red Wings;Partant;GARD;Saros Juuse;NSH;31;1
-Detroit Red Wings;Banc;ATT;Bemstrom Emil;;27;4
-Detroit Red Wings;Banc;ATT;Bourgault Xavier;OTT;24;4
-Detroit Red Wings;Banc;ATT;Brisson Brendan;TOR;25;2
-Detroit Red Wings;Banc;ATT;Castagna Jonathan;CGY;21;3
-Detroit Red Wings;Banc;ATT;Cihar Vojtech;LA;19;1
-Detroit Red Wings;Banc;ATT;Chernyshov Igor;SJ;21;2
-Detroit Red Wings;Banc;ATT;Cootes Braeden;VAN;19;1
-Detroit Red Wings;Banc;ATT;Donato Ryan;CHI;30;4
-Detroit Red Wings;Banc;ATT;Dvorsky Dalibor;STL;21;2
-Detroit Red Wings;Banc;ATT;Gaucher Nathan;ANA;23;3
-Detroit Red Wings;Banc;ATT;Goyette David;PHI;22;3
-Detroit Red Wings;Banc;ATT;Greenway Jordan;CHI;30;4
-Detroit Red Wings;Banc;ATT;Guindon Cedrick;;22;4
-Detroit Red Wings;Banc;ATT;haight Hunter;MIN;23;4
-Detroit Red Wings;Banc;ATT;Heidt Riley;MIN;21;3
-Detroit Red Wings;Banc;ATT;Hirvonen Roni;;25;4
-Detroit Red Wings;Banc;ATT;Jeannot Tanner;BOS;30;4
-Detroit Red Wings;Banc;ATT;Kaliyev Arthur;;25;2
-Detroit Red Wings;Banc;ATT;Kampf David;;31;4
-Detroit Red Wings;Banc;ATT;Kosick Noah;;18;0
-Detroit Red Wings;Banc;ATT;;;;
-Detroit Red Wings;Banc;ATT;Kuraly Sean;BOS;34;4
-Detroit Red Wings;Banc;ATT;Kuzmenko Andrei;PIT;31;4
-Detroit Red Wings;Banc;ATT;Lacerte Félix;;20;2
-Detroit Red Wings;Banc;ATT;Leonard John;DET;28;4
-Detroit Red Wings;Banc;ATT;Lewandowski David;EDM;19;1
-Detroit Red Wings;Banc;ATT;Lisowsky Brandon;;23;4
-Detroit Red Wings;Banc;ATT;MacPherson Connor;;21;3
-Detroit Red Wings;Banc;ATT;McConnell-Barker Bryce;NYR;22;4
-Detroit Red Wings;Banc;ATT;McDonough Aidan;;27;4
-Detroit Red Wings;Banc;ATT;McGroarty Rutger;PIT;22;2
-Detroit Red Wings;Banc;ATT;Morozov Ivan D;VGK;26;4
-Detroit Red Wings;Banc;ATT;Mustard John;CHI;20;2
-Detroit Red Wings;Banc;ATT;Mutryn Casey;SEA;18;0
-Detroit Red Wings;Banc;ATT;Neuchev Viktor;CAR;23;4
-Detroit Red Wings;Banc;ATT;Newhook Alex;MTL;26;4
-Detroit Red Wings;Banc;ATT;Pelletier Jakob;TPB;25;4
-Detroit Red Wings;Banc;ATT;Pharand Alex;;22;3
-Detroit Red Wings;Banc;ATT;Pinelli Luca;CLB;21;3
-Detroit Red Wings;Banc;ATT;Puustinen Valtteri;;27;4
-Detroit Red Wings;Banc;ATT;Raty Aatu;TOR;24;4
-Detroit Red Wings;Banc;ATT;Ritchie Calum;NYI;22;3
-Detroit Red Wings;Banc;ATT;Ritchie Ryder;MIN;20;2
-Detroit Red Wings;Banc;ATT;Robertsson Simon;STL;24;4
-Detroit Red Wings;Banc;ATT;Roulette Connor;;23;4
-Detroit Red Wings;Banc;ATT;Saarelainen Joona;TPB;20;2
-Detroit Red Wings;Banc;ATT;Schmidt Cameron;DAL;19;1
-Detroit Red Wings;Banc;ATT;Sourdif Justin;WSH;24;4
-Detroit Red Wings;Banc;ATT;Steeves Alex;BOS;27;4
-Detroit Red Wings;Banc;ATT;Swanson Mac;PIT;21;2
-Detroit Red Wings;Banc;ATT;Vanhanen Matias;NJ;19;1
-Detroit Red Wings;Banc;ATT;Vanhatalo Vilho;FLA;19;0
-Detroit Red Wings;Banc;ATT;West Mason;CHI;19;1
-Detroit Red Wings;Banc;ATT;Zary Connor;CGY;25;2
-Detroit Red Wings;Banc;DEF;Annborn Karl;SEA;19;1
-Detroit Red Wings;Banc;DEF;Bolduc Samuel;OTT;26;2
-Detroit Red Wings;Banc;DEF;Brunicke Harrison;PIT;20;2
-Detroit Red Wings;Banc;DEF;Brzustewicz Henry;LA;19;1
-Detroit Red Wings;Banc;DEF;Dobson Noah;MTL;27;4
-Detroit Red Wings;Banc;DEF;Engstrom Adam;MTL;23;3
-Detroit Red Wings;Banc;DEF;Gudmundsson Mans;TOR;18;0
-Detroit Red Wings;Banc;DEF;Havelid Mattias;SJ;23;4
-Detroit Red Wings;Banc;DEF;Herrington Caeden;LA;21;1
-Detroit Red Wings;Banc;DEF;Lambos Carson;MIN;24;4
-Detroit Red Wings;Banc;DEF;Laurila Sam;NYI;20;1
-Detroit Red Wings;Banc;DEF;Molendyk Tanner;NSH;22;3
-Detroit Red Wings;Banc;DEF;Morin Etienne;NJ;21;3
-Detroit Red Wings;Banc;DEF;Orlov Dmitry;SJ;35;0
-Detroit Red Wings;Banc;DEF;Samberg Dylan;WIN;28;4
-Detroit Red Wings;Banc;DEF;Sjostrom Oliwer;;19;1
-Detroit Red Wings;Banc;DEF;Tuomisto Antti;VGK;26;4
-Detroit Red Wings;Banc;DEF;Whitecloud Zach;CGY;31;4
-Detroit Red Wings;Banc;DEF;Zub Artem;OTT;31;4
-Detroit Red Wings;Banc;GARD;Andreyanov Pyotr;CLB;19;1
-Detroit Red Wings;Banc;GARD;Arefyev Maxim;;23;4
-Detroit Red Wings;Banc;GARD;Bjarnason Carson;PHI;21;3
-Detroit Red Wings;Banc;GARD;Denault Louis-Antoine;FLA;20;1
-Detroit Red Wings;Banc;GARD;DeSmith Casey;DAL;35;4
-Detroit Red Wings;Banc;GARD;Gidlof Marcus;STL;21;2
-Detroit Red Wings;Banc;GARD;Haronik Martin;;20;2
-Detroit Red Wings;Banc;GARD;Hrabal Michael;UTH;22;3
-Detroit Red Wings;Banc;GARD;Hrenak Samuel;WIN;18;0
-Detroit Red Wings;Banc;GARD;Knight Spencer;CHI;25;4
-Detroit Red Wings;Banc;GARD;Lindbom Carl;VGK;23;4
-Detroit Red Wings;Banc;GARD;Soderblom Arvid;CHI;27;4
-Detroit Red Wings;Banc;GARD;Westman Oscar;;20;1
-Detroit Red Wings;Banc;GARD;Woll Joseph;PHI;28;3
-Boston Bruins;Partant;ATT;Bedard Connor;CHI;21;3
-Boston Bruins;Partant;ATT;Bolduc Zachary;MTL;24;4
-Boston Bruins;Partant;ATT;Brandsegg-Nygard Michael;DET;21;2
-Boston Bruins;Partant;ATT;Coronato Matt;CGY;24;4
-Boston Bruins;Partant;ATT;Cuylle Will;NYR;25;0
-Boston Bruins;Partant;ATT;Dubois Pierre-Luc;WSH;28;4
-Boston Bruins;Partant;ATT;Gritsyuk Arseny;NJ;25;3
-Boston Bruins;Partant;ATT;Hallander Filip;EDM;26;0
-Boston Bruins;Partant;ATT;Holloway Dylan;STL;25;4
-Boston Bruins;Partant;ATT;Marchenko Kirill ;TOR;26;4
-Boston Bruins;Partant;ATT;McCann Jared;SEA;30;1
-Boston Bruins;Partant;ATT;McMichael Connor;STL;26;3
-Boston Bruins;Partant;ATT;Nazar Frank;CHI;23;4
-Boston Bruins;Partant;ATT;Nylander William;TOR;30;4
-Boston Bruins;Partant;ATT;Ohgren Liam;VAN;23;0
-Boston Bruins;Partant;ATT;Ostlund Noah;BUF;22;4
-Boston Bruins;Partant;ATT;Podkolzin Vasily;EDM;25;2
-Boston Bruins;Partant;ATT;Robertson Jason;DAL;27;4
-Boston Bruins;Partant;ATT;Sillinger Cole;CLB;23;4
-Boston Bruins;Partant;ATT;Strome Ryan;CGY;33;4
-Boston Bruins;Partant;ATT;Zetterlund Fabian;OTT;27;4
-Boston Bruins;Partant;DEF;Christiansen Jake;CLB;27;4
-Boston Bruins;Partant;DEF;Clarke Brandt;LA;24;4
-Boston Bruins;Partant;DEF;D'Astous Charle-Edouard;TPB;28;0
-Boston Bruins;Partant;DEF;Evans Ryker;SEA;25;1
-Boston Bruins;Partant;DEF;Fehervary Martin ;WSH;27;1
-Boston Bruins;Partant;DEF;Guhle Kaiden;MTL;25;4
-Boston Bruins;Partant;DEF;Levshunov Artyom;CHI;21;2
-Boston Bruins;Partant;DEF;Pettersson Marcus;NYR;30;3
-Boston Bruins;Partant;DEF;Severson Damon;CLB;32;1
-Boston Bruins;Partant;GARD;Fowler Jacob;MTL;22;3
-Boston Bruins;Partant;GARD;Silovs Arturs;PIT;25;1
-Boston Bruins;Partant;GARD;Wallstedt Jesper;MIN;24;4
-Boston Bruins;Banc;ATT;Artamonov Nikita;CAR;21;2
-Boston Bruins;Banc;ATT;Avon Jon-Randall;SEA;23;3
-Boston Bruins;Banc;ATT;Benak Adam;MIN;19;1
-Boston Bruins;Banc;ATT;Berezkin Maksim;EDM;25;2
-Boston Bruins;Banc;ATT;Berggren Jonatan;STL;26;4
-Boston Bruins;Banc;ATT;Broz Tristan;PIT;24;1
-Boston Bruins;Banc;ATT;Cardwell Ethan;SJ;24;2
-Boston Bruins;Banc;ATT;Dach Kirby;MTL;26;4
-Boston Bruins;Banc;ATT;Del Bel Belluz Luca;CLB;23;2
-Boston Bruins;Banc;ATT;Dower Nilsson Noah;DET;21;3
-Boston Bruins;Banc;ATT;Eklund Victor;NYI;20;1
-Boston Bruins;Banc;ATT;Eyssimont Michael;BOS;30;2
-Boston Bruins;Banc;ATT;Fink Aiden;NSH;22;3
-Boston Bruins;Banc;ATT;Gourde Yanni;TPB;35;4
-Boston Bruins;Banc;ATT;Guite Emile;ANA;19;1
-Boston Bruins;Banc;ATT;Gunler Noel;;25;3
-Boston Bruins;Banc;ATT;Halttunen Kasper;OTT;21;2
-Boston Bruins;Banc;ATT;Holinka Miroslav;TOR;21;0
-Boston Bruins;Banc;ATT;James Dylan;DET;23;0
-Boston Bruins;Banc;ATT;Jones Ben;CGY;28;4
-Boston Bruins;Banc;ATT;Kaplan Devin;SEA;23;0
-Boston Bruins;Banc;ATT;Lakovic Lynden;WSH;20;1
-Boston Bruins;Banc;ATT;Leason Brett;SJ;27;4
-Boston Bruins;Banc;ATT;Luchanko Jett;PHI;20;1
-Boston Bruins;Banc;ATT;Lund Cam;SJ;22;4
-Boston Bruins;Banc;ATT;MacLean Kyle;NYI;27;2
-Boston Bruins;Banc;ATT;Melanson Jacob;SEA;23;3
-Boston Bruins;Banc;ATT;Milano Sonny;;30;4
-Boston Bruins;Banc;ATT;Misiak Martin;CHI;22;3
-Boston Bruins;Banc;ATT;Moroz Vadim;UTH;23;1
-Boston Bruins;Banc;ATT;Nilsson Felix;NSH;21;1
-Boston Bruins;Banc;ATT;Ostapchuk Zack;SJ;23;0
-Boston Bruins;Banc;ATT;Othmann Brennan;CGY;24;4
-Boston Bruins;Banc;ATT;Palat Ondrej;NYI;35;0
-Boston Bruins;Banc;ATT;Perron David;DAL;38;1
-Boston Bruins;Banc;ATT;Perron Jayden;CAR;22;3
-Boston Bruins;Banc;ATT;Pinchuk Vitali;NSH;25;0
-Boston Bruins;Banc;ATT;Plante Max;DET;20;2
-Boston Bruins;Banc;ATT;Potter Cullen;CGY;20;1
-Boston Bruins;Banc;ATT;Quinn Nathan;PHI;19;1
-Boston Bruins;Banc;ATT;Rasmussen Michael;DET;27;0
-Boston Bruins;Banc;ATT;Roobroeck Ryan;CHI;19;0
-Boston Bruins;Banc;ATT;Rousseau Thomas;;19;0
-Boston Bruins;Banc;ATT;Sale Eduard;SEA;21;3
-Boston Bruins;Banc;ATT;Sawchyn Lukas;;19;0
-Boston Bruins;Banc;ATT;Seminoff Matthew;DAL;23;4
-Boston Bruins;Banc;ATT;Steel Sam;DAL;29;3
-Boston Bruins;Banc;ATT;Stenberg Otto;STL;21;3
-Boston Bruins;Banc;ATT;Tarasenko Vladimir;;35;2
-Boston Bruins;Banc;ATT;Terrance Carey;NYR;22;2
-Boston Bruins;Banc;ATT;Tomik Tobias;;19;0
-Boston Bruins;Banc;ATT;Tuch Luke;CLB;24;0
-Boston Bruins;Banc;ATT;Tuomaala Samu;;24;1
-Boston Bruins;Banc;ATT;Tverberg Ryan;TOR;24;4
-Boston Bruins;Banc;ATT;Uronen Tuomas;VGK;21;3
-Boston Bruins;Banc;ATT;Voit Ty;;23;4
-Boston Bruins;Banc;ATT;Wagner Fabian;WIN;22;0
-Boston Bruins;Banc;ATT;Willis Joey;NSH;21;2
-Boston Bruins;Banc;ATT;Yemelyanov Kirill;BOS;20;1
-Boston Bruins;Banc;DEF;Allan Nolan;SJ;23;4
-Boston Bruins;Banc;DEF;Benning Michael;CGY;25;2
-Boston Bruins;Banc;DEF;Bogosian Zach;MIN;36;4
-Boston Bruins;Banc;DEF;Dell'Elce Francesco;COL;21;1
-Boston Bruins;Banc;DEF;Dolgopolov Ilya;;19;0
-Boston Bruins;Banc;DEF;Hinds Tyson;ANA;23;3
-Boston Bruins;Banc;DEF;Johnson Ryan;PIT;25;2
-Boston Bruins;Banc;DEF;Jones Zachary;UTH;26;4
-Boston Bruins;Banc;DEF;Konyushkov Bogdan;MTL;24;2
-Boston Bruins;Banc;DEF;Lamoureux Maveric;UTH;23;2
-Boston Bruins;Banc;DEF;Lilleberg Martinsen Emil;TPB;26;1
-Boston Bruins;Banc;DEF;McCabe Jake;TOR;33;0
-Boston Bruins;Banc;DEF;Nelson Ty;SEA;23;3
-Boston Bruins;Banc;DEF;Nikishin Alex;CAR;25;3
-Boston Bruins;Banc;DEF;Pieniniemi Emil;FLA;22;1
-Boston Bruins;Banc;DEF;Reid Chase;SEA;19;0
-Boston Bruins;Banc;DEF;Sandin Rasmus;WSH;26;4
-Boston Bruins;Banc;DEF;Thrun Henry;WIN;25;4
-Boston Bruins;Banc;DEF;Tretheway Charlie;PIT;19;1
-Boston Bruins;Banc;DEF;Villeneuve Xavier;CHI;19;0
-Boston Bruins;Banc;DEF;Wang Simon Haoxi;SJ;19;1
-Boston Bruins;Banc;GARD;Annunen Justus;NSH;26;1
-Boston Bruins;Banc;GARD;Black Cooper;FLA;25;1
-Boston Bruins;Banc;GARD;Commesso Drew;CHI;24;3
-Boston Bruins;Banc;GARD;Dobes Jakub;MTL;25;3
-Boston Bruins;Banc;GARD;Hildeby Dennis;TPB;25;3
-Boston Bruins;Banc;GARD;Hill Adin;VGK;30;1
-Boston Bruins;Banc;GARD;Ivankovic Jack;NSH;19;1
-Boston Bruins;Banc;GARD;Korpisalo Joonas;NYR;32;2
-Boston Bruins;Banc;GARD;Merzlikins Elvis;TOR;32;4
-Boston Bruins;Banc;GARD;Miller Quentin;MTL;22;3
-Boston Bruins;Banc;GARD;Snell Parker;CLB;18;0
-Boston Bruins;Banc;GARD;Talbot Cam;CLB;39;1
-Boston Bruins;Banc;GARD;Tolopilo Nikita;VAN;26;3
-Boston Bruins;Banc;GARD;Vinni Eemil;EDM;21;2
-Boston Bruins;Banc;GARD;Vyazovoy Semyon;SEA;22;2
-Montréal Canadiens;Partant;ATT;Acciari Noel;PHI;35;4
-Montréal Canadiens;Partant;ATT;Amadio Michael;OTT;30;4
-Montréal Canadiens;Partant;ATT;Bjorkstrand Oliver;NYR;31;3
-Montréal Canadiens;Partant;ATT;Buchnevich Pavel;STL;31;4
-Montréal Canadiens;Partant;ATT;Burakovsky Andre;OTT;32;4
-Montréal Canadiens;Partant;ATT;Cooley Logan;UTH;22;4
-Montréal Canadiens;Partant;ATT;Cotter Paul;VAN;27;2
-Montréal Canadiens;Partant;ATT;Cousins Nick;OTT;32;4
-Montréal Canadiens;Partant;ATT;Dellandrea Ty;SJ;26;1
-Montréal Canadiens;Partant;ATT;Finnie Emmitt;DET;21;0
-Montréal Canadiens;Partant;ATT;Foligno Nick;MIN;39;4
-Montréal Canadiens;Partant;ATT;Garland Conor;CLB;30;3
-Montréal Canadiens;Partant;ATT;Greig Ridly;OTT;24;4
-Montréal Canadiens;Partant;ATT;Hughes T.J.;COL;25;0
-Montréal Canadiens;Partant;ATT;Hryckowian Justin;DAL;25;1
-Montréal Canadiens;Partant;ATT;Johnston Wyatt;DAL;23;4
-Montréal Canadiens;Partant;ATT;Luostarinen Eetu;FLA;28;2
-Montréal Canadiens;Partant;ATT;Maccelli Matias;NYI;26;3
-Montréal Canadiens;Partant;ATT;Rossi Marco;VAN;25;4
-Montréal Canadiens;Partant;ATT;Sasson Max;VAN;26;2
-Montréal Canadiens;Partant;ATT;Suniev Aydar;CGY;22;3
-Montréal Canadiens;Partant;ATT;Winterton Ryan;SEA;23;4
-Montréal Canadiens;Partant;DEF;Dahlin Rasmus;BUF;26;4
-Montréal Canadiens;Partant;DEF;Gavrikov Vladislav;NYR;31;3
-Montréal Canadiens;Partant;DEF;Hutson Cole;WSH;20;2
-Montréal Canadiens;Partant;DEF;Josi Roman;NSH;36;4
-Montréal Canadiens;Partant;DEF;Lindholm Hampus;BOS;33;3
-Montréal Canadiens;Partant;DEF;McAvoy Charlie;BOS;29;3
-Montréal Canadiens;Partant;DEF;Raddysh Darren;TOR;30;2
-Montréal Canadiens;Partant;DEF;Theodore Shea;VGK;31;2
-Montréal Canadiens;Partant;DEF;Werenski Zach;CLB;28;4
-Montréal Canadiens;Partant;GARD;Allen Jake;NJ;36;3
-Montréal Canadiens;Partant;GARD;Jarry Tristan;EDM;31;3
-Montréal Canadiens;Partant;GARD;Swayman Jeremy;BOS;28;3
-Montréal Canadiens;Banc;ATT;Barzal Matthew;NYI;29;4
-Montréal Canadiens;Banc;ATT;Bear Carter;DET;20;1
-Montréal Canadiens;Banc;ATT;Belchetz Ethan;UTH;18;0
-Montréal Canadiens;Banc;ATT;Blumel Matej;;26;2
-Montréal Canadiens;Banc;ATT;Carbonneau Justin;STL;20;1
-Montréal Canadiens;Banc;ATT;Eriksen Mikkel;NYR;19;1
-Montréal Canadiens;Banc;ATT;Fedotov Ilya;UTH;23;3
-Montréal Canadiens;Banc;ATT;Fernstrom Melvin;PIT;21;2
-Montréal Canadiens;Banc;ATT;Frolo Jakub;;19;0
-Montréal Canadiens;Banc;ATT;Gojsic Hiroki;NSH;20;2
-Montréal Canadiens;Banc;ATT;Gushchin Daniil;;25;4
-Montréal Canadiens;Banc;ATT;Hage Michael;MTL;20;2
-Montréal Canadiens;Banc;ATT;Hameenaho Lenni;NJ;22;3
-Montréal Canadiens;Banc;ATT;Harris Samuel;MTL;23;0
-Montréal Canadiens;Banc;ATT;Hemming Oscar;CLB;18;0
-Montréal Canadiens;Banc;ATT;Hutson Quinn;EDM;25;0
-Montréal Canadiens;Banc;ATT;Idzan Bruno;OTT;19;1
-Montréal Canadiens;Banc;ATT;Jecho Adam;STL;20;2
-Montréal Canadiens;Banc;ATT;Kevan Benjamin;NJ;20;1
-Montréal Canadiens;Banc;ATT;King Benjamin;;24;4
-Montréal Canadiens;Banc;ATT;Koblar Tinus Luc;TOR;19;0
-Montréal Canadiens;Banc;ATT;Kos Ondrej;STL;20;2
-Montréal Canadiens;Banc;ATT;Kraft Mason;;19;1
-Montréal Canadiens;Banc;ATT;Labanc Kevin;;31;4
-Montréal Canadiens;Banc;ATT;Laine Patrik;;28;3
-Montréal Canadiens;Banc;ATT;Lauko Jakub;;26;3
-Montréal Canadiens;Banc;ATT;L'Heureux Zachary;COL;23;1
-Montréal Canadiens;Banc;ATT;Lind Kalan;NSH;22;3
-Montréal Canadiens;Banc;ATT;Ludwinski Paul;CHI;22;3
-Montréal Canadiens;Banc;ATT;Mangiapane Andrew;CHI;30;4
-Montréal Canadiens;Banc;ATT;Marjala Viljami;EDM;24;0
-Montréal Canadiens;Banc;ATT;Martinu Pavel;;19;0
-Montréal Canadiens;Banc;ATT;Moldenhauer Nicholas;TOR;22;3
-Montréal Canadiens;Banc;ATT;Montgomery Blake;OTT;21;0
-Montréal Canadiens;Banc;ATT;Nylander Alex;;28;1
-Montréal Canadiens;Banc;ATT;Pastujov Sasha;MTL;23;3
-Montréal Canadiens;Banc;ATT;Pekarcik Juraj;STL;21;3
-Montréal Canadiens;Banc;ATT;Persson Ludwig;WSH;23;4
-Montréal Canadiens;Banc;ATT;Petrov Matvei;;23;4
-Montréal Canadiens;Banc;ATT;Pikkarainen Kasper;NJ;20;2
-Montréal Canadiens;Banc;ATT;Ponomaryov Vasily;;26;4
-Montréal Canadiens;Banc;ATT;Robertson tucker;;23;3
-Montréal Canadiens;Banc;ATT;Sapovaliv Matyas;VGK;23;3
-Montréal Canadiens;Banc;ATT;Sawchyn Gracyn;FLA;22;3
-Montréal Canadiens;Banc;ATT;Soderblom Elmer;PIT;25;3
-Montréal Canadiens;Banc;ATT;Sokolov Egor;;26;3
-Montréal Canadiens;Banc;ATT;Stockselius Theo;CGY;19;1
-Montréal Canadiens;Banc;ATT;Sykora Adam;NYR;23;4
-Montréal Canadiens;Banc;ATT;Thompson Aidan;NYR;23;4
-Montréal Canadiens;Banc;ATT;Wahlberg Anton;ANA;21;3
-Montréal Canadiens;Banc;ATT;Zether Simon;FLA;21;2
-Montréal Canadiens;Banc;DEF;Boumedienne Sascha;WIN;19;1
-Montréal Canadiens;Banc;DEF;Burns Brent;COL;41;1
-Montréal Canadiens;Banc;DEF;Carels Carson;CGY;18;0
-Montréal Canadiens;Banc;DEF;Chabot Thomas;OTT;30;1
-Montréal Canadiens;Banc;DEF;Fisher Michael;SJ;22;3
-Montréal Canadiens;Banc;DEF;Helleson Drew;ANA;24;0
-Montréal Canadiens;Banc;DEF;Jiricek Adam;STL;20;2
-Montréal Canadiens;Banc;DEF;Liljegren Tim;WSH;27;3
-Montréal Canadiens;Banc;DEF;McDonagh Ryan;TPB;36;1
-Montréal Canadiens;Banc;DEF;Malinski Sam;COL;28;2
-Montréal Canadiens;Banc;DEF;Mintyukov Pavel;ANA;23;4
-Montréal Canadiens;Banc;DEF;Morrissey Josh;WIN;30;3
-Montréal Canadiens;Banc;DEF;Pietrangelo Alex;VGK;36;4
-Montréal Canadiens;Banc;DEF;Provorov Ivan;CLB;30;2
-Montréal Canadiens;Banc;DEF;Rinzel Samuel;CHI;22;3
-Montréal Canadiens;Banc;DEF;Shuravin Matvei;FLA;20;1
-Montréal Canadiens;Banc;DEF;Skjei Brady;NSH;32;3
-Montréal Canadiens;Banc;DEF;Smith Tarin;ANA;20;2
-Montréal Canadiens;Banc;DEF;Timmins Conor;BUF;28;3
-Montréal Canadiens;Banc;DEF;Yakemchuk Carter;OTT;21;2
-Montréal Canadiens;Banc;GARD;Beckman Lucas;OTT;19;1
-Montréal Canadiens;Banc;GARD;Dybal Adam;;21;2
-Montréal Canadiens;Banc;GARD;Fedotov Ivan;;30;2
-Montréal Canadiens;Banc;GARD;Frolov Semyon;CAR;19;1
-Montréal Canadiens;Banc;GARD;Lacelle William;;19;0
-Montréal Canadiens;Banc;GARD;Lindbom Olof;;26;4
-Montréal Canadiens;Banc;GARD;Malek Jakub;NJ;24;4
-Montréal Canadiens;Banc;GARD;Musser Carsen;UTH;21;3
-Montréal Canadiens;Banc;GARD;Neuenschwander Elijah;ANA;20;1
-Montréal Canadiens;Banc;GARD;Orsulak Michal;DET;19;0
-Montréal Canadiens;Banc;GARD;Perets Yaniv;;26;3
-Montréal Canadiens;Banc;GARD;Rybkin Yegor;LA;19;0
-Montréal Canadiens;Banc;GARD;Stauber Jaxson;UTH;27;4
-Montréal Canadiens;Banc;GARD;Vladar Daniel;PHI;29;3
-Seattle Kraken;Partant;ATT;Beniers Matty;SEA;24;4
-Seattle Kraken;Partant;ATT;Brink Bobby;MIN;25;4
-Seattle Kraken;Partant;ATT;Catton Berkly;SEA;21;2
-Seattle Kraken;Partant;ATT;Connelly Trevor;VGK;20;2
-Seattle Kraken;Partant;ATT;Glass Cody;NJ;27;4
-Seattle Kraken;Partant;ATT;Guenther Dylan;UTH;23;3
-Seattle Kraken;Partant;ATT;Hartman Ryan;MIN;31;4
-Seattle Kraken;Partant;ATT;Hayton Barrett;UTH;26;4
-Seattle Kraken;Partant;ATT;Howard Isaac;EDM;22;3
-Seattle Kraken;Partant;ATT;Hyman Zach;EDM;34;4
-Seattle Kraken;Partant;ATT;Kantserov Roman;CHI;22;3
-Seattle Kraken;Partant;ATT;McTavish Mason;STL;24;2
-Seattle Kraken;Partant;ATT;Michkov Matvei;PHI;22;2
-Seattle Kraken;Partant;ATT;Misa Michael;SJ;20;1
-Seattle Kraken;Partant;ATT;Olivier Mathieu;CLB;27;4
-Seattle Kraken;Partant;ATT;Robertson Nick;PIT;25;3
-Seattle Kraken;Partant;ATT;Schenn Brayden;NYI;35;4
-Seattle Kraken;Partant;ATT;Sharangovich Egor;CGY;26;4
-Seattle Kraken;Partant;ATT;Stenberg Ivar;SJ;19;0
-Seattle Kraken;Partant;ATT;Stutzle Tim;OTT;25;4
-Seattle Kraken;Partant;ATT;Tsyplakov Maksim;CGY;28;2
-Seattle Kraken;Partant;ATT;Voronkov Dmitri;CLB;26;4
-Seattle Kraken;Partant;DEF;Brunet Frederic;BOS;23;4
-Seattle Kraken;Partant;DEF;Cagnoni Luca;SJ;22;3
-Seattle Kraken;Partant;DEF;Girard Samuel;PIT;28;4
-Seattle Kraken;Partant;DEF;Graves Ryan;PIT;31;4
-Seattle Kraken;Partant;DEF;Korczak Kaedan;PIT;26;4
-Seattle Kraken;Partant;DEF;Mateychuk Denton;CLB;22;4
-Seattle Kraken;Partant;DEF;Schaefer Matthew;NYI;19;1
-Seattle Kraken;Partant;DEF;Spurgeon Jared;MIN;37;4
-Seattle Kraken;Partant;DEF;Vlasic Alex;CHI;25;4
-Seattle Kraken;Partant;GARD;Cossa Sebastian;UTH;24;4
-Seattle Kraken;Partant;GARD;Nedeljkovic Alex;SJ;31;4
-Seattle Kraken;Partant;GARD;Schmid Akira;FLA;26;3
-Seattle Kraken;Banc;ATT;Abruzzese Nicholas;TPB;27;4
-Seattle Kraken;Banc;ATT;Barabanov Egor;CGY;20;0
-Seattle Kraken;Banc;ATT;Beckman Adam;COL;25;4
-Seattle Kraken;Banc;ATT;Behm Nathan;CHI;19;1
-Seattle Kraken;Banc;ATT;Blais Alexandre;ANA;21;2
-Seattle Kraken;Banc;ATT;Buchelnikov Dmitri;STL;23;4
-Seattle Kraken;Banc;ATT;Bunting Michael;PHI;31;4
-Seattle Kraken;Banc;ATT;Cristall Andrew;WSH;22;3
-Seattle Kraken;Banc;ATT;Devine Jack;FLA;23;4
-Seattle Kraken;Banc;ATT;Dube Dillon;STL;28;4
-Seattle Kraken;Banc;ATT;Duguay Jordan;;19;0
-Seattle Kraken;Banc;ATT;Eiserman Cole;NYI;20;2
-Seattle Kraken;Banc;ATT;Ekberg Filip;CAR;19;1
-Seattle Kraken;Banc;ATT;Eklund William;OTT;24;4
-Seattle Kraken;Banc;ATT;Firkus Jagger;SEA;22;4
-Seattle Kraken;Banc;ATT;Fisher Jake;COL;21;3
-Seattle Kraken;Banc;ATT;Graf Yegor;;20;2
-Seattle Kraken;Banc;ATT;Griffin Owen;CLB;19;0
-Seattle Kraken;Banc;ATT;Gustafson Jordan;VGK;23;4
-Seattle Kraken;Banc;ATT;Henrique Adam;;37;4
-Seattle Kraken;Banc;ATT;Hodnett Gavin;;20;2
-Seattle Kraken;Banc;ATT;Howe Tanner;PIT;21;2
-Seattle Kraken;Banc;ATT;Hurlbert Jeffrey Paul;DET;18;0
-Seattle Kraken;Banc;ATT;Huuhtanen Niko;;23;4
-Seattle Kraken;Banc;ATT;Joki Atte;DAL;19;0
-Seattle Kraken;Banc;ATT;Klimovich Yegor;;21;3
-Seattle Kraken;Banc;ATT;Koivu Aatos;MTL;20;2
-Seattle Kraken;Banc;ATT;Lambert Brad;WIN;23;4
-Seattle Kraken;Banc;ATT;Lysell Fabian;COL;24;4
-Seattle Kraken;Banc;ATT;Misa Luke;CGY;21;2
-Seattle Kraken;Banc;ATT;Mistelbacher Luke;;21;1
-Seattle Kraken;Banc;ATT;Nadeau Bradly;CAR;21;3
-Seattle Kraken;Banc;ATT;Nobert Mateo;VGK;19;1
-Seattle Kraken;Banc;ATT;Park Aidan;EDM;21;2
-Seattle Kraken;Banc;ATT;Quillan Jacob;VAN;23;2
-Seattle Kraken;Banc;ATT;Rautiainen Benjamin;TPB;21;2
-Seattle Kraken;Banc;ATT;Romani Anthony;VAN;21;2
-Seattle Kraken;Banc;ATT;Ruzicka Adam;;27;4
-Seattle Kraken;Banc;ATT;Savoie Samuel;CHI;22;4
-Seattle Kraken;Banc;ATT;Sidorov Yegor;ANA;22;3
-Seattle Kraken;Banc;ATT;Simpson Cooper;BOS;19;1
-Seattle Kraken;Banc;ATT;Staal Jordan;CAR;38;4
-Seattle Kraken;Banc;ATT;Svejkovsky Lukas;;24;4
-Seattle Kraken;Banc;ATT;Svrcek Michal;DET;19;0
-Seattle Kraken;Banc;ATT;Trikozov Gleb;CAR;22;2
-Seattle Kraken;Banc;ATT;Tulk Oliver;;22;3
-Seattle Kraken;Banc;ATT;Zellers William;BOS;20;2
-Seattle Kraken;Banc;ATT;Zharovsky Alexander;MTL;20;1
-Seattle Kraken;Banc;DEF;Bean Jake;;28;4
-Seattle Kraken;Banc;DEF;Bertucci Tristan;DAL;21;3
-Seattle Kraken;Banc;DEF;Bjornfot Tobias;FLA;25;4
-Seattle Kraken;Banc;DEF;Brosnan Myles;DET;19;0
-Seattle Kraken;Banc;DEF;Ceulemans Corson;CLB;23;3
-Seattle Kraken;Banc;DEF;Dragicevic Lukas;SEA;21;3
-Seattle Kraken;Banc;DEF;Fransen Noel;CAR;21;2
-Seattle Kraken;Banc;DEF;Gill Spencer;PHI;20;2
-Seattle Kraken;Banc;DEF;Gulyayev Mikhail;COL;21;2
-Seattle Kraken;Banc;DEF;Jansson Ludvig;FLA;23;3
-Seattle Kraken;Banc;DEF;Johannesson Anton;;24;4
-Seattle Kraken;Banc;DEF;Klingberg John;RET;34;4
-Seattle Kraken;Banc;DEF;Kolyachonok Vladislav;NJ;25;4
-Seattle Kraken;Banc;DEF;Kyrou Christian;OTT;23;4
-Seattle Kraken;Banc;DEF;Marrelli Luca;CLB;21;2
-Seattle Kraken;Banc;DEF;Mews Henry;CGY;20;2
-Seattle Kraken;Banc;DEF;Odelius Calle ;NYI;22;4
-Seattle Kraken;Banc;DEF;Perunovich Scott;LA;25;3
-Seattle Kraken;Banc;DEF;Powell Eamon;FLA;24;4
-Seattle Kraken;Banc;DEF;Radivojevic Luka;;20;1
-Seattle Kraken;Banc;GARD;Augustine Trey;DET;22;3
-Seattle Kraken;Banc;GARD;Blomqvist Joel;PIT;25;4
-Seattle Kraken;Banc;GARD;Borichev Dmitri;NSH;18;0
-Seattle Kraken;Banc;GARD;Chechelev Daniil;CGY;25;4
-Seattle Kraken;Banc;GARD;Georgiev Alexandar;KHL;31;4
-Seattle Kraken;Banc;GARD;Glifford Olof;FLA;21;1
-Seattle Kraken;Banc;GARD;Khazheyev Ruslan;CAR;21;3
-Seattle Kraken;Banc;GARD;Kolosov Alexei;PHI;25;4
-Seattle Kraken;Banc;GARD;Medvedev Alexei;VAN;19;1
-Seattle Kraken;Banc;GARD;Murashov Sergei;PIT;22;4
-Seattle Kraken;Banc;GARD;Portillo Erik;LA;26;4
-Seattle Kraken;Banc;GARD;Shmakov Shamil;COL;27;4
-Seattle Kraken;Banc;GARD;Trofimov Andrei;OTT;20;1
-Seattle Kraken;Banc;GARD;Yegorov Mikhail;NJ;20;2
-Seattle Kraken;Banc;GARD;Zarubin Kirill;CGY;21;2
-San Jose Sharks;Partant;ATT;Barkey Denver;PHI;21;3
-San Jose Sharks;Partant;ATT;Cozens Dylan;OTT;26;4
-San Jose Sharks;Partant;ATT;Demidov Ivan;MTL;21;2
-San Jose Sharks;Partant;ATT;Faksa Radek;DAL;33;2
-San Jose Sharks;Partant;ATT;Foerster Tyson;PHI;25;4
-San Jose Sharks;Partant;ATT;Gridin Matvei;CGY;20;1
-San Jose Sharks;Partant;ATT;Helenius Konsta;BUF;20;2
-San Jose Sharks;Partant;ATT;Holmberg Pontus;TPB;27;4
-San Jose Sharks;Partant;ATT;Honzek Samuel;CGY;21;3
-San Jose Sharks;Partant;ATT;Kapanen Kasperi;EDM;30;2
-San Jose Sharks;Partant;ATT;Kindel Ben;PIT;19;1
-San Jose Sharks;Partant;ATT;Koivunen Ville;PIT;23;3
-San Jose Sharks;Partant;ATT;Kyrou Jordan;WSH;28;4
-San Jose Sharks;Partant;ATT;Lapierre Hendrix;PIT;25;4
-San Jose Sharks;Partant;ATT;McKenna Gavin;TOR;19;0
-San Jose Sharks;Partant;ATT;Norris Josh;BUF;27;4
-San Jose Sharks;Partant;ATT;Perreault Gabe;NYR;21;1
-San Jose Sharks;Partant;ATT;Poehling Ryan;ANA;27;3
-San Jose Sharks;Partant;ATT;Protas Aliaksei;WSH;26;3
-San Jose Sharks;Partant;ATT;Samoskevich Mackie;SEA;24;4
-San Jose Sharks;Partant;ATT;Wright Shane;SEA;23;4
-San Jose Sharks;Partant;DEF;Andrae Emil;CLB;25;1
-San Jose Sharks;Partant;DEF;Bonk Oliver;PHI;22;3
-San Jose Sharks;Partant;DEF;Broberg Philip;STL;25;4
-San Jose Sharks;Partant;DEF;Hague Nicolas;NSH;28;2
-San Jose Sharks;Partant;DEF;Hedman Victor;TPB;36;1
-San Jose Sharks;Partant;DEF;Jiricek David;PHI;23;4
-San Jose Sharks;Partant;DEF;Kulak Brett;COL;32;4
-San Jose Sharks;Partant;DEF;Lindstein Theo;STL;22;3
-San Jose Sharks;Partant;DEF;Siegenthaler Jonas;NJ;29;2
-San Jose Sharks;Partant;GARD;Luukkonen U-K;BUF;27;4
-San Jose Sharks;Partant;GARD;Stolarz Anthony;TOR;33;1
-San Jose Sharks;Banc;ATT;Barlow Colby;WIN;21;3
-San Jose Sharks;Banc;ATT;Beaudoin Cole;NYR;20;2
-San Jose Sharks;Banc;ATT;Beck Owen;MTL;23;2
-San Jose Sharks;Banc;ATT;Beckner Owen;OTT;22;3
-San Jose Sharks;Banc;ATT;Berchild Mikey;CAR;18;0
-San Jose Sharks;Banc;ATT;Bjorck Viggo;WIN;18;0
-San Jose Sharks;Banc;ATT;Boisvert Sacha;CHI;20;2
-San Jose Sharks;Banc;ATT;Brabenec Jan;;19;0
-San Jose Sharks;Banc;ATT;Bystedt Filip;SJ;23;1
-San Jose Sharks;Banc;ATT;Caswell Clarke;SEA;20;2
-San Jose Sharks;Banc;ATT;Chrenko Tomas;NYR;19;0
-San Jose Sharks;Banc;ATT;Edwards Beckham;DET;19;0
-San Jose Sharks;Banc;ATT;Eriksson Linus;FLA;20;2
-San Jose Sharks;Banc;ATT;Finley Quinn;NYI;22;3
-San Jose Sharks;Banc;ATT;Gashilov Lavr;NJ;19;0
-San Jose Sharks;Banc;ATT;Gastrin Milton;STL;20;1
-San Jose Sharks;Banc;ATT;Grebenkin Nikita;PHI;23;4
-San Jose Sharks;Banc;ATT;Hayes Gavin;CHI;22;2
-San Jose Sharks;Banc;ATT;Hayes Travis;PIT;19;1
-San Jose Sharks;Banc;ATT;Helenius Samuel;LA;24;0
-San Jose Sharks;Banc;ATT;Hemmerling Ben;VGK;22;0
-San Jose Sharks;Banc;ATT;Holmertz Oscar;OTT;18;0
-San Jose Sharks;Banc;ATT;Ihs-Wozniak Jakob;VGK;19;1
-San Jose Sharks;Banc;ATT;Kasper Marco;DET;22;1
-San Jose Sharks;Banc;ATT;Kemell Joakim ;NSH;22;4
-San Jose Sharks;Banc;ATT;Kiiskinen Jesse;DET;21;1
-San Jose Sharks;Banc;ATT;Kumpulainen Rasmus;MIN;21;3
-San Jose Sharks;Banc;ATT;Levis Connor;WIN;21;3
-San Jose Sharks;Banc;ATT;Malatesta James;CLB;23;3
-San Jose Sharks;Banc;ATT;Martin Brady;NSH;19;1
-San Jose Sharks;Banc;ATT;Massé Maxim;ANA;20;2
-San Jose Sharks;Banc;ATT;Maze Julien;;19;0
-San Jose Sharks;Banc;ATT;McQueen Roger;ANA;20;1
-San Jose Sharks;Banc;ATT;Miroshnichenko Ivan;WSH;23;3
-San Jose Sharks;Banc;ATT;Moore William;BOS;19;1
-San Jose Sharks;Banc;ATT;Moses Shamar;FLA;19;1
-San Jose Sharks;Banc;ATT;Nordmark Marcus;ANA;18;0
-San Jose Sharks;Banc;ATT;Parascak Terik;WSH;20;2
-San Jose Sharks;Banc;ATT;Plante Zam;PIT;22;3
-San Jose Sharks;Banc;ATT;Poletin Tomas;NYI;19;1
-San Jose Sharks;Banc;ATT;Ruck Markus;PIT;19;0
-San Jose Sharks;Banc;ATT;Savoie Matthew;EDM;23;1
-San Jose Sharks;Banc;ATT;Shaugabay Jayson;TPB;21;3
-San Jose Sharks;Banc;ATT;Shilov Yegor;COL;18;0
-San Jose Sharks;Banc;ATT;Sparks Tyus;WSH;19;0
-San Jose Sharks;Banc;ATT;Stillman Chase;DET;23;0
-San Jose Sharks;Banc;ATT;Surin Yegor;NSH;20;2
-San Jose Sharks;Banc;ATT;Tomasino Phillip;OTT;25;4
-San Jose Sharks;Banc;ATT;Unger Sorum Felix ;CAR;21;3
-San Jose Sharks;Banc;ATT;Vansaghi Shane;PHI;20;1
-San Jose Sharks;Banc;ATT;Wassilyn Braidy;;18;0
-San Jose Sharks;Banc;ATT;Whitelaw William;CLB;22;0
-San Jose Sharks;Banc;ATT;Wooten Zach;WIN;21;0
-San Jose Sharks;Banc;ATT;Yager Brayden;WIN;22;3
-San Jose Sharks;Banc;ATT;Zielinski Blake;LA;18;0
-San Jose Sharks;Banc;ATT;Ziemer Brodie;BUF;20;2
-San Jose Sharks;Banc;ATT;Zonnon William;PIT;20;1
-San Jose Sharks;Banc;DEF;Buium Shai;DET;23;4
-San Jose Sharks;Banc;DEF;Burns Quinton;STL;21;3
-San Jose Sharks;Banc;DEF;Casey Seamus;NJ;23;4
-San Jose Sharks;Banc;DEF;Dravecky Vladimir;NYI;19;0
-San Jose Sharks;Banc;DEF;Fiddler Blake;SEA;19;1
-San Jose Sharks;Banc;DEF;Hammell Kaden;SEA;21;3
-San Jose Sharks;Banc;DEF;Heger Kyle;;19;0
-San Jose Sharks;Banc;DEF;Huang Alex;NSH;19;1
-San Jose Sharks;Banc;DEF;Karki Arttu;VGK;22;3
-San Jose Sharks;Banc;DEF;Limatov Kurban;CAR;19;1
-San Jose Sharks;Banc;DEF;Mrtka Radim;BUF;19;1
-San Jose Sharks;Banc;DEF;Pickering Owen;PIT;23;3
-San Jose Sharks;Banc;DEF;Pulkkinen Jesse;NYI;22;2
-San Jose Sharks;Banc;DEF;Rombach Jacob;NSH;19;1
-San Jose Sharks;Banc;DEF;Runtso Timofei;MTL;19;0
-San Jose Sharks;Banc;DEF;Salomonsson Elias;WIN;22;4
-San Jose Sharks;Banc;DEF;Silayev Anton;NJ;20;1
-San Jose Sharks;Banc;DEF;Solberg Stian;ANA;21;2
-San Jose Sharks;Banc;DEF;Strathmann Andrew;CLB;22;3
-San Jose Sharks;Banc;DEF;Vaakanainen Urho;NYR;27;2
-San Jose Sharks;Banc;GARD;Alnefelt Hugo;TPB;25;1
-San Jose Sharks;Banc;GARD;Bennett Trenten;NJ;19;1
-San Jose Sharks;Banc;GARD;Cooley Devin;CGY;28;0
-San Jose Sharks;Banc;GARD;Guimond Rudy;DET;21;2
-San Jose Sharks;Banc;GARD;Harenstam Love;STL;19;1
-San Jose Sharks;Banc;GARD;Knowling Brady;SJ;18;0
-San Jose Sharks;Banc;GARD;Kokko Niklas;SEA;22;2
-San Jose Sharks;Banc;GARD;Kuemper Darcy;LA;36;0
-San Jose Sharks;Banc;GARD;Leenders Ryerson;;20;2
-San Jose Sharks;Banc;GARD;Meloche Samuel;BUF;19;1
-San Jose Sharks;Banc;GARD;Ratzlaff Scott;BUF;21;3
-San Jose Sharks;Banc;GARD;Ruzicka Filip;MIN;18;0
-San Jose Sharks;Banc;GARD;Saarinen Kim;SEA;20;2
-San Jose Sharks;Banc;GARD;Strahl Melvin;CLB;21;2
-San Jose Sharks;Banc;GARD;Trejbal Tobias;CGY;19;0
-Minnesota Wild;Partant;ATT;Cowan Easton;TOR;21;3
-Minnesota Wild;Partant;ATT;Eriksson EK Joel;MIN;29;4
-Minnesota Wild;Partant;ATT;Fantilli Adam;CLB;22;3
-Minnesota Wild;Partant;ATT;Hagens James;BOS;20;1
-Minnesota Wild;Partant;ATT;Hoglander Nils;NSH;26;3
-Minnesota Wild;Partant;ATT;Karlsson Linus;VAN;27;1
-Minnesota Wild;Partant;ATT;Kartye Tye;NYR;25;3
-Minnesota Wild;Partant;ATT;Krebs Peyton;BUF;26;3
-Minnesota Wild;Partant;ATT;Kreider Chris;MTL;35;1
-Minnesota Wild;Partant;ATT;Lekkerimaki Jonathan;VAN;22;4
-Minnesota Wild;Partant;ATT;Leonard Ryan;WSH;22;1
-Minnesota Wild;Partant;ATT;Lindholm Elias;BOS;32;2
-Minnesota Wild;Partant;ATT;McMann Bobby;SEA;29;2
-Minnesota Wild;Partant;ATT;Mercer Dawson;WIN;25;1
-Minnesota Wild;Partant;ATT;Poitras Matthew;BOS;22;4
-Minnesota Wild;Partant;ATT;Quinn Jack;BUF;25;4
-Minnesota Wild;Partant;ATT;Roy Nicolas;COL;30;3
-Minnesota Wild;Partant;ATT;Shabanov Maxim;MIN;26;1
-Minnesota Wild;Partant;ATT;Schmaltz Nick;UTH;31;1
-Minnesota Wild;Partant;ATT;Snuggerud Jimmy;STL;22;1
-Minnesota Wild;Partant;ATT;Thomas Robert;STL;27;1
-Minnesota Wild;Partant;ATT;Tkachuk Brady;FLA;27;3
-Minnesota Wild;Partant;DEF;Borgen William;BOS;30;1
-Minnesota Wild;Partant;DEF;Buium Zeev;VAN;21;1
-Minnesota Wild;Partant;DEF;Durzi Sean;NYR;28;3
-Minnesota Wild;Partant;DEF;Jensen Nick;ANA;35;3
-Minnesota Wild;Partant;DEF;Kesselring Michael;SJ;27;2
-Minnesota Wild;Partant;DEF;Lohrei Mason;BOS;26;3
-Minnesota Wild;Partant;DEF;Nemec Simon;CGY;23;4
-Minnesota Wild;Partant;DEF;Sandin Pellikka Axel;DET;21;3
-Minnesota Wild;Partant;DEF;Willander Tom;VAN;22;3
-Minnesota Wild;Partant;GARD;Askarov Yaroslav;SJ;24;4
-Minnesota Wild;Partant;GARD;Binnington Jordan;STL;33;3
-Minnesota Wild;Partant;GARD;Forsberg Anton;LA;33;4
-Minnesota Wild;Banc;ATT;Alexandrov Nikita;;26;3
-Minnesota Wild;Banc;ATT;Allard Owen;UTH;23;2
-Minnesota Wild;Banc;ATT;Aaram Olsen Niklas;VAN;18;0
-Minnesota Wild;Banc;ATT;Backlund Mikail;CGY;37;1
-Minnesota Wild;Banc;ATT;Bankier Caedan;MIN;23;4
-Minnesota Wild;Banc;ATT;Battaglia Jacob;NYR;20;2
-Minnesota Wild;Banc;ATT;Becher Ondrej;DET;23;2
-Minnesota Wild;Banc;ATT;Brown Connor;NJ;33;4
-Minnesota Wild;Banc;ATT;Brown Ryan;DAL;19;0
-Minnesota Wild;Banc;ATT;Byfield Quinton;LA;24;3
-Minnesota Wild;Banc;ATT;Cates Noah;PHI;27;4
-Minnesota Wild;Banc;ATT;Chinakhov Yegor;PIT;25;2
-Minnesota Wild;Banc;ATT;Colton Ross;NSH;30;3
-Minnesota Wild;Banc;ATT;Copp Andrew;DET;32;4
-Minnesota Wild;Banc;ATT;Crouse Lawson;UTH;29;4
-Minnesota Wild;Banc;ATT;Dervin Kieren;VAN;19;0
-Minnesota Wild;Banc;ATT;Duke Dylan;TPB;24;4
-Minnesota Wild;Banc;ATT;Fondrk Conrad;NJ;19;1
-Minnesota Wild;Banc;ATT;Graf Collin;SJ;24;2
-Minnesota Wild;Banc;ATT;Greentree Liam;NYR;20;2
-Minnesota Wild;Banc;ATT;Halliday Stephen;OTT;24;2
-Minnesota Wild;Banc;ATT;Hamilton Beckett;COL;18;0
-Minnesota Wild;Banc;ATT;Harrington Chase;CGY;19;0
-Minnesota Wild;Banc;ATT;Hoskin Trevor;CGY;22;0
-Minnesota Wild;Banc;ATT;Hynninen Topias;;21;2
-Minnesota Wild;Banc;ATT;Janicke Justin ;;23;4
-Minnesota Wild;Banc;ATT;Joseph Mathieu;EDM;30;3
-Minnesota Wild;Banc;ATT;Kapanen Oliver;MTL;23;2
-Minnesota Wild;Banc;ATT;Lansard Zach;CAR;18;0
-Minnesota Wild;Banc;ATT;Lardis Nicholas;CHI;21;3
-Minnesota Wild;Banc;ATT;Lizotte Blake;PIT;28;4
-Minnesota Wild;Banc;ATT;Lombardi Amadeus;NJ;23;4
-Minnesota Wild;Banc;ATT;Lutz Julian;UTH;23;4
-Minnesota Wild;Banc;ATT;Mazur Carter;DET;23;0
-Minnesota Wild;Banc;ATT;Mbuyi Pierce;PIT;18;0
-Minnesota Wild;Banc;ATT;Miller Ryan;PIT;19;0
-Minnesota Wild;Banc;ATT;Moore Javon;OTT;21;2
-Minnesota Wild;Banc;ATT;Mukhanov Timur;CAR;21;3
-Minnesota Wild;Banc;ATT;Muldowney Joey;SJ;22;0
-Minnesota Wild;Banc;ATT;Murnieks Olivers;;18;0
-Minnesota Wild;Banc;ATT;Nestrasil Vaclav;CHI;19;1
-Minnesota Wild;Banc;ATT;Nordh Noel;UTH;22;0
-Minnesota Wild;Banc;ATT;Nordlund Viggo;CAR;20;1
-Minnesota Wild;Banc;ATT;Nyman Jani;SEA;22;2
-Minnesota Wild;Banc;ATT;Pinelli Francesco;LA;23;4
-Minnesota Wild;Banc;ATT;Poirier Justin;CAR;20;1
-Minnesota Wild;Banc;ATT;Prokhorov Daniil;NYI;19;1
-Minnesota Wild;Banc;ATT;Raty Aku;EDM;25;2
-Minnesota Wild;Banc;ATT;Roy Joshua;UTH;23;4
-Minnesota Wild;Banc;ATT;Ruck Liam;PIT;18;0
-Minnesota Wild;Banc;ATT;Rykov Alexander;CAR;21;3
-Minnesota Wild;Banc;ATT;Sherwood Kiefer;SJ;32;2
-Minnesota Wild;Banc;ATT;Stiga Teddy;NSH;20;2
-Minnesota Wild;Banc;ATT;Svoboda Brandon;OTT;22;0
-Minnesota Wild;Banc;ATT;Tolvanen Eeli;NYR;27;3
-Minnesota Wild;Banc;ATT;Verreault Antonin;;22;2
-Minnesota Wild;Banc;ATT;Wiesblatt Ozzy;NSH;24;4
-Minnesota Wild;Banc;ATT;Williams Cooper;TOR;18;0
-Minnesota Wild;Banc;DEF;Anderson Mikey;LA;28;2
-Minnesota Wild;Banc;DEF;Bernard-Docker J;DET;26;4
-Minnesota Wild;Banc;DEF;Emery E.J.;NYR;20;2
-Minnesota Wild;Banc;DEF;Faber Brock ;MIN;24;4
-Minnesota Wild;Banc;DEF;Freij Alfons;WIN;21;2
-Minnesota Wild;Banc;DEF;Hensler Logan;OTT;20;1
-Minnesota Wild;Banc;DEF;Kulonummi Kasper;;23;4
-Minnesota Wild;Banc;DEF;MacBeath Ben;NYR;19;0
-Minnesota Wild;Banc;DEF;Moser Janis Jérome;TPB;26;4
-Minnesota Wild;Banc;DEF;Pantelas Giorgos;LA;18;0
-Minnesota Wild;Banc;DEF;Pohlkamp Eric;SJ;23;0
-Minnesota Wild;Banc;DEF;Psenicka Max;UTH;20;1
-Minnesota Wild;Banc;DEF;Reid Cameron;NSH;19;1
-Minnesota Wild;Banc;DEF;Rudolph Daxon;BUF;18;0
-Minnesota Wild;Banc;DEF;Schneider Braden;NYR;25;3
-Minnesota Wild;Banc;DEF;Vaisanen Veeti;UTH;20;2
-Minnesota Wild;Banc;DEF;Vanecek Jakub;DAL;19;0
-Minnesota Wild;Banc;DEF;Verhoeff Keaton;SJ;18;0
-Minnesota Wild;Banc;DEF;Vilen Topias;NJ;23;4
-Minnesota Wild;Banc;DEF;Zadorov Nikita;BOS;31;1
-Minnesota Wild;Banc;GARD;Akhtyamov Artur;TOR;25;4
-Minnesota Wild;Banc;GARD;Clara Damian;ANA;22;2
-Minnesota Wild;Banc;GARD;D'Aigle Gabriel;PIT;20;1
-Minnesota Wild;Banc;GARD;Demko Thatcher;VAN;31;3
-Minnesota Wild;Banc;GARD;Husso Ville;ANA;32;3
-Minnesota Wild;Banc;GARD;Karbainov Matvei;;19;0
-Minnesota Wild;Banc;GARD;Kempf Nicholas;WSH;20;2
-Minnesota Wild;Banc;GARD;Larys Jan;;19;0
-Minnesota Wild;Banc;GARD;Leinonen Topias;BUF;23;3
-Minnesota Wild;Banc;GARD;Lyon Alex;BUF;31;3
-Minnesota Wild;Banc;GARD;Milic Thomas;WIN;23;3
-Minnesota Wild;Banc;GARD;Thornton Anson;;23;4
-Minnesota Wild;Banc;GARD;Villalta Matt;BUF;27;4
-New York Rangers;Partant;ATT;Batherson Drake;OTT;28;4
-New York Rangers;Partant;ATT;But Daniil;UTH;22;3
-New York Rangers;Partant;ATT;Geekie Morgan;BOS;28;3
-New York Rangers;Partant;ATT;Heineman Emil;NYI;25;4
-New York Rangers;Partant;ATT;Hintz Roope;DAL;30;3
-New York Rangers;Partant;ATT;Hischier Nico;NJ;27;3
-New York Rangers;Partant;ATT;Howden Brett;VGK;28;4
-New York Rangers;Partant;ATT;Hughes Jack;NJ;25;2
-New York Rangers;Partant;ATT;Kempe Adrian;LA;30;4
-New York Rangers;Partant;ATT;Laba Noah;NYR;23;0
-New York Rangers;Partant;ATT;Laferriere Alex;LA;25;1
-New York Rangers;Partant;ATT;Lafreniere Alexis;NYR;25;4
-New York Rangers;Partant;ATT;Landeskog Gabriel;COL;34;4
-New York Rangers;Partant;ATT;Mittelstadt Casey;BOS;28;4
-New York Rangers;Partant;ATT;Moore Oliver;CHI;22;3
-New York Rangers;Partant;ATT;Nichushkin Valeri;CLB;31;2
-New York Rangers;Partant;ATT;Rantanen Mikko;DAL;30;1
-New York Rangers;Partant;ATT;Roslovic Jack;TOR;30;4
-New York Rangers;Partant;ATT;Sennecke Beckett;ANA;21;2
-New York Rangers;Partant;ATT;Slafkovsky Juraj;MTL;22;3
-New York Rangers;Partant;ATT;Stephenson Chandler;SEA;32;4
-New York Rangers;Partant;ATT;Yurov Danila;MIN;23;4
-New York Rangers;Partant;DEF;Bahl Kevin;CGY;26;1
-New York Rangers;Partant;DEF;Gostisbehere S;CAR;33;1
-New York Rangers;Partant;DEF;Hughes Luke;NJ;24;4
-New York Rangers;Partant;DEF;Luneau Tristan;ANA;23;2
-New York Rangers;Partant;DEF;Matheson Mike;MTL;33;1
-New York Rangers;Partant;DEF;McNabb Brayden;VGK;35;4
-New York Rangers;Partant;DEF;Perbix Nick;NSH;28;4
-New York Rangers;Partant;DEF;Shea Ryan;EDM;30;0
-New York Rangers;Partant;DEF;Trouba Jacob;SJ;33;4
-New York Rangers;Partant;GARD;Blackwood Mack;COL;30;1
-New York Rangers;Partant;GARD;Garand Dylan;NYR;24;4
-New York Rangers;Partant;GARD;Kochetkov Pyotr;CAR;27;4
-New York Rangers;Banc;ATT;Appleton Mason;DET;31;3
-New York Rangers;Banc;ATT;Aspinall Nathan;NYR;20;0
-New York Rangers;Banc;ATT;Bednarik Kamil;NYI;20;2
-New York Rangers;Banc;ATT;Bourque Mavrik;NSH;24;4
-New York Rangers;Banc;ATT;Carcone Michael;UTH;30;2
-New York Rangers;Banc;ATT;Chytil Filip;VAN;27;3
-New York Rangers;Banc;ATT;Colangelo Sam;ANA;25;4
-New York Rangers;Banc;ATT;Command Alexander;WIN;18;0
-New York Rangers;Banc;ATT;Curran Maxmilian;CGY;20;2
-New York Rangers;Banc;ATT;Dean Zachary;STL;24;3
-New York Rangers;Banc;ATT;Doan Josh;BUF;23;4
-New York Rangers;Banc;ATT;Dolzhenkov Kirill;CLB;22;4
-New York Rangers;Banc;ATT;Duchene Matt;DAL;36;1
-New York Rangers;Banc;ATT;Duclair Anthony;NYI;31;4
-New York Rangers;Banc;ATT;Dumais Jordan;CLB;22;2
-New York Rangers;Banc;ATT;Fiala Kevin;LA;31;4
-New York Rangers;Banc;ATT;Foudy Liam;NYI;27;4
-New York Rangers;Banc;ATT;Funk Zac;BUF;23;2
-New York Rangers;Banc;ATT;Gaudette Adam;SJ;31;1
-New York Rangers;Banc;ATT;Geekie Conor;TPB;22;3
-New York Rangers;Banc;ATT;Genborg Eddie;DET;19;1
-New York Rangers;Banc;ATT;Goncalves Gage;TPB;25;1
-New York Rangers;Banc;ATT;Gorzynski Brandon;DAL;19;1
-New York Rangers;Banc;ATT;Grundstrom Carl;PHI;29;4
-New York Rangers;Banc;ATT;Hathaway Garnet;FLA;35;1
-New York Rangers;Banc;ATT;Joshua Dakota;TOR;30;2
-New York Rangers;Banc;ATT;Katolicky Simon;CGY;19;0
-New York Rangers;Banc;ATT;Kolesar Keegan;DET;29;4
-New York Rangers;Banc;ATT;Lafferty Sam;FLA;31;3
-New York Rangers;Banc;ATT;Letourneau Dean;BOS;20;2
-New York Rangers;Banc;ATT;Lindstrom Cayden;CLB;20;2
-New York Rangers;Banc;ATT;Lipinski Jaden;CGY;22;3
-New York Rangers;Banc;ATT;Locmelis Dans;BOS;23;0
-New York Rangers;Banc;ATT;Marques Miguel;NSH;20;1
-New York Rangers;Banc;ATT;McBain Jack;UTH;27;4
-New York Rangers;Banc;ATT;Myatovic Nico;ANA;22;3
-New York Rangers;Banc;ATT;Nemec Adam;OTT;19;0
-New York Rangers;Banc;ATT;O'Brien Jake;SEA;19;1
-New York Rangers;Banc;ATT;Poltapov Prokhor;BUF;24;4
-New York Rangers;Banc;ATT;Preston Mathis;ANA;18;0
-New York Rangers;Banc;ATT;Pridham Jack;TPB;21;0
-New York Rangers;Banc;ATT;Procyszyn Ethan;ANA;20;1
-New York Rangers;Banc;ATT;Rehkopf Carson;SEA;22;3
-New York Rangers;Banc;ATT;Rohrer Vinzenz;MTL;22;4
-New York Rangers;Banc;ATT;Rosen Isak;WIN;24;4
-New York Rangers;Banc;ATT;Ryabkin Ivan;CAR;19;1
-New York Rangers;Banc;ATT;Sissons Colton;TOR;33;4
-New York Rangers;Banc;ATT;Stramel Charlie;MIN;22;3
-New York Rangers;Banc;ATT;Suzdalev Alexander;WSH;23;4
-New York Rangers;Banc;ATT;Thorpe Tyler;MTL;21;1
-New York Rangers;Banc;ATT;Toropchenko Alexey;STL;27;2
-New York Rangers;Banc;ATT;Villeneuve Nathan;SEA;20;2
-New York Rangers;Banc;ATT;Wakely Dalyn;EDM;22;2
-New York Rangers;Banc;ATT;Wetsch Carson;SJ;20;2
-New York Rangers;Banc;ATT;Wheatcroft Chase;CAR;24;3
-New York Rangers;Banc;ATT;Wood Matthew;NSH;22;3
-New York Rangers;Banc;ATT;Xhekaj Florian;MTL;22;2
-New York Rangers;Banc;ATT;Ziemmer Koehn;LA;22;3
-New York Rangers;Banc;DEF;Brzustewicz Hunter;CGY;22;3
-New York Rangers;Banc;DEF;Del Mastro Ethan;CHI;24;3
-New York Rangers;Banc;DEF;Duda Artem;UTH;23;3
-New York Rangers;Banc;DEF;Galvas Tomas;PIT;20;0
-New York Rangers;Banc;DEF;George Isaiah;NYI;22;4
-New York Rangers;Banc;DEF;Grans Helge;PHI;24;4
-New York Rangers;Banc;DEF;Harris Jordan;BOS;26;3
-New York Rangers;Banc;DEF;Healey Ryan;NYI;22;4
-New York Rangers;Banc;DEF;Heimosalmi Aleksi;CAR;23;4
-New York Rangers;Banc;DEF;Heinola Ville;VGK;25;3
-New York Rangers;Banc;DEF;Korchinski Kevin;CHI;22;3
-New York Rangers;Banc;DEF;Krug Torey;STL;34;3
-New York Rangers;Banc;DEF;Lindgren Ryan;SEA;29;4
-New York Rangers;Banc;DEF;Mailloux Logan;STL;23;3
-New York Rangers;Banc;DEF;Middleton Jake;CGY;31;2
-New York Rangers;Banc;DEF;Mikkola Niko;FLA;30;1
-New York Rangers;Banc;DEF;Morrow Scott;NYR;24;4
-New York Rangers;Banc;DEF;Mukhamadullin Shakir;EDM;25;4
-New York Rangers;Banc;DEF;Smits Alberts;NYR;19;0
-New York Rangers;Banc;DEF;Ufko Ryan;NSH;23;4
-New York Rangers;Banc;DEF;Xhekaj Arber;MTL;25;2
-New York Rangers;Banc;GARD;Cournoyer Alexis;MTL;21;0
-New York Rangers;Banc;GARD;Gajan Adam;CHI;22;3
-New York Rangers;Banc;GARD;Kahkonen Kaapo;MTL;30;3
-New York Rangers;Banc;GARD;Markstrom Jacob;FLA;37;1
-New York Rangers;Banc;GARD;Meneghin Harrison;TPB;22;2
-New York Rangers;Banc;GARD;Montembeault Samuel;MTL;30;3
-New York Rangers;Banc;GARD;Poirier Rémi;WSH;25;4
-New York Rangers;Banc;GARD;Quapp Nikita;;24;4
-New York Rangers;Banc;GARD;Sogaard Mads;TPB;26;4
-New York Rangers;Banc;GARD;Stevenson Clay;WIN;27;4
-New York Rangers;Banc;GARD;Tarasov Daniil;DET;27;4
-New York Rangers;Banc;GARD;Varlamov Semeon;NYI;38;4
-New York Rangers;Banc;GARD;Volokhin Yevgeni;MTL;21;2
-New York Rangers;Banc;GARD;Wolf Dustin;CGY;25;2
+Équipe_pool	Statut	Position	joueurs	T	A	Exp
+Vancouver Canucks	Partant	ATT	Benn Jamie	DAL	37	4
+Vancouver Canucks	Partant	ATT	Bennett Sam	FLA	30	2
+Vancouver Canucks	Partant	ATT	Connor Kyle	WIN	30	2
+Vancouver Canucks	Partant	ATT	DeBrincat Alex	DET	29	1
+Vancouver Canucks	Partant	ATT	Eller Lars	FLA	37	4
+Vancouver Canucks	Partant	ATT	Forsberg Filip	NSH	32	3
+Vancouver Canucks	Partant	ATT	Kotkaniemi Jesperi	CAR	26	4
+Vancouver Canucks	Partant	ATT	Giroux Claude	OTT	39	3
+Vancouver Canucks	Partant	ATT	Granlund Mikael	ANA	35	2
+Vancouver Canucks	Partant	ATT	Haula Erik	LA	34	4
+Vancouver Canucks	Partant	ATT	Jenner Boone	WSH	33	4
+Vancouver Canucks	Partant	ATT	Kane Patrick	CHI	38	3
+Vancouver Canucks	Partant	ATT	Lehkonen Artturi	COL	31	2
+Vancouver Canucks	Partant	ATT	Mackinnon Nathan	COL	31	2
+Vancouver Canucks	Partant	ATT	Malkin Evgeni	PIT	40	3
+Vancouver Canucks	Partant	ATT	McDavid Connor	EDM	30	4
+Vancouver Canucks	Partant	ATT	Barron Morgan	WIN	28	4
+Vancouver Canucks	Partant	ATT	Danault Phillip	MTL	34	4
+Vancouver Canucks	Partant	ATT	Scheifele Mark	WIN	33	2
+Vancouver Canucks	Partant	ATT	Seguin Taylor	DAL	35	3
+Vancouver Canucks	Partant	ATT	Vilardi Gabriel	WIN	27	4
+Vancouver Canucks	Partant	ATT	Tavares John	TOR	36	2
+Vancouver Canucks	Partant	ATT	Verhaeghe Carter	FLA	31	1
+Vancouver Canucks	Partant	DEF	Bouchard Evan	EDM	27	1
+Vancouver Canucks	Partant	DEF	Carlson John	TPB	36	2
+Vancouver Canucks	Partant	DEF	Demelo Dylan	WIN	33	1
+Vancouver Canucks	Partant	DEF	Ekblad Aaron	FLA	31	2
+Vancouver Canucks	Partant	DEF	Drysdale Jamie	PHI	24	1
+Vancouver Canucks	Partant	DEF	Hutson Lane	MTL	23	4
+Vancouver Canucks	Partant	DEF	LaCombe Jackson	ANA	25	4
+Vancouver Canucks	Partant	DEF	Letang Khris	PIT	39	4
+Vancouver Canucks	Partant	GARD	Bussi Brandon	CAR	28	1
+Vancouver Canucks	Partant	GARD	Oettinger Jake	DAL	28	4
+Vancouver Canucks	Partant	GARD	Thompson Logan	WSH	29	1
+Vancouver Canucks	Banc	ATT	Arcuri Francesco	COL	23	4
+Vancouver Canucks	Banc	ATT	Barratt Evan		27	4
+Vancouver Canucks	Banc	ATT	Gallagher Branden	VAN	34	0
+Vancouver Canucks	Banc	ATT	Beaucage Alex		25	4
+Vancouver Canucks	Banc	ATT	Bicker Kevin	DET	22	3
+Vancouver Canucks	Banc	ATT	Brazeau Justin	PIT	28	1
+Vancouver Canucks	Banc	ATT	Caggiula Drake		32	4
+Vancouver Canucks	Banc	ATT	Dach Colton	EDM	24	0
+Vancouver Canucks	Banc	ATT	Dagenais Maddox	STL	18	0
+Vancouver Canucks	Banc	ATT	Damiani Riley		26	4
+Vancouver Canucks	Banc	ATT	Ovechkin Alex	WSH	40	0
+Vancouver Canucks	Banc	ATT	Desnoyers Elliot		25	4
+Vancouver Canucks	Banc	ATT	Dowd Nic	VGK	36	4
+Vancouver Canucks	Banc	ATT	Drouin Jonathan		31	2
+Vancouver Canucks	Banc	ATT	Foegele Warren	OTT	30	4
+Vancouver Canucks	Banc	ATT	Fontaine Gunnar		26	4
+Vancouver Canucks	Banc	ATT	Foudy Jean-Luc		24	4
+Vancouver Canucks	Banc	ATT	Iskhakov Ruslan	NYI	26	4
+Vancouver Canucks	Banc	ATT	Jarventie Emil	PIT	21	3
+Vancouver Canucks	Banc	ATT	Jones Max	EDM	29	4
+Vancouver Canucks	Banc	ATT	Kallionkieli Marcus		25	4
+Vancouver Canucks	Banc	ATT	Kilpinen Maximilian		23	2
+Vancouver Canucks	Banc	ATT	Kulich Jiri 	BUF	22	4
+Vancouver Canucks	Banc	ATT	Konecny Jakub		24	4
+Vancouver Canucks	Banc	ATT	Rust Brian	PIT	34	4
+Vancouver Canucks	Banc	ATT	Kuznetsov Evgeni		34	1
+Vancouver Canucks	Banc	ATT	Lane Aiden	CGY	19	1
+Vancouver Canucks	Banc	ATT	Lawrence Tynan	STL	18	0
+Vancouver Canucks	Banc	ATT	Lemieux Brendan		30	4
+Vancouver Canucks	Banc	ATT	Ljungman Daniel		24	4
+Vancouver Canucks	Banc	ATT	Ludtke Tanner	UTH	22	3
+Vancouver Canucks	Banc	ATT	Marchand Brad	FLA	38	3
+Vancouver Canucks	Banc	ATT	Marchessault Jonathan	NSH	36	4
+Vancouver Canucks	Banc	ATT	Morin Zachary		19	1
+Vancouver Canucks	Banc	ATT	Mrsic Tomas	STL	20	2
+Vancouver Canucks	Banc	ATT	Namestnikov Vladislav	WIN	34	2
+Vancouver Canucks	Banc	ATT	Nedopekin Nikita		21	3
+Vancouver Canucks	Banc	ATT	Nehring Zachary	WIN	21	3
+Vancouver Canucks	Banc	ATT	Perevalov Alexander	CAR	22	4
+Vancouver Canucks	Banc	ATT	Petrovsky Servac		22	4
+Vancouver Canucks	Banc	ATT	Pilgrim Carson		20	2
+Vancouver Canucks	Banc	ATT	Powell Noah	PHI	22	2
+Vancouver Canucks	Banc	ATT	Ranta Sampo	COL	26	4
+Vancouver Canucks	Banc	ATT	Schultz Ashton	BUF	20	1
+Vancouver Canucks	Banc	ATT	Shaw Mason	MIN	28	4
+Vancouver Canucks	Banc	ATT	Simoneau Xavier		25	4
+Vancouver Canucks	Banc	ATT	Simontaival Kasper		25	4
+Vancouver Canucks	Banc	ATT	Skinner Jeff		34	4
+Vancouver Canucks	Banc	ATT	Sumpf Julius	CHI	21	1
+Vancouver Canucks	Banc	ATT	Suvanto Oliver	WSH	18	0
+Vancouver Canucks	Banc	ATT	Tatar Tomas		36	3
+Vancouver Canucks	Banc	ATT	Thoreson Gavyn		21	2
+Vancouver Canucks	Banc	ATT	Vanriemsdyk James		37	3
+Vancouver Canucks	Banc	ATT	Wise Jake		26	4
+Vancouver Canucks	Banc	ATT	Zadina Filip		27	3
+Vancouver Canucks	Banc	ATT	Zimmer Max	CAR	29	4
+Vancouver Canucks	Banc	ATT	Zucker Jason	BUF	35	1
+Vancouver Canucks	Banc	DEF	Barnhill Sean	NYR	20	1
+Vancouver Canucks	Banc	DEF	Barrie Tyson	RET	35	4
+Vancouver Canucks	Banc	DEF	Bear Ethan	NYI	29	4
+Vancouver Canucks	Banc	DEF	Boltmann Jake	SJ	25	4
+Vancouver Canucks	Banc	DEF	Hanifin Noah	VGK	30	4
+Vancouver Canucks	Banc	DEF	Goljer Adam	LA	18	0
+Vancouver Canucks	Banc	DEF	Grudinin Vladimir	CAR	23	4
+Vancouver Canucks	Banc	DEF	Gudbranson Erik	CLB	34	4
+Vancouver Canucks	Banc	DEF	Kokkonen Mikko		26	4
+Vancouver Canucks	Banc	DEF	Kurtz Jayden	ANA	19	0
+Vancouver Canucks	Banc	DEF	Larsson Adam	SEA	34	1
+Vancouver Canucks	Banc	DEF	Leddy Nick	SJ	35	4
+Vancouver Canucks	Banc	DEF	Myers Tyler	DAL	37	4
+Vancouver Canucks	Banc	DEF	Nurse Darnell	SJ	32	4
+Vancouver Canucks	Banc	DEF	Olsson Anton		24	4
+Vancouver Canucks	Banc	DEF	Petry Jeff		39	4
+Vancouver Canucks	Banc	DEF	Piiparinen Juho	VGK	18	0
+Vancouver Canucks	Banc	DEF	Skahan Will	UTH	20	2
+Vancouver Canucks	Banc	DEF	Sokolovskii Maksim	PHI	18	0
+Vancouver Canucks	Banc	DEF	Suter Ryan		42	4
+Vancouver Canucks	Banc	DEF	Viro Eemil	DET	23	4
+Vancouver Canucks	Banc	DEF	Zanetti Brian		23	4
+Vancouver Canucks	Banc	GARD	Alexander Gage		24	4
+Vancouver Canucks	Banc	GARD	Delia Collin		32	4
+Vancouver Canucks	Banc	GARD	Gibson John	DET	33	4
+Vancouver Canucks	Banc	GARD	Lankinen Kevin	VAN	31	2
+Vancouver Canucks	Banc	GARD	Lindgren Charlie 	WSH	33	3
+Vancouver Canucks	Banc	GARD	Mandolese Kevin		26	4
+Vancouver Canucks	Banc	GARD	Mann Strauss		28	4
+Vancouver Canucks	Banc	GARD	Mrazek Petr		35	1
+Vancouver Canucks	Banc	GARD	Reimer James	NYR	38	4
+Vancouver Canucks	Banc	GARD	Rousseau William		24	3
+Vancouver Canucks	Banc	GARD	Tomek Matej		29	4
+Vancouver Canucks	Banc	GARD	Vanecek Vitek	NYI	31	2
+Vancouver Canucks	Banc	GARD	Zherenko Vadim	OTT	25	4
+Edmonton Oilers	Partant	ATT	Benson Zach	BUF	21	3
+Edmonton Oilers	Partant	ATT	Carlsson Leo	ANA	21	2
+Edmonton Oilers	Partant	ATT	Caufield Cole	MTL	26	4
+Edmonton Oilers	Partant	ATT	Coleman Blake	MIN	35	1
+Edmonton Oilers	Partant	ATT	Debrusk Jake	VAN	30	4
+Edmonton Oilers	Partant	ATT	Draisaitl Leon	EDM	31	4
+Edmonton Oilers	Partant	ATT	Frondell Anton	CHI	19	1
+Edmonton Oilers	Partant	ATT	Couturier Sean	PHI	34	2
+Edmonton Oilers	Partant	ATT	Hall Taylor	CAR	35	3
+Edmonton Oilers	Partant	ATT	Iafallo Alex	WIN	33	2
+Edmonton Oilers	Partant	ATT	Armia Joel	LA	33	2
+Edmonton Oilers	Partant	ATT	Killorn Alexander	ANA 	37	1
+Edmonton Oilers	Partant	ATT	Marner Mitch	VGK	29	4
+Edmonton Oilers	Partant	ATT	Mikheyev Ilya	TPB	31	1
+Edmonton Oilers	Partant	ATT	Monahan Sean	CLB	32	3
+Edmonton Oilers	Partant	ATT	Neighbours Jake	STL	24	2
+Edmonton Oilers	Partant	ATT	Palmieri Kyle	NYI	35	1
+Edmonton Oilers	Partant	ATT	Suter Pius	STL	30	2
+Edmonton Oilers	Partant	ATT	Teravainen Teuvo	CHI	32	1
+Edmonton Oilers	Partant	ATT	Tkachuk Matthew	FLA	29	1
+Edmonton Oilers	Partant	ATT	Yamamoto Kailer	UTH	28	1
+Edmonton Oilers	Partant	ATT	Zegras Trevor	PHI	25	4
+Edmonton Oilers	Partant	DEF	Dickinson Sam	SJ	20	2
+Edmonton Oilers	Partant	DEF	Doughty Drew	LA	36	2
+Edmonton Oilers	Partant	DEF	Hamilton Dougie	NJ	33	3
+Edmonton Oilers	Partant	DEF	Hughes Quinton	MIN	27	4
+Edmonton Oilers	Partant	DEF	Sanheim Travis	PHI	30	4
+Edmonton Oilers	Partant	DEF	Schmidt Nate	UTH	34	1
+Edmonton Oilers	Partant	DEF	Slavin Jaccob	CAR	32	3
+Edmonton Oilers	Partant	DEF	Valimaki Juuso	CAR	28	1
+Edmonton Oilers	Partant	GARD	Dipietro Michael	BOS	27	3
+Edmonton Oilers	Partant	GARD	Hart Carter	VGK	28	0
+Edmonton Oilers	Partant	GARD	Hofer Joel	STL	26	3
+Edmonton Oilers	Banc	ATT	Afanasyev Yegor		26	4
+Edmonton Oilers	Banc	ATT	Greer A.J.	ANA	29	4
+Edmonton Oilers	Banc	ATT	Avramov Fyodor	CAR	20	2
+Edmonton Oilers	Banc	ATT	Barkov Alexander	FLA	31	4
+Edmonton Oilers	Banc	ATT	Basha Andrew	CGY	21	2
+Edmonton Oilers	Banc	ATT	Beauvillier Anthony	WSH	29	2
+Edmonton Oilers	Banc	ATT	Boilard Raoul	NYR	21	2
+Edmonton Oilers	Banc	ATT	Cajkovic Maxim		26	4
+Edmonton Oilers	Banc	ATT	Cali Ryder	FLA	18	0
+Edmonton Oilers	Banc	ATT	Cerrato Charlie	CAR	21	0
+Edmonton Oilers	Banc	ATT	Compher J.T	DET	31	1
+Edmonton Oilers	Banc	ATT	Khusnutdinov Marat	BOS	24	4
+Edmonton Oilers	Banc	ATT	Cullen Wyatt	NSH	18	0
+Edmonton Oilers	Banc	ATT	Danielson Nate	DET	22	2
+Edmonton Oilers	Banc	ATT	Desnoyers Caleb	UTH	19	1
+Edmonton Oilers	Banc	ATT	Domi Max	TOR	31	3
+Edmonton Oilers	Banc	ATT	Fix-Wolansky Trey	VAN	27	4
+Edmonton Oilers	Banc	ATT	Frederic Trent	EDM	29	4
+Edmonton Oilers	Banc	ATT	Gard Matthew	PHI	19	1
+Edmonton Oilers	Banc	ATT	Hemming Emil	DAL	20	2
+Edmonton Oilers	Banc	ATT	Hermansson Elton	LA	18	0
+Edmonton Oilers	Banc	ATT	Hopkins Tyler	TOR	20	1
+Edmonton Oilers	Banc	ATT	Horcoff Will	PIT	20	1
+Edmonton Oilers	Banc	ATT	Huberdeau Jonathan	CGY	33	2
+Edmonton Oilers	Banc	ATT	Hughes D Jack		23	1
+Edmonton Oilers	Banc	ATT	Ignatavicius Simas	FLA	19	0
+Edmonton Oilers	Banc	ATT	Isayev Dmitri	OTT	19	1
+Edmonton Oilers	Banc	ATT	Janmark Mattias	EDM	34	4
+Edmonton Oilers	Banc	ATT	Kane Evander		35	1
+Edmonton Oilers	Banc	ATT	Kayumov Artur	CHI	29	4
+Edmonton Oilers	Banc	ATT	Kilfoil Liam		19	1
+Edmonton Oilers	Banc	ATT	Klepov Nikita	ANA	18	0
+Edmonton Oilers	Banc	ATT	Kulebyakin Oleg	TPB	19	0
+Edmonton Oilers	Banc	ATT	Lafreniere Tommy	EDM	20	1
+Edmonton Oilers	Banc	ATT	Lavoie Raphael	VGK	26	2
+Edmonton Oilers	Banc	ATT	Lee Ryker	NSH	20	1
+Edmonton Oilers	Banc	ATT	Lorenz Reiger	MIN	22	4
+Edmonton Oilers	Banc	ATT	Malhotra Caleb	VAN	18	0
+Edmonton Oilers	Banc	ATT	Mercuri Lucas	TPB	24	4
+Edmonton Oilers	Banc	ATT	Morozov D. Ilya	BUF	18	0
+Edmonton Oilers	Banc	ATT	Murtagh Jack	PHI	19	1
+Edmonton Oilers	Banc	ATT	Nelson Danny	NYI	21	3
+Edmonton Oilers	Banc	ATT	Niederreiter Nino	WIN	34	4
+Edmonton Oilers	Banc	ATT	Nizameyev Artemi		21	1
+Edmonton Oilers	Banc	ATT	O'Reilly Samuel	TPB	20	2
+Edmonton Oilers	Banc	ATT	Patterson Riley	VAN	20	2
+Edmonton Oilers	Banc	ATT	Paupanekis Hayden	MTL	19	1
+Edmonton Oilers	Banc	ATT	Plante Victor	DET	18	0
+Edmonton Oilers	Banc	ATT	Reichel Lukas	BOS	24	4
+Edmonton Oilers	Banc	ATT	Salminen Samu	FLA	23	4
+Edmonton Oilers	Banc	ATT	Spence Malcolm	NYR	20	1
+Edmonton Oilers	Banc	ATT	Spicer Cole	BOS	22	4
+Edmonton Oilers	Banc	ATT	Traff Herman	ANA	21	2
+Edmonton Oilers	Banc	ATT	Vatrano Frank	ANA	32	3
+Edmonton Oilers	Banc	ATT	Vrana Jakub		31	2
+Edmonton Oilers	Banc	ATT	Vuollet Oskar	CAR	21	2
+Edmonton Oilers	Banc	ATT	Willhoft Dustin		19	1
+Edmonton Oilers	Banc	ATT	Wisdom Zaccharya	SEA	22	3
+Edmonton Oilers	Banc	DEF	Aitcheson Kashawn	NYI	20	1
+Edmonton Oilers	Banc	DEF	Blankenburg Nick	TOR	28	3
+Edmonton Oilers	Banc	DEF	Boelius Lasse	ANA	19	1
+Edmonton Oilers	Banc	DEF	Doyle Eddy		19	0
+Edmonton Oilers	Banc	DEF	Emberson Ty	EDM	26	4
+Edmonton Oilers	Banc	DEF	Forsmark Simon		23	4
+Edmonton Oilers	Banc	DEF	Jokiharju Henri	BOS	27	2
+Edmonton Oilers	Banc	DEF	Jones Caleb	BUF	29	1
+Edmonton Oilers	Banc	DEF	Klimpke Brayden	MTL	19	0
+Edmonton Oilers	Banc	DEF	Knyzhov Nikolai		28	3
+Edmonton Oilers	Banc	DEF	Lavoie Tomas	UTH	20	2
+Edmonton Oilers	Banc	DEF	Lin Ryan	SJ	18	0
+Edmonton Oilers	Banc	DEF	Mackenzie Ethan	TOR	20	0
+Edmonton Oilers	Banc	DEF	Meehan Ben		25	4
+Edmonton Oilers	Banc	DEF	Pylenkov Daniil	TPB	26	0
+Edmonton Oilers	Banc	DEF	Ristolainen Rasmus	PHI	32	3
+Edmonton Oilers	Banc	DEF	Salin Otto	LA	22	4
+Edmonton Oilers	Banc	DEF	Shcherbakov Nikita	NJ	19	0
+Edmonton Oilers	Banc	DEF	Soderstrom Victor		26	2
+Edmonton Oilers	Banc	DEF	Svozil Stanislav		24	4
+Edmonton Oilers	Banc	DEF	York Cam	PHI	26	2
+Edmonton Oilers	Banc	GARD	Bernstein Thatcher		20	2
+Edmonton Oilers	Banc	GARD	Boettinger Harrison		19	0
+Edmonton Oilers	Banc	GARD	Greaves Jet	CLB	24	3
+Edmonton Oilers	Banc	GARD	George Carter	LA	20	2
+Edmonton Oilers	Banc	GARD	Goos Mans	DAL	19	1
+Edmonton Oilers	Banc	GARD	Malik Nick		25	4
+Edmonton Oilers	Banc	GARD	Merilainen Leevi	VAN	23	4
+Edmonton Oilers	Banc	GARD	Miller Landon		21	2
+Edmonton Oilers	Banc	GARD	Moysevich Pavel	VGK	22	2
+Edmonton Oilers	Banc	GARD	Nabokov Ilya	COL	23	2
+Edmonton Oilers	Banc	GARD	Rimpinen Petteri	LA	20	1
+Edmonton Oilers	Banc	GARD	Sergeyev Arseni	CGY	24	0
+Edmonton Oilers	Banc	GARD	Slukynsky Hampton	LA	21	0
+Edmonton Oilers	Banc	GARD	Stierngranat Joel		21	2
+Edmonton Oilers	Banc	GARD	Zavragin Yegor	PHI	23	3
+Colorado Avalanches	Partant	ATT	Boeser Brock	VAN	30	4
+Colorado Avalanches	Partant	ATT	Farabee Joel	CGY	27	4
+Colorado Avalanches	Partant	ATT	Gaudreau Freddy	SEA	33	4
+Colorado Avalanches	Partant	ATT	Hagel Brandon	TPB	28	4
+Colorado Avalanches	Partant	ATT	Horvat Bo	NYI	31	4
+Colorado Avalanches	Partant	ATT	Kucherov Nikita	TPB	33	4
+Colorado Avalanches	Partant	ATT	Marchment Mason	SJ	31	4
+Colorado Avalanches	Partant	ATT	Martinook Jordan	CAR	34	4
+Colorado Avalanches	Partant	ATT	Tippett Owen	PHI	27	4
+Colorado Avalanches	Partant	ATT	Minten Fraser	BOS	22	3
+Colorado Avalanches	Partant	ATT	Moore Trevor	LA	32	4
+Colorado Avalanches	Partant	ATT	Novak Tommy	PIT	29	4
+Colorado Avalanches	Partant	ATT	O'Connor Drew	VAN	28	2
+Colorado Avalanches	Partant	ATT	Olofsson Victor	VGK	32	3
+Colorado Avalanches	Partant	ATT	Protas Ilya	WSH	20	1
+Colorado Avalanches	Partant	ATT	Rodrigues Evan	NJ	33	1
+Colorado Avalanches	Partant	ATT	Schwartz Jaden	COL	34	1
+Colorado Avalanches	Partant	ATT	Smith William	SJ	21	3
+Colorado Avalanches	Partant	ATT	Svechkov Fedor	COL	23	3
+Colorado Avalanches	Partant	ATT	Svechnikov Andrei	CAR	26	4
+Colorado Avalanches	Partant	ATT	Boldy Matthew	MIN	25	4
+Colorado Avalanches	Partant	ATT	Tuch Alex	WSH	30	3
+Colorado Avalanches	Partant	DEF	Dumoulin Brian	LA	35	4
+Colorado Avalanches	Partant	DEF	Pulock Ryan	NYI	32	4
+Colorado Avalanches	Partant	DEF	Fowler Cam	STL	35	3
+Colorado Avalanches	Partant	DEF	Heiskanen Miro	DAL	27	1
+Colorado Avalanches	Partant	DEF	Kuznetsov Yan	CGY	24	4
+Colorado Avalanches	Partant	DEF	Makar Cale	COL	27	4
+Colorado Avalanches	Partant	DEF	Miller K'Andre	CAR	27	4
+Colorado Avalanches	Partant	DEF	Spence Jordan	OTT	26	4
+Colorado Avalanches	Partant	DEF	Toews Devon	COL	33	1
+Colorado Avalanches	Partant	GARD	Shesterkin Igor	NYR	31	4
+Colorado Avalanches	Partant	GARD	Ullmark Linus	OTT	33	0
+Colorado Avalanches	Partant	GARD	Vejmelka Karel	UTH	30	3
+Colorado Avalanches	Banc	ATT	Andersson Ludvig		18	0
+Colorado Avalanches	Banc	ATT	Bartholdsson Nils	BOS	18	0
+Colorado Avalanches	Banc	ATT	McLeod Ryan	BUF	27	4
+Colorado Avalanches	Banc	ATT	Brabenec Jakub		23	4
+Colorado Avalanches	Banc	ATT	Burrows Hagen	TPB	21	2
+Colorado Avalanches	Banc	ATT	Busch Shea	FLA	20	0
+Colorado Avalanches	Banc	ATT	Cataford Mathieu	VGK	21	3
+Colorado Avalanches	Banc	ATT	Chibrikov Nikita	WIN	24	3
+Colorado Avalanches	Banc	ATT	Chmelevski Alex	SJ	27	4
+Colorado Avalanches	Banc	ATT	Chromiak Martin	LA	24	4
+Colorado Avalanches	Banc	ATT	Czata Ethan	TPB	19	1
+Colorado Avalanches	Banc	ATT	Dickinson Jason	EDM	31	4
+Colorado Avalanches	Banc	ATT	Di Iorio Alessandro	CLB	18	0
+Colorado Avalanches	Banc	ATT	Edstrom David	NSH	22	2
+Colorado Avalanches	Banc	ATT	Engvall Pierre	NYI	30	4
+Colorado Avalanches	Banc	ATT	Epperson Kristian	LA	20	1
+Colorado Avalanches	Banc	ATT	Gauthier Ethan	TPB	22	3
+Colorado Avalanches	Banc	ATT	Greene Ryan	CHI	23	4
+Colorado Avalanches	Banc	ATT	Gustafsson David	PIT	26	4
+Colorado Avalanches	Banc	ATT	Hafele Landon	WIN	19	0
+Colorado Avalanches	Banc	ATT	Hextall Jack	CGY	18	0
+Colorado Avalanches	Banc	ATT	Holtz Alexander	VGK	25	3
+Colorado Avalanches	Banc	ATT	Humphreys Christian	COL	21	2
+Colorado Avalanches	Banc	ATT	Iginla Tij	UTH	20	2
+Colorado Avalanches	Banc	ATT	Isaksson Max		19	0
+Colorado Avalanches	Banc	ATT	Jardine Evan	CLB	19	0
+Colorado Avalanches	Banc	ATT	Kaskimaki Aleksanteri	STL	23	4
+Colorado Avalanches	Banc	ATT	Katzin Lev		19	1
+Colorado Avalanches	Banc	ATT	Kidney Riley		23	4
+Colorado Avalanches	Banc	ATT	Klimovich Danila	PHI	24	4
+Colorado Avalanches	Banc	ATT	Knuble Cole	PHI	22	3
+Colorado Avalanches	Banc	ATT	Kupari Rasmus	WIN	26	3
+Colorado Avalanches	Banc	ATT	Kurashev Philipp		27	4
+Colorado Avalanches	Banc	ATT	Loponen Markus	WIN	20	2
+Colorado Avalanches	Banc	ATT	Lucius Cruz	ANA	22	4
+Colorado Avalanches	Banc	ATT	Martino Ayrton	DAL	23	4
+Colorado Avalanches	Banc	ATT	Mateiko Eriks	WSH	21	2
+Colorado Avalanches	Banc	ATT	McKinney Cole	SJ	19	1
+Colorado Avalanches	Banc	ATT	Moe Mason	NJ	18	1
+Colorado Avalanches	Banc	ATT	Musty Quentin	SJ	21	3
+Colorado Avalanches	Banc	ATT	Nesbitt Jack	PHI	20	1
+Colorado Avalanches	Banc	ATT	Olausson Oskar		24	3
+Colorado Avalanches	Banc	ATT	Raddysh Taylor	NYR	29	3
+Colorado Avalanches	Banc	ATT	Robidas Justin	CAR	23	4
+Colorado Avalanches	Banc	ATT	Rogowski Brooks	VAN	18	0
+Colorado Avalanches	Banc	ATT	Romano Luca	NYI	19	1
+Colorado Avalanches	Banc	ATT	Saad Brandon		34	3
+Colorado Avalanches	Banc	ATT	Sawyer Logan	MTL	20	2
+Colorado Avalanches	Banc	ATT	Steiner Lars	STL	19	0
+Colorado Avalanches	Banc	ATT	Slaggert Landon	CHI	24	2
+Colorado Avalanches	Banc	ATT	Stromgren William	CGY	23	4
+Colorado Avalanches	Banc	ATT	Suzuki Ryan	OTT	25	4
+Colorado Avalanches	Banc	ATT	Texier Alexandre	MTL	27	4
+Colorado Avalanches	Banc	ATT	Turcotte Alex	LA	26	1
+Colorado Avalanches	Banc	ATT	Vanacker Marek	 CHI	20	2
+Colorado Avalanches	Banc	ATT	Walton Kieron	WIN	20	1
+Colorado Avalanches	Banc	ATT	Westergard Max	PHI	19	1
+Colorado Avalanches	Banc	ATT	Wood Miles	TOR	31	4
+Colorado Avalanches	Banc	DEF	Allen Cameron	WSH	22	3
+Colorado Avalanches	Banc	DEF	Bleyl Tommy	NSH	19	0
+Colorado Avalanches	Banc	DEF	Cameron Carson		19	1
+Colorado Avalanches	Banc	DEF	Croskery Callum		19	0
+Colorado Avalanches	Banc	DEF	Fischer Lukas	STL	20	2
+Colorado Avalanches	Banc	DEF	Gustafsson Malte	NYI	18	0
+Colorado Avalanches	Banc	DEF	Handel Carlos	MTL	19	1
+Colorado Avalanches	Banc	DEF	Kleber Adam	BUF	20	2
+Colorado Avalanches	Banc	DEF	Mania Matthew		22	3
+Colorado Avalanches	Banc	DEF	Nause Evan	WIN	24	4
+Colorado Avalanches	Banc	DEF	Osburn Luke	BUF	19	0
+Colorado Avalanches	Banc	DEF	Pickford Bryce	MTL	20	1
+Colorado Avalanches	Banc	DEF	Price Caden	SEA	21	3
+Colorado Avalanches	Banc	DEF	Ferraro Mario	WIN	28	4
+Colorado Avalanches	Banc	DEF	Ralph Colin	STL	21	2
+Colorado Avalanches	Banc	DEF	Reinbacher David	MTL	22	3
+Colorado Avalanches	Banc	DEF	Romanov Alex	NYI	27	3
+Colorado Avalanches	Banc	DEF	Roy Matt	WSH	31	4
+Colorado Avalanches	Banc	DEF	Sahlin Wallenius Leo	SJ	20	2
+Colorado Avalanches	Banc	DEF	Smith Jackson	CLB	20	1
+Colorado Avalanches	Banc	DEF	Thompson Jack	VAN	24	1
+Colorado Avalanches	Banc	GARD	Bjorklund Garin	WSH	24	4
+Colorado Avalanches	Banc	GARD	Brennan Tyler		23	4
+Colorado Avalanches	Banc	GARD	Cloutier Louka	COL	21	0
+Colorado Avalanches	Banc	GARD	Dyck Reid		23	4
+Colorado Avalanches	Banc	GARD	Gardner Evan	CLB	21	2
+Colorado Avalanches	Banc	GARD	Gerasimyuk Kirill	FLA	23	4
+Colorado Avalanches	Banc	GARD	Gustavsson Filip	MIN	28	4
+Colorado Avalanches	Banc	GARD	Hellnemo Alex		23	3
+Colorado Avalanches	Banc	GARD	Haider Ethan		25	4
+Colorado Avalanches	Banc	GARD	Matecha Lukas		21	2
+Colorado Avalanches	Banc	GARD	Milota Jakub	NSH	20	2
+Colorado Avalanches	Banc	GARD	Nilsson Douglas		18	0
+Colorado Avalanches	Banc	GARD	Ravensbergen Josh	SJ	20	1
+Colorado Avalanches	Banc	GARD	Reidler Kevin	OTT	22	4
+Colorado Avalanches	Banc	GARD	Tvrznik Tobias	COL	18	0
+utah Mammouth	Partant	ATT	Aho Sebastian	CAR	29	4
+utah Mammouth	Partant	ATT	Bertuzzi Tyler	CHI	32	1
+utah Mammouth	Partant	ATT	Coyle Charlie	CLB	34	3
+utah Mammouth	Partant	ATT	Jarvis Seth	CAR	24	4
+utah Mammouth	Partant	ATT	Dorofeyev Pavel	NYR	26	1
+utah Mammouth	Partant	ATT	Eberle Jordan	SEA	36	4
+utah Mammouth	Partant	ATT	Ehlers Nikolaj	CAR	31	2
+utah Mammouth	Partant	ATT	Karlsson William	VGK	34	4
+utah Mammouth	Partant	ATT	Knies Matthew	CLB	24	0
+utah Mammouth	Partant	ATT	Dvorak Christian	PHI	31	1
+utah Mammouth	Partant	ATT	Lowry Adam	WIN	32	4
+utah Mammouth	Partant	ATT	Mantha Anthony	NJ	32	0
+utah Mammouth	Partant	ATT	Martone Porter	PHI	20	0
+utah Mammouth	Partant	ATT	Nelson Brock	COL	35	1
+utah Mammouth	Partant	ATT	Panarin Artemi	LA	35	4
+utah Mammouth	Partant	ATT	Paul Nicolas	TOR	31	4
+utah Mammouth	Partant	ATT	Reinhart Sam	FLA	31	2
+utah Mammouth	Partant	ATT	Trocheck Vince	UTH	33	4
+utah Mammouth	Partant	ATT	Nugent-Hop Ryan	EDM	33	1
+utah Mammouth	Partant	ATT	Zibanejad Mika	NYR	33	1
+utah Mammouth	Partant	DEF	Barron Justin	STL	25	0
+utah Mammouth	Partant	DEF	Chychrun Jakob	WSH	28	4
+utah Mammouth	Partant	DEF	DeAngelo Anthony	NYI	31	1
+utah Mammouth	Partant	DEF	Dunn Vince	SEA	30	4
+utah Mammouth	Partant	DEF	Faulk Justin	DET	34	3
+utah Mammouth	Partant	DEF	Hronek Filip	VAN	29	4
+utah Mammouth	Partant	DEF	Jones Seth	FLA	32	1
+utah Mammouth	Partant	DEF	Brodin Jonas	MIN	33	4
+utah Mammouth	Partant	DEF	Gustafsson Erik	LA	33	3
+utah Mammouth	Partant	GARD	Bobrovsky Sergei	TOR	37	4
+utah Mammouth	Partant	GARD	Sorokin Ilya	NYI	31	1
+utah Mammouth	Partant	GARD	Vasilevskiy Andrei	TPB	31	4
+utah Mammouth	Banc	ATT	Andersson Adam	MIN	18	0
+utah Mammouth	Banc	ATT	Belle William	TOR	20	1
+utah Mammouth	Banc	ATT	Benson Tyler		28	4
+utah Mammouth	Banc	ATT	Bernat Lucian	VAN	18	0
+utah Mammouth	Banc	ATT	Berzkalns Rudolfs	EDM	18	0
+utah Mammouth	Banc	ATT	Bjorck Wilson	VAN	21	1
+utah Mammouth	Banc	ATT	Bowes Spencer	NYR	19	0
+utah Mammouth	Banc	ATT	Chudzinski Rian	ANA	19	0
+utah Mammouth	Banc	ATT	Costmar Arvid		25	4
+utah Mammouth	Banc	ATT	Dach Kale	PIT	19	1
+utah Mammouth	Banc	ATT	Denisenko Grigori		26	2
+utah Mammouth	Banc	ATT	Drott Arvid	FLA	19	1
+utah Mammouth	Banc	ATT	Dewar Connor  	PIT	27	4
+utah Mammouth	Banc	ATT	Edmonds Lucas		25	4
+utah Mammouth	Banc	ATT	Fischer Christian	RET	29	4
+utah Mammouth	Banc	ATT	Foligno Marcus	MIN	35	1
+utah Mammouth	Banc	ATT	Fortier Gabriel		27	4
+utah Mammouth	Banc	ATT	Fyodorov Viktor	SEA	18	0
+utah Mammouth	Banc	ATT	Groshev Maxim	TPB	25	4
+utah Mammouth	Banc	ATT	Gurianov Denis		29	3
+utah Mammouth	Banc	ATT	Harkins Jansen	TPB	29	4
+utah Mammouth	Banc	ATT	Henriksson Karl	NYR	26	4
+utah Mammouth	Banc	ATT	Hillstrom Gustav	NJ	19	1
+utah Mammouth	Banc	ATT	Larkin Dylan	DET	30	4
+utah Mammouth	Banc	ATT	Johansson Marcus		36	1
+utah Mammouth	Banc	ATT	Jost Tyson	NSH	28	4
+utah Mammouth	Banc	ATT	Katchouk Boris		28	4
+utah Mammouth	Banc	ATT	Konecny Travis	PHI	29	1
+utah Mammouth	Banc	ATT	Kostov Alex	LA	20	0
+utah Mammouth	Banc	ATT	Laughton Scott	LA	32	4
+utah Mammouth	Banc	ATT	Lazar Curtis		31	4
+utah Mammouth	Banc	ATT	Lefebvre Liam	LA	19	0
+utah Mammouth	Banc	ATT	McGinn Brock		33	4
+utah Mammouth	Banc	ATT	Milne Mikey		24	4
+utah Mammouth	Banc	ATT	Mooney LJ John	MTL	19	0
+utah Mammouth	Banc	ATT	Mutryn Edward Teddy	SJ	19	1
+utah Mammouth	Banc	ATT	Nikolayev Ilya		25	4
+utah Mammouth	Banc	ATT	Wilson Thomas	WSH	32	1
+utah Mammouth	Banc	ATT	Olsen Zachery	TOR	18	0
+utah Mammouth	Banc	ATT	Oshie TJ	RET	40	4
+utah Mammouth	Banc	ATT	Pavelski Joe	RET	42	3
+utah Mammouth	Banc	ATT	Pearson Tanner		34	1
+utah Mammouth	Banc	ATT	Pettersen Mathias		26	4
+utah Mammouth	Banc	ATT	Pitlick Rem		29	4
+utah Mammouth	Banc	ATT	Pivonka Jacob		27	4
+utah Mammouth	Banc	ATT	Pobezal Tomas		20	1
+utah Mammouth	Banc	ATT	Pugachyov Gleb	MTL	18	0
+utah Mammouth	Banc	ATT	Rashevsky Dmitri	WIN	26	4
+utah Mammouth	Banc	ATT	Sanford Zach		32	4
+utah Mammouth	Banc	ATT	Savage Redmond		23	4
+utah Mammouth	Banc	ATT	Schwindt Cole	FLA	25	4
+utah Mammouth	Banc	ATT	Sjoberg Albert		23	4
+utah Mammouth	Banc	ATT	Smith Givani		29	4
+utah Mammouth	Banc	ATT	Vandenberg Thomas	LA	18	0
+utah Mammouth	Banc	ATT	Wennberg Alex	SJ	32	1
+utah Mammouth	Banc	ATT	Tanev Brandon	UTH	35	3
+utah Mammouth	Banc	ATT	Terry Troy	ANA	29	1
+utah Mammouth	Banc	ATT	Tieksola Tuukka		25	4
+utah Mammouth	Banc	DEF	Addison Calen		26	2
+utah Mammouth	Banc	DEF	Agafonov Maxim	SEA	19	1
+utah Mammouth	Banc	DEF	Alalauri Samu	CHI	18	0
+utah Mammouth	Banc	DEF	Amico Carter	PHI	19	1
+utah Mammouth	Banc	DEF	Bilecki Alexander	TOR	18	0
+utah Mammouth	Banc	DEF	Marino John	UTH	29	1
+utah Mammouth	Banc	DEF	Edvinsson Simon	DET	24	0
+utah Mammouth	Banc	DEF	Ekman-Larsson O	TOR	35	3
+utah Mammouth	Banc	DEF	Floris Jakub	NSH	19	0
+utah Mammouth	Banc	DEF	Forbort Derek	CGY	34	4
+utah Mammouth	Banc	DEF	Parayko Colton	STL	33	1
+utah Mammouth	Banc	DEF	Iorio Vincent	NYR	24	4
+utah Mammouth	Banc	DEF	Kettles Peyton	PIT	19	1
+utah Mammouth	Banc	DEF	Lindell Esa	DAL	32	4
+utah Mammouth	Banc	DEF	Maatta Olli	MIN	32	2
+utah Mammouth	Banc	DEF	Merkley Ryan		26	4
+utah Mammouth	Banc	DEF	Olofsson Axel	COL	18	0
+utah Mammouth	Banc	DEF	Robertson Matt	NYR	25	2
+utah Mammouth	Banc	DEF	Seeley Ronan	CAR	24	4
+utah Mammouth	Banc	DEF	Vanriemsdyk Trevor	PIT	35	3
+utah Mammouth	Banc	GARD	Andersen Fred	EDM	37	2
+utah Mammouth	Banc	GARD	DiVincentiis Domenic	WIN	22	2
+utah Mammouth	Banc	GARD	Fanti Ryan	CLB	27	4
+utah Mammouth	Banc	GARD	Fetterolf Ryder	CAR	19	0
+utah Mammouth	Banc	GARD	Kerkola Patrik		19	1
+utah Mammouth	Banc	GARD	Pickard Calvin	MIN	33	1
+utah Mammouth	Banc	GARD	Plumins Patriks	TOR	19	0
+utah Mammouth	Banc	GARD	Pradel Michal	DET	19	1
+utah Mammouth	Banc	GARD	Psohlavec Martin	PHI	18	0
+utah Mammouth	Banc	GARD	Rittich David	NJ	33	4
+utah Mammouth	Banc	GARD	Shurygin Stepan	TPB	19	0
+utah Mammouth	Banc	GARD	Sorqvist Isak		19	1
+utah Mammouth	Banc	GARD	Vermirovsky David		18	0
+utah Mammouth	Banc	GARD	Vondras Jakub		22	4
+utah Mammouth	Banc	GARD	Wedgewood Scott	COL	34	1
+Toronto Maple Leafs	Partant	ATT	Anderson Josh	MTL	32	4
+Toronto Maple Leafs	Partant	ATT	Boqvist Jesper	NJ	28	4
+Toronto Maple Leafs	Partant	ATT	Bratt Jesper	NJ	28	4
+Toronto Maple Leafs	Partant	ATT	Carrier William	CAR	31	4
+Toronto Maple Leafs	Partant	ATT	Cirelli Anthony	TPB	29	2
+Toronto Maple Leafs	Partant	ATT	Eichel Jack	VGK	30	4
+Toronto Maple Leafs	Partant	ATT	Guentzel Jake	TPB	32	3
+Toronto Maple Leafs	Partant	ATT	Hertl Tomas	VGK	33	2
+Toronto Maple Leafs	Partant	ATT	Kadri Nazem	COL	36	4
+Toronto Maple Leafs	Partant	ATT	Keller Clayton	UTH	28	4
+Toronto Maple Leafs	Partant	ATT	Lee Anders	UTH	36	2
+Toronto Maple Leafs	Partant	ATT	Matthews Auston	TOR	29	2
+Toronto Maple Leafs	Partant	ATT	Lundell Anton	FLA	25	4
+Toronto Maple Leafs	Partant	ATT	Pastrnak David	BOS	30	4
+Toronto Maple Leafs	Partant	ATT	Pettersson Elias	VAN	27	2
+Toronto Maple Leafs	Partant	ATT	Peterka J-J	BOS	25	4
+Toronto Maple Leafs	Partant	ATT	Point Brayden	TPB	30	4
+Toronto Maple Leafs	Partant	ATT	Raymond Lucas	DET	24	4
+Toronto Maple Leafs	Partant	ATT	Strome Dylan	WSH	29	2
+Toronto Maple Leafs	Partant	ATT	Suzuki Nick	MTL	27	1
+Toronto Maple Leafs	Partant	ATT	Toffoli Tyler	SJ	34	4
+Toronto Maple Leafs	Partant	ATT	Zacha Pavel	BOS	29	4
+Toronto Maple Leafs	Partant	DEF	Andersson Rasmus	VGK	30	4
+Toronto Maple Leafs	Partant	DEF	Carrier Alexandre	MTL	30	4
+Toronto Maple Leafs	Partant	DEF	Ekholm Mattias	EDM	36	4
+Toronto Maple Leafs	Partant	DEF	Fox Adam	NYR	29	2
+Toronto Maple Leafs	Partant	DEF	Karlsson Erik	PIT	36	4
+Toronto Maple Leafs	Partant	DEF	Montour Brandon	SEA	32	4
+Toronto Maple Leafs	Partant	DEF	Samuelsson Mattias	BUF	26	4
+Toronto Maple Leafs	Partant	DEF	Sanderson Jake	OTT	24	4
+Toronto Maple Leafs	Partant	DEF	Wilsby Adam	NSH	26	4
+Toronto Maple Leafs	Partant	GARD	Daccord Joel	SEA	30	4
+Toronto Maple Leafs	Partant	GARD	Hellebuyck Conor	NJ	33	4
+Toronto Maple Leafs	Partant	GARD	Skinner Stuart	WIN	28	4
+Toronto Maple Leafs	Banc	ATT	Anoshko Ivan		22	3
+Toronto Maple Leafs	Banc	ATT	Bains Arshdeep	VAN	25	4
+Toronto Maple Leafs	Banc	ATT	Blueger Teodors	TOR	32	4
+Toronto Maple Leafs	Banc	ATT	Brindley Gavin	COL	22	3
+Toronto Maple Leafs	Banc	ATT	Bump Alex	PHI	23	4
+Toronto Maple Leafs	Banc	ATT	Carlsson Kalle		21	3
+Toronto Maple Leafs	Banc	ATT	Chovan Jan	LA	20	1
+Toronto Maple Leafs	Banc	ATT	Ciernik Alex	PHI	22	3
+Toronto Maple Leafs	Banc	ATT	Cover Jaxon	OTT	18	0
+Toronto Maple Leafs	Banc	ATT	Drury Jack	NSH	27	4
+Toronto Maple Leafs	Banc	ATT	Evans Jake	MTL	30	4
+Toronto Maple Leafs	Banc	ATT	Fabbri Robby		31	4
+Toronto Maple Leafs	Banc	ATT	Fitzgerald Colin	STL	18	0
+Toronto Maple Leafs	Banc	ATT	Galimov Artyom	ANA	27	4
+Toronto Maple Leafs	Banc	ATT	Gendron Alexis		23	4
+Toronto Maple Leafs	Banc	ATT	He Kevin	WIN	20	2
+Toronto Maple Leafs	Banc	ATT	Kahkonen Viljo		18	0
+Toronto Maple Leafs	Banc	ATT	Karabela Jake		22	4
+Toronto Maple Leafs	Banc	ATT	Karmiris Lucas		20	1
+Toronto Maple Leafs	Banc	ATT	Klingsell Viktor	WIN	19	1
+Toronto Maple Leafs	Banc	ATT	Korczak Ryder		24	4
+Toronto Maple Leafs	Banc	ATT	Kurth Connor	TPB	23	4
+Toronto Maple Leafs	Banc	ATT	Lagerberg Hoen Jonas	OTT	19	0
+Toronto Maple Leafs	Banc	ATT	Lind Kole		27	4
+Toronto Maple Leafs	Banc	ATT	Lombardi Jimmy	LA	19	1
+Toronto Maple Leafs	Banc	ATT	Meier Timo	NJ	30	4
+Toronto Maple Leafs	Banc	ATT	Lundestrom Isac	CLB	27	4
+Toronto Maple Leafs	Banc	ATT	Martin Owen	WIN	19	1
+Toronto Maple Leafs	Banc	ATT	Miettinen Julius	SEA	21	2
+Toronto Maple Leafs	Banc	ATT	Nilson Eric	ANA	19	1
+Toronto Maple Leafs	Banc	ATT	Noesen Stefan	NJ	33	4
+Toronto Maple Leafs	Banc	ATT	Novotny Adam	VAN	19	0
+Toronto Maple Leafs	Banc	ATT	Nybeck Zion		24	4
+Toronto Maple Leafs	Banc	ATT	O'neil Andrew		20	0
+Toronto Maple Leafs	Banc	ATT	Pahlsson Erik	NSH	22	2
+Toronto Maple Leafs	Banc	ATT	Pautov Ilya	PHI	20	2
+Toronto Maple Leafs	Banc	ATT	Perry Corey	LA	41	4
+Toronto Maple Leafs	Banc	ATT	Pettersson Lucas	ANA	20	2
+Toronto Maple Leafs	Banc	ATT	Pitre Coulson	ANA	22	3
+Toronto Maple Leafs	Banc	ATT	Pospisil Martin	CGY	27	4
+Toronto Maple Leafs	Banc	ATT	Puistola Patrik 		26	4
+Toronto Maple Leafs	Banc	ATT	Reschny Cole	CGY	19	1
+Toronto Maple Leafs	Banc	ATT	Rybinski Henrik	TOR	25	4
+Toronto Maple Leafs	Banc	ATT	Schaefer Reid	NSH	23	4
+Toronto Maple Leafs	Banc	ATT	Sedlacek David		19	0
+Toronto Maple Leafs	Banc	ATT	Shafigullin Bulat	LA	27	4
+Toronto Maple Leafs	Banc	ATT	Shaikhlislamov Alan	CGY	18	0
+Toronto Maple Leafs	Banc	ATT	Sivertson Jonah	VGK	18	0
+Toronto Maple Leafs	Banc	ATT	Sorensson Wiggo	CAR	18	0
+Toronto Maple Leafs	Banc	ATT	Studnicka Jack	PHI	28	4
+Toronto Maple Leafs	Banc	ATT	Szturc Gabriel	TPB	23	3
+Toronto Maple Leafs	Banc	ATT	Teply Michal		25	4
+Toronto Maple Leafs	Banc	ATT	Trenin Yakov	MIN	30	4
+Toronto Maple Leafs	Banc	ATT	Trineyev Bogdan	WSH	24	4
+Toronto Maple Leafs	Banc	ATT	Valentini Adam	UTH	19	0
+Toronto Maple Leafs	Banc	ATT	Veilleux Philippe		19	1
+Toronto Maple Leafs	Banc	ATT	Vlasov Alexei		19	0
+Toronto Maple Leafs	Banc	ATT	Zuccarello Matts	LA	39	2
+Toronto Maple Leafs	Banc	DEF	Akey Beau	EDM	22	3
+Toronto Maple Leafs	Banc	DEF	Badinka Dominik	CAR	21	2
+Toronto Maple Leafs	Banc	DEF	Beauchesne Quinn	PIT	19	1
+Toronto Maple Leafs	Banc	DEF	Behrens Sean	COL	24	4
+Toronto Maple Leafs	Banc	DEF	Byram Bowen	CHI	25	4
+Toronto Maple Leafs	Banc	DEF	Cernak Erik	TPB	29	4
+Toronto Maple Leafs	Banc	DEF	Chisholm Declan	NJ	27	4
+Toronto Maple Leafs	Banc	DEF	Forsling Gustav	FLA	30	4
+Toronto Maple Leafs	Banc	DEF	Hallquisth Theodor	MIN	19	1
+Toronto Maple Leafs	Banc	DEF	Kiviharju Aron	MIN	21	1
+Toronto Maple Leafs	Banc	DEF	Leslie Mazden		21	3
+Toronto Maple Leafs	Banc	DEF	Lundkvist Nils	DAL	26	4
+Toronto Maple Leafs	Banc	DEF	Muggli Leon	WSH	20	2
+Toronto Maple Leafs	Banc	DEF	Nousiainen Kim		26	4
+Toronto Maple Leafs	Banc	DEF	Palme Ola	SEA	19	0
+Toronto Maple Leafs	Banc	DEF	Roberts Colton	SJ	20	2
+Toronto Maple Leafs	Banc	DEF	Sharpe Will	LA	19	1
+Toronto Maple Leafs	Banc	DEF	Thornton Hudson		23	3
+Toronto Maple Leafs	Banc	DEF	Wallinder William	DET	24	4
+Toronto Maple Leafs	Banc	DEF	Walman Jake	EDM	30	4
+Toronto Maple Leafs	Banc	DEF	Warren Noah	ANA	22	4
+Toronto Maple Leafs	Banc	GARD	Bilic Marko		20	2
+Toronto Maple Leafs	Banc	GARD	Blomquist Ian		23	3
+Toronto Maple Leafs	Banc	GARD	Cowan Dawson		21	2
+Toronto Maple Leafs	Banc	GARD	Ersson Samuel	OTT	27	4
+Toronto Maple Leafs	Banc	GARD	Daws Nico	WIN	26	4
+Toronto Maple Leafs	Banc	GARD	Ivanov Sergei	CLB	22	4
+Toronto Maple Leafs	Banc	GARD	Jones Martin		37	3
+Toronto Maple Leafs	Banc	GARD	Jonsson Samuel	EDM	23	4
+Toronto Maple Leafs	Banc	GARD	Lehner Robin		35	4
+Toronto Maple Leafs	Banc	GARD	Mayorov Maxim	DAL	22	4
+Toronto Maple Leafs	Banc	GARD	Murray Matt		32	2
+Toronto Maple Leafs	Banc	GARD	Stebetak Ondrej		19	1
+Toronto Maple Leafs	Banc	GARD	Suchanek Tomas	ANA	23	3
+Toronto Maple Leafs	Banc	GARD	Thiessen Matthew		26	4
+Toronto Maple Leafs	Banc	GARD	Vikman Jesper		24	4
+Detroit Red Wings	Partant	ATT	Arvidsson Viktor	DET	33	4
+Detroit Red Wings	Partant	ATT	Barbashev Ivan	VGK	31	0
+Detroit Red Wings	Partant	ATT	Blake Jackson	CAR	23	4
+Detroit Red Wings	Partant	ATT	Bowman Braeden	VGK	22	0
+Detroit Red Wings	Partant	ATT	Celebrini Macklin	SJ	20	2
+Detroit Red Wings	Partant	ATT	Crosby Sydney	PIT	39	0
+Detroit Red Wings	Partant	ATT	Evangelista Luke	NJ	25	3
+Detroit Red Wings	Partant	ATT	Frost Morgan	CGY	27	4
+Detroit Red Wings	Partant	ATT	Gauthier Cutter	ANA	23	3
+Detroit Red Wings	Partant	ATT	Holmstrom Simon	NYI	25	4
+Detroit Red Wings	Partant	ATT	Johnson Kent	CLB	24	4
+Detroit Red Wings	Partant	ATT	kakko Kaapo	SEA	26	4
+Detroit Red Wings	Partant	ATT	Kaprizov Kirill	MIN	29	1
+Detroit Red Wings	Partant	ATT	Newhook Alex	MTL	26	4
+Detroit Red Wings	Partant	ATT	Miller J.T.	NYR	33	0
+Detroit Red Wings	Partant	ATT	Necas Martin	COL	27	1
+Detroit Red Wings	Partant	ATT	O'Reilly Ryan	NSH	36	0
+Detroit Red Wings	Partant	ATT	Pageau J.G.	NYI	34	0
+Detroit Red Wings	Partant	ATT	Perfetti Cole	WIN	25	3
+Detroit Red Wings	Partant	ATT	Pinto Shane	OTT	26	1
+Detroit Red Wings	Partant	ATT	Rakell Rickard	PIT	33	0
+Detroit Red Wings	Partant	ATT	Stamkos Steven	NSH	37	0
+Detroit Red Wings	Partant	ATT	Stankoven Logan	CAR	24	4
+Detroit Red Wings	Partant	ATT	Thompson Tage	BUF	29	4
+Detroit Red Wings	Partant	ATT	Stone Mark	VGK	34	3
+Detroit Red Wings	Partant	DEF	Harley Thomas	DAL	25	4
+Detroit Red Wings	Partant	DEF	Parekh Zayne	CGY	21	2
+Detroit Red Wings	Partant	DEF	Pionk Neal	WIN	30	0
+Detroit Red Wings	Partant	DEF	Power Owen	BUF	24	4
+Detroit Red Wings	Partant	DEF	Rielly Morgan	TOR	32	0
+Detroit Red Wings	Partant	DEF	Seider Moritz	DET	25	4
+Detroit Red Wings	Partant	DEF	Sergachev Mikhail	UTH 	28	1
+Detroit Red Wings	Partant	DEF	Dobson Noah	MTL	27	4
+Detroit Red Wings	Partant	DEF	Walker Sean	CAR	32	0
+Detroit Red Wings	Partant	DEF	Orlov Dmitry	SJ	35	0
+Detroit Red Wings	Partant	DEF	Samberg Dylan	WIN	28	4
+Detroit Red Wings	Partant	GARD	Knight Spencer	CHI	25	4
+Detroit Red Wings	Partant	GARD	Grubauer Philipp	SEA	35	0
+Detroit Red Wings	Partant	GARD	Levi Devon	EDM	24	4
+Detroit Red Wings	Partant	GARD	Saros Juuse	NSH	31	1
+Detroit Red Wings	Banc	ATT	Bemstrom Emil		27	4
+Detroit Red Wings	Banc	ATT	Bourgault Xavier	OTT	24	4
+Detroit Red Wings	Banc	ATT	Brisson Brendan	TOR	25	2
+Detroit Red Wings	Banc	ATT	Castagna Jonathan	CGY	21	3
+Detroit Red Wings	Banc	ATT	Cihar Vojtech	LA	19	1
+Detroit Red Wings	Banc	ATT	Chernyshov Igor	SJ	21	2
+Detroit Red Wings	Banc	ATT	Cootes Braeden	VAN	19	1
+Detroit Red Wings	Banc	ATT	Donato Ryan	CHI	30	4
+Detroit Red Wings	Banc	ATT	Dvorsky Dalibor	STL	21	2
+Detroit Red Wings	Banc	ATT	Gaucher Nathan	ANA	23	3
+Detroit Red Wings	Banc	ATT	Goyette David	PHI	22	3
+Detroit Red Wings	Banc	ATT	Greenway Jordan	CHI	30	4
+Detroit Red Wings	Banc	ATT	Guindon Cedrick		22	4
+Detroit Red Wings	Banc	ATT	haight Hunter	MIN	23	4
+Detroit Red Wings	Banc	ATT	Heidt Riley	MIN	21	3
+Detroit Red Wings	Banc	ATT	Hirvonen Roni		25	4
+Detroit Red Wings	Banc	ATT	Jeannot Tanner	BOS	30	4
+Detroit Red Wings	Banc	ATT	Kaliyev Arthur		25	2
+Detroit Red Wings	Banc	ATT	Kampf David		31	4
+Detroit Red Wings	Banc	ATT	Kosick Noah		18	0
+Detroit Red Wings	Banc	ATT	Kerfoot Alexander	NSH	32	4
+Detroit Red Wings	Banc	ATT	Kuraly Sean	BOS	34	4
+Detroit Red Wings	Banc	ATT	Kuzmenko Andrei	PIT	31	4
+Detroit Red Wings	Banc	ATT	Lacerte Félix		20	2
+Detroit Red Wings	Banc	ATT	Leonard John	DET	28	4
+Detroit Red Wings	Banc	ATT	Lewandowski David	EDM	19	1
+Detroit Red Wings	Banc	ATT	Lisowsky Brandon		23	4
+Detroit Red Wings	Banc	ATT	MacPherson Connor		21	3
+Detroit Red Wings	Banc	ATT	McConnell-Barker Bryce	NYR	22	4
+Detroit Red Wings	Banc	ATT	McDonough Aidan		27	4
+Detroit Red Wings	Banc	ATT	McGroarty Rutger	PIT	22	2
+Detroit Red Wings	Banc	ATT	Morozov Ivan D	VGK	26	4
+Detroit Red Wings	Banc	ATT	Mustard John	CHI	20	2
+Detroit Red Wings	Banc	ATT	Mutryn Casey	SEA	18	0
+Detroit Red Wings	Banc	ATT	Neuchev Viktor	CAR	23	4
+Detroit Red Wings	Banc	ATT	Pelletier Jakob	TPB	25	4
+Detroit Red Wings	Banc	ATT	Pharand Alex		22	3
+Detroit Red Wings	Banc	ATT	Pinelli Luca	CLB	21	3
+Detroit Red Wings	Banc	ATT	Puustinen Valtteri		27	4
+Detroit Red Wings	Banc	ATT	Raty Aatu	TOR	24	4
+Detroit Red Wings	Banc	ATT	Ritchie Calum	NYI	22	3
+Detroit Red Wings	Banc	ATT	Ritchie Ryder	MIN	20	2
+Detroit Red Wings	Banc	ATT	Robertsson Simon	STL	24	4
+Detroit Red Wings	Banc	ATT	Roulette Connor		23	4
+Detroit Red Wings	Banc	ATT	Saarelainen Joona	TPB	20	2
+Detroit Red Wings	Banc	ATT	Schmidt Cameron	DAL	19	1
+Detroit Red Wings	Banc	ATT	Sourdif Justin	WSH	24	4
+Detroit Red Wings	Banc	ATT	Steeves Alex	BOS	27	4
+Detroit Red Wings	Banc	ATT	Swanson Mac	PIT	21	2
+Detroit Red Wings	Banc	ATT	Vanhanen Matias	NJ	19	1
+Detroit Red Wings	Banc	ATT	Vanhatalo Vilho	FLA	19	0
+Detroit Red Wings	Banc	ATT	West Mason	CHI	19	1
+Detroit Red Wings	Banc	ATT	Zary Connor	CGY	25	2
+Detroit Red Wings	Banc	DEF	Annborn Karl	SEA	19	1
+Detroit Red Wings	Banc	DEF	Bolduc Samuel	OTT	26	2
+Detroit Red Wings	Banc	DEF	Brunicke Harrison	PIT	20	2
+Detroit Red Wings	Banc	DEF	Brzustewicz Henry	LA	19	1
+Detroit Red Wings	Banc	DEF	Simashev Dmitri	UTH	22	3
+Detroit Red Wings	Banc	DEF	Engstrom Adam	MTL	23	3
+Detroit Red Wings	Banc	DEF	Gudmundsson Mans	TOR	18	0
+Detroit Red Wings	Banc	DEF	Havelid Mattias	SJ	23	4
+Detroit Red Wings	Banc	DEF	Herrington Caeden	LA	21	1
+Detroit Red Wings	Banc	DEF	Lambos Carson	MIN	24	4
+Detroit Red Wings	Banc	DEF	Laurila Sam	NYI	20	1
+Detroit Red Wings	Banc	DEF	Molendyk Tanner	NSH	22	3
+Detroit Red Wings	Banc	DEF	Morin Etienne	NJ	21	3
+Detroit Red Wings	Banc	DEF	Weegar MacKenzie	UTH	33	0
+Detroit Red Wings	Banc	DEF	Zellweger Olen	BUF	23	4
+Detroit Red Wings	Banc	DEF	Sjostrom Oliwer		19	1
+Detroit Red Wings	Banc	DEF	Tuomisto Antti	VGK	26	4
+Detroit Red Wings	Banc	DEF	Whitecloud Zach	CGY	31	4
+Detroit Red Wings	Banc	DEF	Zub Artem	OTT	31	4
+Detroit Red Wings	Banc	GARD	Andreyanov Pyotr	CLB	19	1
+Detroit Red Wings	Banc	GARD	Arefyev Maxim		23	4
+Detroit Red Wings	Banc	GARD	Bjarnason Carson	PHI	21	3
+Detroit Red Wings	Banc	GARD	Denault Louis-Antoine	FLA	20	1
+Detroit Red Wings	Banc	GARD	DeSmith Casey	DAL	35	4
+Detroit Red Wings	Banc	GARD	Gidlof Marcus	STL	21	2
+Detroit Red Wings	Banc	GARD	Haronik Martin		20	2
+Detroit Red Wings	Banc	GARD	Hrabal Michael	UTH	22	3
+Detroit Red Wings	Banc	GARD	Hrenak Samuel	WIN	18	0
+Detroit Red Wings	Banc	GARD	Dostal Lukas	ANA	26	4
+Detroit Red Wings	Banc	GARD	Lindbom Carl	VGK	23	4
+Detroit Red Wings	Banc	GARD	Soderblom Arvid	CHI	27	4
+Detroit Red Wings	Banc	GARD	Westman Oscar		20	1
+Detroit Red Wings	Banc	GARD	Woll Joseph	PHI	28	3
+Boston Bruins	Partant	ATT	Bedard Connor	CHI	21	3
+Boston Bruins	Partant	ATT	Bolduc Zachary	MTL	24	4
+Boston Bruins	Partant	ATT	Brandsegg-Nygard Michael	DET	21	2
+Boston Bruins	Partant	ATT	Coronato Matt	CGY	24	4
+Boston Bruins	Partant	ATT	Cuylle Will	NYR	25	0
+Boston Bruins	Partant	ATT	Dubois Pierre-Luc	WSH	28	4
+Boston Bruins	Partant	ATT	Gritsyuk Arseny	NJ	25	3
+Boston Bruins	Partant	ATT	Eklund Victor	NYI	20	1
+Boston Bruins	Partant	ATT	Holloway Dylan	STL	25	4
+Boston Bruins	Partant	ATT	Marchenko Kirill 	TOR	26	4
+Boston Bruins	Partant	ATT	McCann Jared	SEA	30	1
+Boston Bruins	Partant	ATT	McMichael Connor	STL	26	3
+Boston Bruins	Partant	ATT	Nazar Frank	CHI	23	4
+Boston Bruins	Partant	ATT	Nylander William	TOR	30	4
+Boston Bruins	Partant	ATT	Ohgren Liam	VAN	23	0
+Boston Bruins	Partant	ATT	Ostlund Noah	BUF	22	4
+Boston Bruins	Partant	ATT	Podkolzin Vasily	EDM	25	2
+Boston Bruins	Partant	ATT	Robertson Jason	DAL	27	4
+Boston Bruins	Partant	ATT	Sillinger Cole	CLB	23	4
+Boston Bruins	Partant	ATT	Strome Ryan	CGY	33	4
+Boston Bruins	Partant	ATT	Zetterlund Fabian	OTT	27	4
+Boston Bruins	Partant	DEF	Christiansen Jake	CLB	27	4
+Boston Bruins	Partant	DEF	Clarke Brandt	LA	24	4
+Boston Bruins	Partant	DEF	D'Astous Charle-Edouard	TPB	28	0
+Boston Bruins	Partant	DEF	Evans Ryker	SEA	25	1
+Boston Bruins	Partant	DEF	Fehervary Martin 	WSH	27	1
+Boston Bruins	Partant	DEF	Guhle Kaiden	MTL	25	4
+Boston Bruins	Partant	DEF	Levshunov Artyom	CHI	21	2
+Boston Bruins	Partant	DEF	Pettersson Marcus	NYR	30	3
+Boston Bruins	Partant	DEF	Severson Damon	CLB	32	1
+Boston Bruins	Partant	GARD	Fowler Jacob	MTL	22	3
+Boston Bruins	Partant	GARD	Hill Adin	VGK	30	1
+Boston Bruins	Partant	GARD	Wallstedt Jesper	MIN	24	4
+Boston Bruins	Banc	ATT	Artamonov Nikita	CAR	21	2
+Boston Bruins	Banc	ATT	Avon Jon-Randall	SEA	23	3
+Boston Bruins	Banc	ATT	Benak Adam	MIN	19	1
+Boston Bruins	Banc	ATT	Berezkin Maksim	EDM	25	2
+Boston Bruins	Banc	ATT	Berggren Jonatan	STL	26	4
+Boston Bruins	Banc	ATT	Broz Tristan	PIT	24	1
+Boston Bruins	Banc	ATT	Cardwell Ethan	SJ	24	2
+Boston Bruins	Banc	ATT	Dach Kirby	MTL	26	4
+Boston Bruins	Banc	ATT	Del Bel Belluz Luca	CLB	23	2
+Boston Bruins	Banc	ATT	Dower Nilsson Noah	DET	21	3
+Boston Bruins	Banc	ATT	Hallander Filip	EDM	26	0
+Boston Bruins	Banc	ATT	Eyssimont Michael	BOS	30	2
+Boston Bruins	Banc	ATT	Fink Aiden	NSH	22	3
+Boston Bruins	Banc	ATT	Gourde Yanni	TPB	35	4
+Boston Bruins	Banc	ATT	Guite Emile	ANA	19	1
+Boston Bruins	Banc	ATT	Gunler Noel		25	3
+Boston Bruins	Banc	ATT	Halttunen Kasper	OTT	21	2
+Boston Bruins	Banc	ATT	Holinka Miroslav	TOR	21	0
+Boston Bruins	Banc	ATT	James Dylan	DET	23	0
+Boston Bruins	Banc	ATT	Jones Ben	CGY	28	4
+Boston Bruins	Banc	ATT	Kaplan Devin	SEA	23	0
+Boston Bruins	Banc	ATT	Lakovic Lynden	WSH	20	1
+Boston Bruins	Banc	ATT	Leason Brett	SJ	27	4
+Boston Bruins	Banc	ATT	Luchanko Jett	PHI	20	1
+Boston Bruins	Banc	ATT	Lund Cam	SJ	22	4
+Boston Bruins	Banc	ATT	MacLean Kyle	NYI	27	2
+Boston Bruins	Banc	ATT	Melanson Jacob	SEA	23	3
+Boston Bruins	Banc	ATT	Milano Sonny		30	4
+Boston Bruins	Banc	ATT	Misiak Martin	CHI	22	3
+Boston Bruins	Banc	ATT	Moroz Vadim	UTH	23	1
+Boston Bruins	Banc	ATT	Nilsson Felix	NSH	21	1
+Boston Bruins	Banc	ATT	Ostapchuk Zack	SJ	23	0
+Boston Bruins	Banc	ATT	Othmann Brennan	CGY	24	4
+Boston Bruins	Banc	ATT	Palat Ondrej	NYI	35	0
+Boston Bruins	Banc	ATT	Perron David	DAL	38	1
+Boston Bruins	Banc	ATT	Perron Jayden	CAR	22	3
+Boston Bruins	Banc	ATT	Pinchuk Vitali	NSH	25	0
+Boston Bruins	Banc	ATT	Plante Max	DET	20	2
+Boston Bruins	Banc	ATT	Potter Cullen	CGY	20	1
+Boston Bruins	Banc	ATT	Quinn Nathan	PHI	19	1
+Boston Bruins	Banc	ATT	Rasmussen Michael	DET	27	0
+Boston Bruins	Banc	ATT	Roobroeck Ryan	CHI	19	0
+Boston Bruins	Banc	ATT	Rousseau Thomas		19	0
+Boston Bruins	Banc	ATT	Sale Eduard	SEA	21	3
+Boston Bruins	Banc	ATT	Sawchyn Lukas		19	0
+Boston Bruins	Banc	ATT	Seminoff Matthew	DAL	23	4
+Boston Bruins	Banc	ATT	Steel Sam	DAL	29	3
+Boston Bruins	Banc	ATT	Stenberg Otto	STL	21	3
+Boston Bruins	Banc	ATT	Tarasenko Vladimir		35	2
+Boston Bruins	Banc	ATT	Terrance Carey	NYR	22	2
+Boston Bruins	Banc	ATT	Tomik Tobias		19	0
+Boston Bruins	Banc	ATT	Tuch Luke	CLB	24	0
+Boston Bruins	Banc	ATT	Tuomaala Samu		24	1
+Boston Bruins	Banc	ATT	Tverberg Ryan	TOR	24	4
+Boston Bruins	Banc	ATT	Uronen Tuomas	VGK	21	3
+Boston Bruins	Banc	ATT	Voit Ty		23	4
+Boston Bruins	Banc	ATT	Wagner Fabian	WIN	22	0
+Boston Bruins	Banc	ATT	Willis Joey	NSH	21	2
+Boston Bruins	Banc	ATT	Yemelyanov Kirill	BOS	20	1
+Boston Bruins	Banc	DEF	Allan Nolan	SJ	23	4
+Boston Bruins	Banc	DEF	Benning Michael	CGY	25	2
+Boston Bruins	Banc	DEF	Bogosian Zach	MIN	36	4
+Boston Bruins	Banc	DEF	Dell'Elce Francesco	COL	21	1
+Boston Bruins	Banc	DEF	Dolgopolov Ilya		19	0
+Boston Bruins	Banc	DEF	Hinds Tyson	ANA	23	3
+Boston Bruins	Banc	DEF	Johnson Ryan	PIT	25	2
+Boston Bruins	Banc	DEF	Jones Zachary	UTH	26	4
+Boston Bruins	Banc	DEF	Konyushkov Bogdan	MTL	24	2
+Boston Bruins	Banc	DEF	Lamoureux Maveric	UTH	23	2
+Boston Bruins	Banc	DEF	Lilleberg Martinsen Emil	TPB	26	1
+Boston Bruins	Banc	DEF	McCabe Jake	TOR	33	0
+Boston Bruins	Banc	DEF	Nelson Ty	SEA	23	3
+Boston Bruins	Banc	DEF	Nikishin Alex	CAR	25	3
+Boston Bruins	Banc	DEF	Pieniniemi Emil	FLA	22	1
+Boston Bruins	Banc	DEF	Reid Chase	SEA	19	0
+Boston Bruins	Banc	DEF	Sandin Rasmus	WSH	26	4
+Boston Bruins	Banc	DEF	Thrun Henry	WIN	25	4
+Boston Bruins	Banc	DEF	Tretheway Charlie	PIT	19	1
+Boston Bruins	Banc	DEF	Villeneuve Xavier	CHI	19	0
+Boston Bruins	Banc	DEF	Wang Simon Haoxi	SJ	19	1
+Boston Bruins	Banc	GARD	Annunen Justus	NSH	26	1
+Boston Bruins	Banc	GARD	Black Cooper	FLA	25	1
+Boston Bruins	Banc	GARD	Commesso Drew	CHI	24	3
+Boston Bruins	Banc	GARD	Dobes Jakub	MTL	25	3
+Boston Bruins	Banc	GARD	Hildeby Dennis	TPB	25	3
+Boston Bruins	Banc	GARD	Silovs Arturs	PIT	25	1
+Boston Bruins	Banc	GARD	Ivankovic Jack	NSH	19	1
+Boston Bruins	Banc	GARD	Korpisalo Joonas	NYR	32	2
+Boston Bruins	Banc	GARD	Merzlikins Elvis	TOR	32	4
+Boston Bruins	Banc	GARD	Miller Quentin	MTL	22	3
+Boston Bruins	Banc	GARD	Snell Parker	CLB	18	0
+Boston Bruins	Banc	GARD	Talbot Cam	CLB	39	1
+Boston Bruins	Banc	GARD	Tolopilo Nikita	VAN	26	3
+Boston Bruins	Banc	GARD	Vinni Eemil	EDM	21	2
+Boston Bruins	Banc	GARD	Vyazovoy Semyon	SEA	22	2
+Montréal Canadiens	Partant	ATT	Acciari Noel	PHI	35	4
+Montréal Canadiens	Partant	ATT	Amadio Michael	OTT	30	4
+Montréal Canadiens	Partant	ATT	Bjorkstrand Oliver	NYR	31	3
+Montréal Canadiens	Partant	ATT	Buchnevich Pavel	STL	31	4
+Montréal Canadiens	Partant	ATT	Hameenaho Lenni	NJ	22	3
+Montréal Canadiens	Partant	ATT	Cooley Logan	UTH	22	4
+Montréal Canadiens	Partant	ATT	Cotter Paul	VAN	27	2
+Montréal Canadiens	Partant	ATT	Cousins Nick	OTT	32	4
+Montréal Canadiens	Partant	ATT	Dellandrea Ty	SJ	26	1
+Montréal Canadiens	Partant	ATT	Finnie Emmitt	DET	21	0
+Montréal Canadiens	Partant	ATT	Foligno Nick	MIN	39	4
+Montréal Canadiens	Partant	ATT	Mangiapane Andrew	CHI	30	4
+Montréal Canadiens	Partant	ATT	Greig Ridly	OTT	24	4
+Montréal Canadiens	Partant	ATT	Hughes T.J.	COL	25	0
+Montréal Canadiens	Partant	ATT	Hryckowian Justin	DAL	25	1
+Montréal Canadiens	Partant	ATT	Johnston Wyatt	DAL	23	4
+Montréal Canadiens	Partant	ATT	Luostarinen Eetu	FLA	28	2
+Montréal Canadiens	Partant	ATT	Maccelli Matias	NYI	26	3
+Montréal Canadiens	Partant	ATT	Rossi Marco	VAN	25	4
+Montréal Canadiens	Partant	ATT	Sasson Max	VAN	26	2
+Montréal Canadiens	Partant	ATT	Suniev Aydar	CGY	22	3
+Montréal Canadiens	Partant	ATT	Winterton Ryan	SEA	23	4
+Montréal Canadiens	Partant	DEF	Dahlin Rasmus	BUF	26	4
+Montréal Canadiens	Partant	DEF	Chabot Thomas	OTT	30	1
+Montréal Canadiens	Partant	DEF	Hutson Cole	WSH	20	2
+Montréal Canadiens	Partant	DEF	Josi Roman	NSH	36	4
+Montréal Canadiens	Partant	DEF	Malinski Sam	COL	28	2
+Montréal Canadiens	Partant	DEF	McAvoy Charlie	BOS	29	3
+Montréal Canadiens	Partant	DEF	Raddysh Darren	TOR	30	2
+Montréal Canadiens	Partant	DEF	Mintyukov Pavel	ANA	23	4
+Montréal Canadiens	Partant	DEF	Werenski Zach	CLB	28	4
+Montréal Canadiens	Partant	GARD	Allen Jake	NJ	36	3
+Montréal Canadiens	Partant	GARD	Jarry Tristan	EDM	31	3
+Montréal Canadiens	Partant	GARD	Swayman Jeremy	BOS	28	3
+Montréal Canadiens	Banc	ATT	Barzal Matthew	NYI	29	4
+Montréal Canadiens	Banc	ATT	Bear Carter	DET	20	1
+Montréal Canadiens	Banc	ATT	Belchetz Ethan	UTH	18	0
+Montréal Canadiens	Banc	ATT	Blumel Matej		26	2
+Montréal Canadiens	Banc	ATT	Carbonneau Justin	STL	20	1
+Montréal Canadiens	Banc	ATT	Eriksen Mikkel	NYR	19	1
+Montréal Canadiens	Banc	ATT	Fedotov Ilya	UTH	23	3
+Montréal Canadiens	Banc	ATT	Fernstrom Melvin	PIT	21	2
+Montréal Canadiens	Banc	ATT	Frolo Jakub		19	0
+Montréal Canadiens	Banc	ATT	Gojsic Hiroki	NSH	20	2
+Montréal Canadiens	Banc	ATT	Gushchin Daniil		25	4
+Montréal Canadiens	Banc	ATT	Hage Michael	MTL	20	2
+Montréal Canadiens	Banc	ATT	Burakovsky Andre	OTT	32	4
+Montréal Canadiens	Banc	ATT	Harris Samuel	MTL	23	0
+Montréal Canadiens	Banc	ATT	Hemming Oscar	CLB	18	0
+Montréal Canadiens	Banc	ATT	Hutson Quinn	EDM	25	0
+Montréal Canadiens	Banc	ATT	Idzan Bruno	OTT	19	1
+Montréal Canadiens	Banc	ATT	Jecho Adam	STL	20	2
+Montréal Canadiens	Banc	ATT	Kevan Benjamin	NJ	20	1
+Montréal Canadiens	Banc	ATT	King Benjamin		24	4
+Montréal Canadiens	Banc	ATT	Koblar Tinus Luc	TOR	19	0
+Montréal Canadiens	Banc	ATT	Kos Ondrej	STL	20	2
+Montréal Canadiens	Banc	ATT	Kraft Mason		19	1
+Montréal Canadiens	Banc	ATT	Labanc Kevin		31	4
+Montréal Canadiens	Banc	ATT	Laine Patrik		28	3
+Montréal Canadiens	Banc	ATT	Lauko Jakub		26	3
+Montréal Canadiens	Banc	ATT	L'Heureux Zachary	COL	23	1
+Montréal Canadiens	Banc	ATT	Lind Kalan	NSH	22	3
+Montréal Canadiens	Banc	ATT	Ludwinski Paul	CHI	22	3
+Montréal Canadiens	Banc	ATT	Garland Conor	CLB	30	3
+Montréal Canadiens	Banc	ATT	Marjala Viljami	EDM	24	0
+Montréal Canadiens	Banc	ATT	Martinu Pavel		19	0
+Montréal Canadiens	Banc	ATT	Moldenhauer Nicholas	TOR	22	3
+Montréal Canadiens	Banc	ATT	Montgomery Blake	OTT	21	0
+Montréal Canadiens	Banc	ATT	Nylander Alex		28	1
+Montréal Canadiens	Banc	ATT	Pastujov Sasha	MTL	23	3
+Montréal Canadiens	Banc	ATT	Pekarcik Juraj	STL	21	3
+Montréal Canadiens	Banc	ATT	Persson Ludwig	WSH	23	4
+Montréal Canadiens	Banc	ATT	Petrov Matvei		23	4
+Montréal Canadiens	Banc	ATT	Pikkarainen Kasper	NJ	20	2
+Montréal Canadiens	Banc	ATT	Ponomaryov Vasily		26	4
+Montréal Canadiens	Banc	ATT	Robertson tucker		23	3
+Montréal Canadiens	Banc	ATT	Sapovaliv Matyas	VGK	23	3
+Montréal Canadiens	Banc	ATT	Sawchyn Gracyn	FLA	22	3
+Montréal Canadiens	Banc	ATT	Soderblom Elmer	PIT	25	3
+Montréal Canadiens	Banc	ATT	Sokolov Egor		26	3
+Montréal Canadiens	Banc	ATT	Stockselius Theo	CGY	19	1
+Montréal Canadiens	Banc	ATT	Sykora Adam	NYR	23	4
+Montréal Canadiens	Banc	ATT	Thompson Aidan	NYR	23	4
+Montréal Canadiens	Banc	ATT	Wahlberg Anton	ANA	21	3
+Montréal Canadiens	Banc	ATT	Zether Simon	FLA	21	2
+Montréal Canadiens	Banc	DEF	Boumedienne Sascha	WIN	19	1
+Montréal Canadiens	Banc	DEF	Burns Brent	COL	41	1
+Montréal Canadiens	Banc	DEF	Carels Carson	CGY	18	0
+Montréal Canadiens	Banc	DEF	Gavrikov Vladislav	NYR	31	3
+Montréal Canadiens	Banc	DEF	Fisher Michael	SJ	22	3
+Montréal Canadiens	Banc	DEF	Helleson Drew	ANA	24	0
+Montréal Canadiens	Banc	DEF	Jiricek Adam	STL	20	2
+Montréal Canadiens	Banc	DEF	Liljegren Tim	WSH	27	3
+Montréal Canadiens	Banc	DEF	McDonagh Ryan	TPB	36	1
+Montréal Canadiens	Banc	DEF	Lindholm Hampus	BOS	33	3
+Montréal Canadiens	Banc	DEF	Theodore Shea	VGK	31	2
+Montréal Canadiens	Banc	DEF	Morrissey Josh	WIN	30	3
+Montréal Canadiens	Banc	DEF	Pietrangelo Alex	VGK	36	4
+Montréal Canadiens	Banc	DEF	Provorov Ivan	CLB	30	2
+Montréal Canadiens	Banc	DEF	Rinzel Samuel	CHI	22	3
+Montréal Canadiens	Banc	DEF	Shuravin Matvei	FLA	20	1
+Montréal Canadiens	Banc	DEF	Skjei Brady	NSH	32	3
+Montréal Canadiens	Banc	DEF	Smith Tarin	ANA	20	2
+Montréal Canadiens	Banc	DEF	Timmins Conor	BUF	28	3
+Montréal Canadiens	Banc	DEF	Yakemchuk Carter	OTT	21	2
+Montréal Canadiens	Banc	GARD	Beckman Lucas	OTT	19	1
+Montréal Canadiens	Banc	GARD	Dybal Adam		21	2
+Montréal Canadiens	Banc	GARD	Fedotov Ivan		30	2
+Montréal Canadiens	Banc	GARD	Frolov Semyon	CAR	19	1
+Montréal Canadiens	Banc	GARD	Lacelle William		19	0
+Montréal Canadiens	Banc	GARD	Lindbom Olof		26	4
+Montréal Canadiens	Banc	GARD	Malek Jakub	NJ	24	4
+Montréal Canadiens	Banc	GARD	Musser Carsen	UTH	21	3
+Montréal Canadiens	Banc	GARD	Neuenschwander Elijah	ANA	20	1
+Montréal Canadiens	Banc	GARD	Orsulak Michal	DET	19	0
+Montréal Canadiens	Banc	GARD	Perets Yaniv		26	3
+Montréal Canadiens	Banc	GARD	Rybkin Yegor	LA	19	0
+Montréal Canadiens	Banc	GARD	Stauber Jaxson	UTH	27	4
+Montréal Canadiens	Banc	GARD	Vladar Daniel	PHI	29	3
+Seattle Kraken	Partant	ATT	Beniers Matty	SEA	24	4
+Seattle Kraken	Partant	ATT	Brink Bobby	MIN	25	4
+Seattle Kraken	Partant	ATT	Catton Berkly	SEA	21	2
+Seattle Kraken	Partant	ATT	Connelly Trevor	VGK	20	2
+Seattle Kraken	Partant	ATT	Glass Cody	NJ	27	4
+Seattle Kraken	Partant	ATT	Guenther Dylan	UTH	23	3
+Seattle Kraken	Partant	ATT	Hartman Ryan	MIN	31	4
+Seattle Kraken	Partant	ATT	Hayton Barrett	UTH	26	4
+Seattle Kraken	Partant	ATT	Howard Isaac	EDM	22	3
+Seattle Kraken	Partant	ATT	Hyman Zach	EDM	34	4
+Seattle Kraken	Partant	ATT	Kantserov Roman	CHI	22	3
+Seattle Kraken	Partant	ATT	McTavish Mason	STL	24	2
+Seattle Kraken	Partant	ATT	Michkov Matvei	PHI	22	2
+Seattle Kraken	Partant	ATT	Misa Michael	SJ	20	1
+Seattle Kraken	Partant	ATT	Olivier Mathieu	CLB	27	4
+Seattle Kraken	Partant	ATT	Robertson Nick	PIT	25	3
+Seattle Kraken	Partant	ATT	Schenn Brayden	NYI	35	4
+Seattle Kraken	Partant	ATT	Sharangovich Egor	CGY	26	4
+Seattle Kraken	Partant	ATT	Stenberg Ivar	SJ	19	0
+Seattle Kraken	Partant	ATT	Stutzle Tim	OTT	25	4
+Seattle Kraken	Partant	ATT	Tsyplakov Maksim	CGY	28	2
+Seattle Kraken	Partant	ATT	Voronkov Dmitri	CLB	26	4
+Seattle Kraken	Partant	DEF	Brunet Frederic	BOS	23	4
+Seattle Kraken	Partant	DEF	Cagnoni Luca	SJ	22	3
+Seattle Kraken	Partant	DEF	Girard Samuel	PIT	28	4
+Seattle Kraken	Partant	DEF	Kolyachonok Vlad	NJ	25	4
+Seattle Kraken	Partant	DEF	Korczak Kaedan	PIT	26	4
+Seattle Kraken	Partant	DEF	Mateychuk Denton	CLB	22	4
+Seattle Kraken	Partant	DEF	Schaefer Matthew	NYI	19	1
+Seattle Kraken	Partant	DEF	Spurgeon Jared	MIN	37	4
+Seattle Kraken	Partant	DEF	Vlasic Alex	CHI	25	4
+Seattle Kraken	Partant	GARD	Cossa Sebastian	UTH	24	4
+Seattle Kraken	Partant	GARD	Nedeljkovic Alex	SJ	31	4
+Seattle Kraken	Partant	GARD	Schmid Akira	FLA	26	3
+Seattle Kraken	Banc	ATT	Abruzzese Nicholas	TPB	27	4
+Seattle Kraken	Banc	ATT	Barabanov Egor	CGY	20	0
+Seattle Kraken	Banc	ATT	Beckman Adam	COL	25	4
+Seattle Kraken	Banc	ATT	Behm Nathan	CHI	19	1
+Seattle Kraken	Banc	ATT	Blais Alexandre	ANA	21	2
+Seattle Kraken	Banc	ATT	Buchelnikov Dmitri	STL	23	4
+Seattle Kraken	Banc	ATT	Bunting Michael	PHI	31	4
+Seattle Kraken	Banc	ATT	Cristall Andrew	WSH	22	3
+Seattle Kraken	Banc	ATT	Devine Jack	FLA	23	4
+Seattle Kraken	Banc	ATT	Dube Dillon	STL	28	4
+Seattle Kraken	Banc	ATT	Duguay Jordan		19	0
+Seattle Kraken	Banc	ATT	Eiserman Cole	NYI	20	2
+Seattle Kraken	Banc	ATT	Ekberg Filip	CAR	19	1
+Seattle Kraken	Banc	ATT	Eklund William	OTT	24	4
+Seattle Kraken	Banc	ATT	Firkus Jagger	SEA	22	4
+Seattle Kraken	Banc	ATT	Fisher Jake	COL	21	3
+Seattle Kraken	Banc	ATT	Graf Yegor		20	2
+Seattle Kraken	Banc	ATT	Griffin Owen	CLB	19	0
+Seattle Kraken	Banc	ATT	Gustafson Jordan	VGK	23	4
+Seattle Kraken	Banc	ATT	Henrique Adam		37	4
+Seattle Kraken	Banc	ATT	Hodnett Gavin		20	2
+Seattle Kraken	Banc	ATT	Howe Tanner	PIT	21	2
+Seattle Kraken	Banc	ATT	Hurlbert Jeffrey Paul	DET	18	0
+Seattle Kraken	Banc	ATT	Huuhtanen Niko		23	4
+Seattle Kraken	Banc	ATT	Joki Atte	DAL	19	0
+Seattle Kraken	Banc	ATT	Klimovich Yegor		21	3
+Seattle Kraken	Banc	ATT	Koivu Aatos	MTL	20	2
+Seattle Kraken	Banc	ATT	Lambert Brad	WIN	23	4
+Seattle Kraken	Banc	ATT	Lysell Fabian	COL	24	4
+Seattle Kraken	Banc	ATT	Misa Luke	CGY	21	2
+Seattle Kraken	Banc	ATT	Mistelbacher Luke		21	1
+Seattle Kraken	Banc	ATT	Nadeau Bradly	CAR	21	3
+Seattle Kraken	Banc	ATT	Nobert Mateo	VGK	19	1
+Seattle Kraken	Banc	ATT	Park Aidan	EDM	21	2
+Seattle Kraken	Banc	ATT	Quillan Jacob	VAN	23	2
+Seattle Kraken	Banc	ATT	Rautiainen Benjamin	TPB	21	2
+Seattle Kraken	Banc	ATT	Romani Anthony	VAN	21	2
+Seattle Kraken	Banc	ATT	Ruzicka Adam		27	4
+Seattle Kraken	Banc	ATT	Savoie Samuel	CHI	22	4
+Seattle Kraken	Banc	ATT	Sidorov Yegor	ANA	22	3
+Seattle Kraken	Banc	ATT	Simpson Cooper	BOS	19	1
+Seattle Kraken	Banc	ATT	Staal Jordan	CAR	38	4
+Seattle Kraken	Banc	ATT	Svejkovsky Lukas		24	4
+Seattle Kraken	Banc	ATT	Svrcek Michal	DET	19	0
+Seattle Kraken	Banc	ATT	Trikozov Gleb	CAR	22	2
+Seattle Kraken	Banc	ATT	Tulk Oliver		22	3
+Seattle Kraken	Banc	ATT	Zellers William	BOS	20	2
+Seattle Kraken	Banc	ATT	Zharovsky Alexander	MTL	20	1
+Seattle Kraken	Banc	DEF	Bean Jake		28	4
+Seattle Kraken	Banc	DEF	Bertucci Tristan	DAL	21	3
+Seattle Kraken	Banc	DEF	Bjornfot Tobias	FLA	25	4
+Seattle Kraken	Banc	DEF	Brosnan Myles	DET	19	0
+Seattle Kraken	Banc	DEF	Ceulemans Corson	CLB	23	3
+Seattle Kraken	Banc	DEF	Dragicevic Lukas	SEA	21	3
+Seattle Kraken	Banc	DEF	Fransen Noel	CAR	21	2
+Seattle Kraken	Banc	DEF	Gill Spencer	PHI	20	2
+Seattle Kraken	Banc	DEF	Gulyayev Mikhail	COL	21	2
+Seattle Kraken	Banc	DEF	Jansson Ludvig	FLA	23	3
+Seattle Kraken	Banc	DEF	Johannesson Anton		24	4
+Seattle Kraken	Banc	DEF	Klingberg John	RET	34	4
+Seattle Kraken	Banc	DEF	Graves Ryan	PIT	31	4
+Seattle Kraken	Banc	DEF	Kyrou Christian	OTT	23	4
+Seattle Kraken	Banc	DEF	Marrelli Luca	CLB	21	2
+Seattle Kraken	Banc	DEF	Mews Henry	CGY	20	2
+Seattle Kraken	Banc	DEF	Odelius Calle 	NYI	22	4
+Seattle Kraken	Banc	DEF	Perunovich Scott	LA	25	3
+Seattle Kraken	Banc	DEF	Powell Eamon	FLA	24	4
+Seattle Kraken	Banc	DEF	Radivojevic Luka		20	1
+Seattle Kraken	Banc	GARD	Augustine Trey	DET	22	3
+Seattle Kraken	Banc	GARD	Blomqvist Joel	PIT	25	4
+Seattle Kraken	Banc	GARD	Borichev Dmitri	NSH	18	0
+Seattle Kraken	Banc	GARD	Chechelev Daniil	CGY	25	4
+Seattle Kraken	Banc	GARD	Georgiev Alexandar	KHL	31	4
+Seattle Kraken	Banc	GARD	Glifford Olof	FLA	21	1
+Seattle Kraken	Banc	GARD	Khazheyev Ruslan	CAR	21	3
+Seattle Kraken	Banc	GARD	Kolosov Alexei	PHI	25	4
+Seattle Kraken	Banc	GARD	Medvedev Alexei	VAN	19	1
+Seattle Kraken	Banc	GARD	Murashov Sergei	PIT	22	4
+Seattle Kraken	Banc	GARD	Portillo Erik	LA	26	4
+Seattle Kraken	Banc	GARD	Shmakov Shamil	COL	27	4
+Seattle Kraken	Banc	GARD	Trofimov Andrei	OTT	20	1
+Seattle Kraken	Banc	GARD	Yegorov Mikhail	NJ	20	2
+Seattle Kraken	Banc	GARD	Zarubin Kirill	CGY	21	2
+San Jose Sharks	Partant	ATT	Barkey Denver	PHI	21	3
+San Jose Sharks	Partant	ATT	Cozens Dylan	OTT	26	4
+San Jose Sharks	Partant	ATT	McQueen Roger	ANA	20	1
+San Jose Sharks	Partant	ATT	Faksa Radek	DAL	33	2
+San Jose Sharks	Partant	ATT	Foerster Tyson	PHI	25	4
+San Jose Sharks	Partant	ATT	Gridin Matvei	CGY	20	1
+San Jose Sharks	Partant	ATT	Helenius Konsta	BUF	20	2
+San Jose Sharks	Partant	ATT	Holmberg Pontus	TPB	27	4
+San Jose Sharks	Partant	ATT	Beck Owen	MTL	23	2
+San Jose Sharks	Partant	ATT	Kapanen Kasperi	EDM	30	2
+San Jose Sharks	Partant	ATT	Kindel Ben	PIT	19	1
+San Jose Sharks	Partant	ATT	Koivunen Ville	PIT	23	3
+San Jose Sharks	Partant	ATT	Kyrou Jordan	WSH	28	4
+San Jose Sharks	Partant	ATT	Lapierre Hendrix	PIT	25	4
+San Jose Sharks	Partant	ATT	McKenna Gavin	TOR	19	0
+San Jose Sharks	Partant	ATT	Norris Josh	BUF	27	4
+San Jose Sharks	Partant	ATT	Perreault Gabe	NYR	21	1
+San Jose Sharks	Partant	ATT	Bjorck Viggo	WIN	18	0
+San Jose Sharks	Partant	ATT	Protas Aliaksei	WSH	26	3
+San Jose Sharks	Partant	ATT	Samoskevich Mackie	SEA	24	4
+San Jose Sharks	Partant	ATT	Wright Shane	SEA	23	4
+San Jose Sharks	Partant	DEF	Andrae Emil	CLB	25	1
+San Jose Sharks	Partant	DEF	Bonk Oliver	PHI	22	3
+San Jose Sharks	Partant	DEF	Broberg Philip	STL	25	4
+San Jose Sharks	Partant	DEF	Hague Nicolas	NSH	28	2
+San Jose Sharks	Partant	DEF	Hedman Victor	TPB	36	1
+San Jose Sharks	Partant	DEF	Jiricek David	PHI	23	4
+San Jose Sharks	Partant	DEF	Kulak Brett	COL	32	4
+San Jose Sharks	Partant	DEF	Lindstein Theo	STL	22	3
+San Jose Sharks	Partant	DEF	Siegenthaler Jonas	NJ	29	2
+San Jose Sharks	Partant	GARD	Luukkonen U-K	BUF	27	4
+San Jose Sharks	Partant	GARD	Kuemper Darcy	LA	36	0
+San Jose Sharks	Banc	ATT	Barlow Colby	WIN	21	3
+San Jose Sharks	Banc	ATT	Beaudoin Cole	NYR	20	2
+San Jose Sharks	Banc	ATT	Demidov Ivan	MTL	21	2
+San Jose Sharks	Banc	ATT	Beckner Owen	OTT	22	3
+San Jose Sharks	Banc	ATT	Berchild Mikey	CAR	18	0
+San Jose Sharks	Banc	ATT	Honzek Samuel	CGY	21	3
+San Jose Sharks	Banc	ATT	Boisvert Sacha	CHI	20	2
+San Jose Sharks	Banc	ATT	Brabenec Jan		19	0
+San Jose Sharks	Banc	ATT	Bystedt Filip	SJ	23	1
+San Jose Sharks	Banc	ATT	Caswell Clarke	SEA	20	2
+San Jose Sharks	Banc	ATT	Chrenko Tomas	NYR	19	0
+San Jose Sharks	Banc	ATT	Edwards Beckham	DET	19	0
+San Jose Sharks	Banc	ATT	Eriksson Linus	FLA	20	2
+San Jose Sharks	Banc	ATT	Finley Quinn	NYI	22	3
+San Jose Sharks	Banc	ATT	Gashilov Lavr	NJ	19	0
+San Jose Sharks	Banc	ATT	Gastrin Milton	STL	20	1
+San Jose Sharks	Banc	ATT	Grebenkin Nikita	PHI	23	4
+San Jose Sharks	Banc	ATT	Hayes Gavin	CHI	22	2
+San Jose Sharks	Banc	ATT	Hayes Travis	PIT	19	1
+San Jose Sharks	Banc	ATT	Helenius Samuel	LA	24	0
+San Jose Sharks	Banc	ATT	Hemmerling Ben	VGK	22	0
+San Jose Sharks	Banc	ATT	Holmertz Oscar	OTT	18	0
+San Jose Sharks	Banc	ATT	Ihs-Wozniak Jakob	VGK	19	1
+San Jose Sharks	Banc	ATT	Kasper Marco	DET	22	1
+San Jose Sharks	Banc	ATT	Kemell Joakim 	NSH	22	4
+San Jose Sharks	Banc	ATT	Kiiskinen Jesse	DET	21	1
+San Jose Sharks	Banc	ATT	Kumpulainen Rasmus	MIN	21	3
+San Jose Sharks	Banc	ATT	Levis Connor	WIN	21	3
+San Jose Sharks	Banc	ATT	Malatesta James	CLB	23	3
+San Jose Sharks	Banc	ATT	Martin Brady	NSH	19	1
+San Jose Sharks	Banc	ATT	Massé Maxim	ANA	20	2
+San Jose Sharks	Banc	ATT	Maze Julien		19	0
+San Jose Sharks	Banc	ATT	Poehling Ryan	ANA	27	3
+San Jose Sharks	Banc	ATT	Miroshnichenko Ivan	WSH	23	3
+San Jose Sharks	Banc	ATT	Moore William	BOS	19	1
+San Jose Sharks	Banc	ATT	Moses Shamar	FLA	19	1
+San Jose Sharks	Banc	ATT	Nordmark Marcus	ANA	18	0
+San Jose Sharks	Banc	ATT	Parascak Terik	WSH	20	2
+San Jose Sharks	Banc	ATT	Plante Zam	PIT	22	3
+San Jose Sharks	Banc	ATT	Poletin Tomas	NYI	19	1
+San Jose Sharks	Banc	ATT	Ruck Markus	PIT	19	0
+San Jose Sharks	Banc	ATT	Savoie Matthew	EDM	23	1
+San Jose Sharks	Banc	ATT	Shaugabay Jayson	TPB	21	3
+San Jose Sharks	Banc	ATT	Shilov Yegor	COL	18	0
+San Jose Sharks	Banc	ATT	Sparks Tyus	WSH	19	0
+San Jose Sharks	Banc	ATT	Stillman Chase	DET	23	0
+San Jose Sharks	Banc	ATT	Surin Yegor	NSH	20	2
+San Jose Sharks	Banc	ATT	Tomasino Phillip	OTT	25	4
+San Jose Sharks	Banc	ATT	Unger Sorum Felix 	CAR	21	3
+San Jose Sharks	Banc	ATT	Vansaghi Shane	PHI	20	1
+San Jose Sharks	Banc	ATT	Wassilyn Braidy		18	0
+San Jose Sharks	Banc	ATT	Whitelaw William	CLB	22	0
+San Jose Sharks	Banc	ATT	Wooten Zach	WIN	21	0
+San Jose Sharks	Banc	ATT	Yager Brayden	WIN	22	3
+San Jose Sharks	Banc	ATT	Zielinski Blake	LA	18	0
+San Jose Sharks	Banc	ATT	Ziemer Brodie	BUF	20	2
+San Jose Sharks	Banc	ATT	Zonnon William	PIT	20	1
+San Jose Sharks	Banc	DEF	Buium Shai	DET	23	4
+San Jose Sharks	Banc	DEF	Burns Quinton	STL	21	3
+San Jose Sharks	Banc	DEF	Casey Seamus	NJ	23	4
+San Jose Sharks	Banc	DEF	Dravecky Vladimir	NYI	19	0
+San Jose Sharks	Banc	DEF	Fiddler Blake	SEA	19	1
+San Jose Sharks	Banc	DEF	Hammell Kaden	SEA	21	3
+San Jose Sharks	Banc	DEF	Heger Kyle		19	0
+San Jose Sharks	Banc	DEF	Huang Alex	NSH	19	1
+San Jose Sharks	Banc	DEF	Karki Arttu	VGK	22	3
+San Jose Sharks	Banc	DEF	Limatov Kurban	CAR	19	1
+San Jose Sharks	Banc	DEF	Mrtka Radim	BUF	19	1
+San Jose Sharks	Banc	DEF	Pickering Owen	PIT	23	3
+San Jose Sharks	Banc	DEF	Pulkkinen Jesse	NYI	22	2
+San Jose Sharks	Banc	DEF	Rombach Jacob	NSH	19	1
+San Jose Sharks	Banc	DEF	Runtso Timofei	MTL	19	0
+San Jose Sharks	Banc	DEF	Salomonsson Elias	WIN	22	4
+San Jose Sharks	Banc	DEF	Silayev Anton	NJ	20	1
+San Jose Sharks	Banc	DEF	Solberg Stian	ANA	21	2
+San Jose Sharks	Banc	DEF	Strathmann Andrew	CLB	22	3
+San Jose Sharks	Banc	DEF	Vaakanainen Urho	NYR	27	2
+San Jose Sharks	Banc	GARD	Alnefelt Hugo	TPB	25	1
+San Jose Sharks	Banc	GARD	Bennett Trenten	NJ	19	1
+San Jose Sharks	Banc	GARD	Cooley Devin	CGY	28	0
+San Jose Sharks	Banc	GARD	Guimond Rudy	DET	21	2
+San Jose Sharks	Banc	GARD	Harenstam Love	STL	19	1
+San Jose Sharks	Banc	GARD	Knowling Brady	SJ	18	0
+San Jose Sharks	Banc	GARD	Kokko Niklas	SEA	22	2
+San Jose Sharks	Banc	GARD	Stolarz Anthony	TOR	33	1
+San Jose Sharks	Banc	GARD	Leenders Ryerson		20	2
+San Jose Sharks	Banc	GARD	Meloche Samuel	BUF	19	1
+San Jose Sharks	Banc	GARD	Ratzlaff Scott	BUF	21	3
+San Jose Sharks	Banc	GARD	Ruzicka Filip	MIN	18	0
+San Jose Sharks	Banc	GARD	Saarinen Kim	SEA	20	2
+San Jose Sharks	Banc	GARD	Strahl Melvin	CLB	21	2
+San Jose Sharks	Banc	GARD	Trejbal Tobias	CGY	19	0
+Minnesota Wild	Partant	ATT	Cowan Easton	TOR	21	3
+Minnesota Wild	Partant	ATT	Eriksson EK Joel	MIN	29	4
+Minnesota Wild	Partant	ATT	Brown Connor	NJ	33	4
+Minnesota Wild	Partant	ATT	Hagens James	BOS	20	1
+Minnesota Wild	Partant	ATT	Hoglander Nils	NSH	26	3
+Minnesota Wild	Partant	ATT	Karlsson Linus	VAN	27	1
+Minnesota Wild	Partant	ATT	Kartye Tye	NYR	25	3
+Minnesota Wild	Partant	ATT	Krebs Peyton	BUF	26	3
+Minnesota Wild	Partant	ATT	Kreider Chris	MTL	35	1
+Minnesota Wild	Partant	ATT	Lekkerimaki Jonathan	VAN	22	4
+Minnesota Wild	Partant	ATT	Leonard Ryan	WSH	22	1
+Minnesota Wild	Partant	ATT	Lindholm Elias	BOS	32	2
+Minnesota Wild	Partant	ATT	Copp Andrew	DET	32	4
+Minnesota Wild	Partant	ATT	Mercer Dawson	WIN	25	1
+Minnesota Wild	Partant	ATT	Joseph Mathieu	EDM	30	3
+Minnesota Wild	Partant	ATT	Quinn Jack	BUF	25	4
+Minnesota Wild	Partant	ATT	Sherwood Kiefer	SJ	32	2
+Minnesota Wild	Partant	ATT	Shabanov Maxim	MIN	26	1
+Minnesota Wild	Partant	ATT	Schmaltz Nick	UTH	31	1
+Minnesota Wild	Partant	ATT	Snuggerud Jimmy	STL	22	1
+Minnesota Wild	Partant	ATT	Thomas Robert	STL	27	1
+Minnesota Wild	Partant	ATT	Tkachuk Brady	FLA	27	3
+Minnesota Wild	Partant	DEF	Borgen William	BOS	30	1
+Minnesota Wild	Partant	DEF	Buium Zeev	VAN	21	1
+Minnesota Wild	Partant	DEF	Durzi Sean	NYR	28	3
+Minnesota Wild	Partant	DEF	Jensen Nick	ANA	35	3
+Minnesota Wild	Partant	DEF	Kesselring Michael	SJ	27	2
+Minnesota Wild	Partant	DEF	Lohrei Mason	BOS	26	3
+Minnesota Wild	Partant	DEF	Nemec Simon	CGY	23	4
+Minnesota Wild	Partant	DEF	Sandin Pellikka Axel	DET	21	3
+Minnesota Wild	Partant	DEF	Willander Tom	VAN	22	3
+Minnesota Wild	Partant	GARD	Askarov Yaroslav	SJ	24	4
+Minnesota Wild	Partant	GARD	Binnington Jordan	STL	33	3
+Minnesota Wild	Partant	GARD	Forsberg Anton	LA	33	4
+Minnesota Wild	Banc	ATT	Alexandrov Nikita		26	3
+Minnesota Wild	Banc	ATT	Allard Owen	UTH	23	2
+Minnesota Wild	Banc	ATT	Aaram Olsen Niklas	VAN	18	0
+Minnesota Wild	Banc	ATT	Backlund Mikail	CGY	37	1
+Minnesota Wild	Banc	ATT	Bankier Caedan	MIN	23	4
+Minnesota Wild	Banc	ATT	Battaglia Jacob	NYR	20	2
+Minnesota Wild	Banc	ATT	Becher Ondrej	DET	23	2
+Minnesota Wild	Banc	ATT	Fantilli Adam	CLB	22	3
+Minnesota Wild	Banc	ATT	Brown Ryan	DAL	19	0
+Minnesota Wild	Banc	ATT	Byfield Quinton	LA	24	3
+Minnesota Wild	Banc	ATT	Cates Noah	PHI	27	4
+Minnesota Wild	Banc	ATT	Chinakhov Yegor	PIT	25	2
+Minnesota Wild	Banc	ATT	Colton Ross	NSH	30	3
+Minnesota Wild	Banc	ATT	McMann Bobby	SEA	29	2
+Minnesota Wild	Banc	ATT	Crouse Lawson	UTH	29	4
+Minnesota Wild	Banc	ATT	Dervin Kieren	VAN	19	0
+Minnesota Wild	Banc	ATT	Duke Dylan	TPB	24	4
+Minnesota Wild	Banc	ATT	Fondrk Conrad	NJ	19	1
+Minnesota Wild	Banc	ATT	Graf Collin	SJ	24	2
+Minnesota Wild	Banc	ATT	Greentree Liam	NYR	20	2
+Minnesota Wild	Banc	ATT	Halliday Stephen	OTT	24	2
+Minnesota Wild	Banc	ATT	Hamilton Beckett	COL	18	0
+Minnesota Wild	Banc	ATT	Harrington Chase	CGY	19	0
+Minnesota Wild	Banc	ATT	Hoskin Trevor	CGY	22	0
+Minnesota Wild	Banc	ATT	Hynninen Topias		21	2
+Minnesota Wild	Banc	ATT	Janicke Justin 		23	4
+Minnesota Wild	Banc	ATT	Poitras Matthew	BOS	22	4
+Minnesota Wild	Banc	ATT	Kapanen Oliver	MTL	23	2
+Minnesota Wild	Banc	ATT	Lansard Zach	CAR	18	0
+Minnesota Wild	Banc	ATT	Lardis Nicholas	CHI	21	3
+Minnesota Wild	Banc	ATT	Lizotte Blake	PIT	28	4
+Minnesota Wild	Banc	ATT	Lombardi Amadeus	NJ	23	4
+Minnesota Wild	Banc	ATT	Lutz Julian	UTH	23	4
+Minnesota Wild	Banc	ATT	Mazur Carter	DET	23	0
+Minnesota Wild	Banc	ATT	Mbuyi Pierce	PIT	18	0
+Minnesota Wild	Banc	ATT	Miller Ryan	PIT	19	0
+Minnesota Wild	Banc	ATT	Moore Javon	OTT	21	2
+Minnesota Wild	Banc	ATT	Mukhanov Timur	CAR	21	3
+Minnesota Wild	Banc	ATT	Muldowney Joey	SJ	22	0
+Minnesota Wild	Banc	ATT	Murnieks Olivers		18	0
+Minnesota Wild	Banc	ATT	Nestrasil Vaclav	CHI	19	1
+Minnesota Wild	Banc	ATT	Nordh Noel	UTH	22	0
+Minnesota Wild	Banc	ATT	Nordlund Viggo	CAR	20	1
+Minnesota Wild	Banc	ATT	Nyman Jani	SEA	22	2
+Minnesota Wild	Banc	ATT	Pinelli Francesco	LA	23	4
+Minnesota Wild	Banc	ATT	Poirier Justin	CAR	20	1
+Minnesota Wild	Banc	ATT	Prokhorov Daniil	NYI	19	1
+Minnesota Wild	Banc	ATT	Raty Aku	EDM	25	2
+Minnesota Wild	Banc	ATT	Roy Joshua	UTH	23	4
+Minnesota Wild	Banc	ATT	Ruck Liam	PIT	18	0
+Minnesota Wild	Banc	ATT	Rykov Alexander	CAR	21	3
+Minnesota Wild	Banc	ATT	Roy Nicolas	COL	30	3
+Minnesota Wild	Banc	ATT	Stiga Teddy	NSH	20	2
+Minnesota Wild	Banc	ATT	Svoboda Brandon	OTT	22	0
+Minnesota Wild	Banc	ATT	Tolvanen Eeli	NYR	27	3
+Minnesota Wild	Banc	ATT	Verreault Antonin		22	2
+Minnesota Wild	Banc	ATT	Wiesblatt Ozzy	NSH	24	4
+Minnesota Wild	Banc	ATT	Williams Cooper	TOR	18	0
+Minnesota Wild	Banc	DEF	Anderson Mikey	LA	28	2
+Minnesota Wild	Banc	DEF	Bernard-Docker J	DET	26	4
+Minnesota Wild	Banc	DEF	Emery E.J.	NYR	20	2
+Minnesota Wild	Banc	DEF	Faber Brock 	MIN	24	4
+Minnesota Wild	Banc	DEF	Freij Alfons	WIN	21	2
+Minnesota Wild	Banc	DEF	Hensler Logan	OTT	20	1
+Minnesota Wild	Banc	DEF	Kulonummi Kasper		23	4
+Minnesota Wild	Banc	DEF	MacBeath Ben	NYR	19	0
+Minnesota Wild	Banc	DEF	Moser Janis Jérome	TPB	26	4
+Minnesota Wild	Banc	DEF	Pantelas Giorgos	LA	18	0
+Minnesota Wild	Banc	DEF	Pohlkamp Eric	SJ	23	0
+Minnesota Wild	Banc	DEF	Psenicka Max	UTH	20	1
+Minnesota Wild	Banc	DEF	Reid Cameron	NSH	19	1
+Minnesota Wild	Banc	DEF	Rudolph Daxon	BUF	18	0
+Minnesota Wild	Banc	DEF	Schneider Braden	NYR	25	3
+Minnesota Wild	Banc	DEF	Vaisanen Veeti	UTH	20	2
+Minnesota Wild	Banc	DEF	Vanecek Jakub	DAL	19	0
+Minnesota Wild	Banc	DEF	Verhoeff Keaton	SJ	18	0
+Minnesota Wild	Banc	DEF	Vilen Topias	NJ	23	4
+Minnesota Wild	Banc	DEF	Zadorov Nikita	BOS	31	1
+Minnesota Wild	Banc	GARD	Akhtyamov Artur	TOR	25	4
+Minnesota Wild	Banc	GARD	Clara Damian	ANA	22	2
+Minnesota Wild	Banc	GARD	D'Aigle Gabriel	PIT	20	1
+Minnesota Wild	Banc	GARD	Demko Thatcher	VAN	31	3
+Minnesota Wild	Banc	GARD	Husso Ville	ANA	32	3
+Minnesota Wild	Banc	GARD	Karbainov Matvei		19	0
+Minnesota Wild	Banc	GARD	Kempf Nicholas	WSH	20	2
+Minnesota Wild	Banc	GARD	Larys Jan		19	0
+Minnesota Wild	Banc	GARD	Leinonen Topias	BUF	23	3
+Minnesota Wild	Banc	GARD	Lyon Alex	BUF	31	3
+Minnesota Wild	Banc	GARD	Milic Thomas	WIN	23	3
+Minnesota Wild	Banc	GARD	Thornton Anson		23	4
+Minnesota Wild	Banc	GARD	Villalta Matt	BUF	27	4
+New York Rangers	Partant	ATT	Batherson Drake	OTT	28	4
+New York Rangers	Partant	ATT	Duclair Anthony	NYI	31	4
+New York Rangers	Partant	ATT	Geekie Morgan	BOS	28	3
+New York Rangers	Partant	ATT	Heineman Emil	NYI	25	4
+New York Rangers	Partant	ATT	Hintz Roope	DAL	30	3
+New York Rangers	Partant	ATT	Hischier Nico	NJ	27	3
+New York Rangers	Partant	ATT	Howden Brett	VGK	28	4
+New York Rangers	Partant	ATT	Hughes Jack	NJ	25	2
+New York Rangers	Partant	ATT	Kempe Adrian	LA	30	4
+New York Rangers	Partant	ATT	Laba Noah	NYR	23	0
+New York Rangers	Partant	ATT	Laferriere Alex	LA	25	1
+New York Rangers	Partant	ATT	Lafreniere Alexis	NYR	25	4
+New York Rangers	Partant	ATT	Landeskog Gabriel	COL	34	4
+New York Rangers	Partant	ATT	Mittelstadt Casey	BOS	28	4
+New York Rangers	Partant	ATT	McBain Jack	UTH	27	4
+New York Rangers	Partant	ATT	Nichushkin Valeri	CLB	31	2
+New York Rangers	Partant	ATT	Rantanen Mikko	DAL	30	1
+New York Rangers	Partant	ATT	Roslovic Jack	TOR	30	4
+New York Rangers	Partant	ATT	Sennecke Beckett	ANA	21	2
+New York Rangers	Partant	ATT	Slafkovsky Juraj	MTL	22	3
+New York Rangers	Partant	ATT	Stephenson Chandler	SEA	32	4
+New York Rangers	Partant	ATT	Yurov Danila	MIN	23	4
+New York Rangers	Partant	DEF	Mikkola Niko	FLA	30	1
+New York Rangers	Partant	DEF	Gostisbehere S	CAR	33	1
+New York Rangers	Partant	DEF	Hughes Luke	NJ	24	4
+New York Rangers	Partant	DEF	Luneau Tristan	ANA	23	2
+New York Rangers	Partant	DEF	Matheson Mike	MTL	33	1
+New York Rangers	Partant	DEF	McNabb Brayden	VGK	35	4
+New York Rangers	Partant	DEF	Perbix Nick	NSH	28	4
+New York Rangers	Partant	DEF	Shea Ryan	EDM	30	0
+New York Rangers	Partant	DEF	Trouba Jacob	SJ	33	4
+New York Rangers	Partant	GARD	Blackwood Mack	COL	30	1
+New York Rangers	Partant	GARD	Garand Dylan	NYR	24	4
+New York Rangers	Partant	GARD	Kochetkov Pyotr	CAR	27	4
+New York Rangers	Banc	ATT	Appleton Mason	DET	31	3
+New York Rangers	Banc	ATT	Aspinall Nathan	NYR	20	0
+New York Rangers	Banc	ATT	Bednarik Kamil	NYI	20	2
+New York Rangers	Banc	ATT	Bourque Mavrik	NSH	24	4
+New York Rangers	Banc	ATT	Carcone Michael	UTH	30	2
+New York Rangers	Banc	ATT	Chytil Filip	VAN	27	3
+New York Rangers	Banc	ATT	Colangelo Sam	ANA	25	4
+New York Rangers	Banc	ATT	Command Alexander	WIN	18	0
+New York Rangers	Banc	ATT	Curran Maxmilian	CGY	20	2
+New York Rangers	Banc	ATT	Dean Zachary	STL	24	3
+New York Rangers	Banc	ATT	Doan Josh	BUF	23	4
+New York Rangers	Banc	ATT	Dolzhenkov Kirill	CLB	22	4
+New York Rangers	Banc	ATT	Duchene Matt	DAL	36	1
+New York Rangers	Banc	ATT	But Daniil	UTH	22	3
+New York Rangers	Banc	ATT	Dumais Jordan	CLB	22	2
+New York Rangers	Banc	ATT	Fiala Kevin	LA	31	4
+New York Rangers	Banc	ATT	Foudy Liam	NYI	27	4
+New York Rangers	Banc	ATT	Funk Zac	BUF	23	2
+New York Rangers	Banc	ATT	Gaudette Adam	SJ	31	1
+New York Rangers	Banc	ATT	Geekie Conor	TPB	22	3
+New York Rangers	Banc	ATT	Genborg Eddie	DET	19	1
+New York Rangers	Banc	ATT	Goncalves Gage	TPB	25	1
+New York Rangers	Banc	ATT	Gorzynski Brandon	DAL	19	1
+New York Rangers	Banc	ATT	Grundstrom Carl	PHI	29	4
+New York Rangers	Banc	ATT	Hathaway Garnet	FLA	35	1
+New York Rangers	Banc	ATT	Joshua Dakota	TOR	30	2
+New York Rangers	Banc	ATT	Katolicky Simon	CGY	19	0
+New York Rangers	Banc	ATT	Kolesar Keegan	DET	29	4
+New York Rangers	Banc	ATT	Lafferty Sam	FLA	31	3
+New York Rangers	Banc	ATT	Letourneau Dean	BOS	20	2
+New York Rangers	Banc	ATT	Lindstrom Cayden	CLB	20	2
+New York Rangers	Banc	ATT	Lipinski Jaden	CGY	22	3
+New York Rangers	Banc	ATT	Locmelis Dans	BOS	23	0
+New York Rangers	Banc	ATT	Marques Miguel	NSH	20	1
+New York Rangers	Banc	ATT	Moore Oliver	CHI	22	3
+New York Rangers	Banc	ATT	Myatovic Nico	ANA	22	3
+New York Rangers	Banc	ATT	Nemec Adam	OTT	19	0
+New York Rangers	Banc	ATT	O'Brien Jake	SEA	19	1
+New York Rangers	Banc	ATT	Poltapov Prokhor	BUF	24	4
+New York Rangers	Banc	ATT	Preston Mathis	ANA	18	0
+New York Rangers	Banc	ATT	Pridham Jack	TPB	21	0
+New York Rangers	Banc	ATT	Procyszyn Ethan	ANA	20	1
+New York Rangers	Banc	ATT	Rehkopf Carson	SEA	22	3
+New York Rangers	Banc	ATT	Rohrer Vinzenz	MTL	22	4
+New York Rangers	Banc	ATT	Rosen Isak	WIN	24	4
+New York Rangers	Banc	ATT	Ryabkin Ivan	CAR	19	1
+New York Rangers	Banc	ATT	Sissons Colton	TOR	33	4
+New York Rangers	Banc	ATT	Stramel Charlie	MIN	22	3
+New York Rangers	Banc	ATT	Suzdalev Alexander	WSH	23	4
+New York Rangers	Banc	ATT	Thorpe Tyler	MTL	21	1
+New York Rangers	Banc	ATT	Toropchenko Alexey	STL	27	2
+New York Rangers	Banc	ATT	Villeneuve Nathan	SEA	20	2
+New York Rangers	Banc	ATT	Wakely Dalyn	EDM	22	2
+New York Rangers	Banc	ATT	Wetsch Carson	SJ	20	2
+New York Rangers	Banc	ATT	Wheatcroft Chase	CAR	24	3
+New York Rangers	Banc	ATT	Wood Matthew	NSH	22	3
+New York Rangers	Banc	ATT	Xhekaj Florian	MTL	22	2
+New York Rangers	Banc	ATT	Ziemmer Koehn	LA	22	3
+New York Rangers	Banc	DEF	Brzustewicz Hunter	CGY	22	3
+New York Rangers	Banc	DEF	Del Mastro Ethan	CHI	24	3
+New York Rangers	Banc	DEF	Duda Artem	UTH	23	3
+New York Rangers	Banc	DEF	Galvas Tomas	PIT	20	0
+New York Rangers	Banc	DEF	George Isaiah	NYI	22	4
+New York Rangers	Banc	DEF	Grans Helge	PHI	24	4
+New York Rangers	Banc	DEF	Harris Jordan	BOS	26	3
+New York Rangers	Banc	DEF	Healey Ryan	NYI	22	4
+New York Rangers	Banc	DEF	Heimosalmi Aleksi	CAR	23	4
+New York Rangers	Banc	DEF	Heinola Ville	VGK	25	3
+New York Rangers	Banc	DEF	Korchinski Kevin	CHI	22	3
+New York Rangers	Banc	DEF	Krug Torey	STL	34	3
+New York Rangers	Banc	DEF	Lindgren Ryan	SEA	29	4
+New York Rangers	Banc	DEF	Mailloux Logan	STL	23	3
+New York Rangers	Banc	DEF	Middleton Jake	CGY	31	2
+New York Rangers	Banc	DEF	Bahl Kevin	CGY	26	1
+New York Rangers	Banc	DEF	Morrow Scott	NYR	24	4
+New York Rangers	Banc	DEF	Mukhamadullin Shakir	EDM	25	4
+New York Rangers	Banc	DEF	Smits Alberts	NYR	19	0
+New York Rangers	Banc	DEF	Ufko Ryan	NSH	23	4
+New York Rangers	Banc	DEF	Xhekaj Arber	MTL	25	2
+New York Rangers	Banc	GARD	Cournoyer Alexis	MTL	21	0
+New York Rangers	Banc	GARD	Gajan Adam	CHI	22	3
+New York Rangers	Banc	GARD	Kahkonen Kaapo	MTL	30	3
+New York Rangers	Banc	GARD	Markstrom Jacob	FLA	37	1
+New York Rangers	Banc	GARD	Meneghin Harrison	TPB	22	2
+New York Rangers	Banc	GARD	Montembeault Samuel	MTL	30	3
+New York Rangers	Banc	GARD	Poirier Rémi	WSH	25	4
+New York Rangers	Banc	GARD	Quapp Nikita		24	4
+New York Rangers	Banc	GARD	Sogaard Mads	TPB	26	4
+New York Rangers	Banc	GARD	Stevenson Clay	WIN	27	4
+New York Rangers	Banc	GARD	Tarasov Daniil	DET	27	4
+New York Rangers	Banc	GARD	Varlamov Semeon	NYI	38	4
+New York Rangers	Banc	GARD	Volokhin Yevgeni	MTL	21	2
+New York Rangers	Banc	GARD	Wolf Dustin	CGY	25	2
