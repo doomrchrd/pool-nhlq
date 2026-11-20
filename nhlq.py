@@ -109,56 +109,101 @@ GAME_TYPE = "2"
 def fetch_nhl_stats():
     headers = {"User-Agent": "Mozilla/5.0"}
     skaters, goalies = {}, {}
+    today = datetime.now().date()
+
+    def fetch_all_pages(endpoint):
+        url = f"https://api.nhle.com/stats/rest/en/{endpoint}"
+        rows = []
+        start = 0
+        limit = 100
+        api_total = 0
+        while True:
+            params = {
+                "start": start,
+                "limit": limit,
+                "sort": '[{"property":"playerId","direction":"ASC"}]',
+                "cayenneExp": f"seasonId={SAISON} and gameTypeId={GAME_TYPE}"
+            }
+            r = requests.get(url, params=params, headers=headers, timeout=15)
+            r.raise_for_status()
+            payload = r.json()
+            batch = payload.get("data", [])
+            if payload.get("total"):
+                api_total = payload["total"]
+            if not batch:
+                break
+            rows.extend(batch)
+            start += len(batch)
+            if api_total and len(rows) >= api_total:
+                break
+            if len(batch) < limit and not api_total:
+                break
+        return rows, api_total
+
     try:
-        url_sk = f"https://api.nhle.com/stats/rest/en/skater/summary?limit=-1&cayenneExp=seasonId={SAISON}%20and%20gameTypeId={GAME_TYPE}"
-        r_sk = requests.get(url_sk, headers=headers, timeout=10)
-        if r_sk.status_code == 200:
-            for p in r_sk.json().get("data", []):
-                nom_clean = clean_str(p.get("skaterFullName", ""))
-                if nom_clean not in skaters: skaters[nom_clean] = []
-                skaters[nom_clean].append({"pj": p.get("gamesPlayed", 0), "pts": p.get("points", 0), "team": p.get("teamAbbrevs", ""), "age": None, "posCode": p.get("positionCode", "")})
+        # 1. Patineurs (stats)
+        sk_rows, total_sk_api = fetch_all_pages("skater/summary")
+        for p in sk_rows:
+            nom_clean = clean_str(p.get("skaterFullName", ""))
+            if nom_clean not in skaters:
+                skaters[nom_clean] = []
+            skaters[nom_clean].append({
+                "pj": p.get("gamesPlayed", 0),
+                "pts": p.get("points", 0),
+                "team": p.get("teamAbbrevs", ""),
+                "age": None,
+                "posCode": p.get("positionCode", "")
+            })
 
-        url_sk_bio = f"https://api.nhle.com/stats/rest/en/skater/bios?limit=-1&cayenneExp=seasonId={SAISON}%20and%20gameTypeId={GAME_TYPE}"
-        r_sk_bio = requests.get(url_sk_bio, headers=headers, timeout=10)
-        if r_sk_bio.status_code == 200:
-            for p in r_sk_bio.json().get("data", []):
-                nom_clean = clean_str(p.get("skaterFullName", ""))
-                if nom_clean in skaters and p.get("birthDate"):
-                    try:
-                        b_dt = datetime.strptime(p.get("birthDate"), "%Y-%m-%d").date()
-                        today = datetime.now().date()
-                        age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
-                        pos = p.get("positionCode", "")
-                        for sk in skaters[nom_clean]:
-                            if sk.get("posCode") == pos or not sk.get("posCode"): sk["age"] = age
-                    except: pass
+        # 2. Patineurs (bios / âge)
+        sk_bio_rows, _ = fetch_all_pages("skater/bios")
+        for p in sk_bio_rows:
+            nom_clean = clean_str(p.get("skaterFullName", ""))
+            if nom_clean in skaters and p.get("birthDate"):
+                try:
+                    b_dt = datetime.strptime(p.get("birthDate"), "%Y-%m-%d").date()
+                    age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
+                    pos = p.get("positionCode", "")
+                    for sk in skaters[nom_clean]:
+                        if sk.get("posCode") == pos or not sk.get("posCode"):
+                            sk["age"] = age
+                except Exception:
+                    pass
 
-        url_g = f"https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId={SAISON}%20and%20gameTypeId={GAME_TYPE}"
-        r_g = requests.get(url_g, headers=headers, timeout=10)
-        if r_g.status_code == 200:
-            for g in r_g.json().get("data", []):
-                v, otl, so = g.get("wins", 0), g.get("otLosses", 0), g.get("shutouts", 0)
-                nom_clean = clean_str(g.get("goalieFullName", ""))
-                if nom_clean not in goalies: goalies[nom_clean] = []
-                goalies[nom_clean].append({"pj": g.get("gamesPlayed", 0), "pts": (v * 2) + (otl * 1) + (so * 1), "team": g.get("teamAbbrevs", ""), "age": None, "posCode": "G"})
+        # 3. Gardiens (stats)
+        g_rows, total_g_api = fetch_all_pages("goalie/summary")
+        for g in g_rows:
+            v, otl, so = g.get("wins", 0), g.get("otLosses", 0), g.get("shutouts", 0)
+            nom_clean = clean_str(g.get("goalieFullName", ""))
+            if nom_clean not in goalies:
+                goalies[nom_clean] = []
+            goalies[nom_clean].append({
+                "pj": g.get("gamesPlayed", 0),
+                "pts": (v * 2) + (otl * 1) + (so * 1),
+                "team": g.get("teamAbbrevs", ""),
+                "age": None,
+                "posCode": "G"
+            })
 
-        url_g_bio = f"https://api.nhle.com/stats/rest/en/goalie/bios?limit=-1&cayenneExp=seasonId={SAISON}%20and%20gameTypeId={GAME_TYPE}"
-        r_g_bio = requests.get(url_g_bio, headers=headers, timeout=10)
-        if r_g_bio.status_code == 200:
-            for g in r_g_bio.json().get("data", []):
-                nom_clean = clean_str(g.get("goalieFullName", ""))
-                if nom_clean in goalies and g.get("birthDate"):
-                    try:
-                        b_dt = datetime.strptime(g.get("birthDate"), "%Y-%m-%d").date()
-                        today = datetime.now().date()
-                        age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
-                        for go in goalies[nom_clean]: go["age"] = age
-                    except: pass
-    except Exception as e: return skaters, goalies, f"Erreur API : {e}"
+        # 4. Gardiens (bios / âge)
+        g_bio_rows, _ = fetch_all_pages("goalie/bios")
+        for g in g_bio_rows:
+            nom_clean = clean_str(g.get("goalieFullName", ""))
+            if nom_clean in goalies and g.get("birthDate"):
+                try:
+                    b_dt = datetime.strptime(g.get("birthDate"), "%Y-%m-%d").date()
+                    age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
+                    for go in goalies[nom_clean]:
+                        go["age"] = age
+                except Exception:
+                    pass
+
+    except Exception as e:
+        return skaters, goalies, f"Erreur API : {e}"
+
     total_pat = sum(len(v) for v in skaters.values())
     total_gard = sum(len(v) for v in goalies.values())
-    return skaters, goalies, f"Connecté à la LNH : {total_pat} patineurs et {total_gard} gardiens."
-
+    return skaters, goalies, f"Connecté à la LNH : {total_pat}/{total_sk_api} patineurs et {total_gard}/{total_g_api} gardiens."
 nhl_skaters, nhl_goalies, api_status = fetch_nhl_stats()
 
 SPECIAL_OVERRIDE = {}
