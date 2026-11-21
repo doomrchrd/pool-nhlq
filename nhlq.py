@@ -104,16 +104,37 @@ def color_empty_cells(val):
 # =========================================================
 SAISON = "20262027"
 GAME_TYPE = "2"
-
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=300, show_spinner=False)
 def fetch_nhl_stats():
-    headers = {"User-Agent": "Mozilla/5.0"}
+    from concurrent.futures import ThreadPoolExecutor
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0"})
     skaters, goalies = {}, {}
     today = datetime.now().date()
 
     def fetch_all_pages(endpoint):
         url = f"https://api.nhle.com/stats/rest/en/{endpoint}"
+        # Plan A1 : tout récupérer en 1 requête (limit=-1)
+        try:
+            params_all = {
+                "limit": -1,
+                "start": 0,
+                "sort": '[{"property":"playerId","direction":"ASC"}]',
+                "cayenneExp": f"seasonId={SAISON} and gameTypeId={GAME_TYPE}"
+            }
+            r0 = session.get(url, params=params_all, timeout=20)
+            if r0.status_code == 200:
+                p0 = r0.json()
+                b0 = p0.get("data", [])
+                t0 = p0.get("total") or len(b0)
+                if b0 and len(b0) >= t0 and (len(b0) > 100 or "goalie" in endpoint):
+                    return b0, t0
+        except Exception:
+            pass
+
+        # Plan A2 : pagination par blocs de 100
         rows = []
+        seen_ids = set()
         start = 0
         limit = 100
         api_total = 0
@@ -124,7 +145,7 @@ def fetch_nhl_stats():
                 "sort": '[{"property":"playerId","direction":"ASC"}]',
                 "cayenneExp": f"seasonId={SAISON} and gameTypeId={GAME_TYPE}"
             }
-            r = requests.get(url, params=params, headers=headers, timeout=15)
+            r = session.get(url, params=params, timeout=15)
             r.raise_for_status()
             payload = r.json()
             batch = payload.get("data", [])
@@ -132,13 +153,129 @@ def fetch_nhl_stats():
                 api_total = payload["total"]
             if not batch:
                 break
-            rows.extend(batch)
+            for item in batch:
+                pid = item.get("playerId")
+                if pid is not None:
+                    if pid in seen_ids:
+                        continue
+                    seen_ids.add(pid)
+                rows.append(item)
             start += len(batch)
-            if api_total and len(rows) >= api_total:
+            if api_total and start >= api_total:
                 break
             if len(batch) < limit and not api_total:
                 break
-        return rows, api_total
+        return rows, (api_total or len(rows))
+
+    def fetch_via_club_stats():
+        # Plan B : récupère les 32 équipes via api-web.nhle.com
+        sk_by_pid, g_by_pid = {}, {}
+        team_abbrevs = [
+            "ANA", "BOS", "BUF", "CAR", "CBJ", "CGY", "CHI", "COL",
+            "DAL", "DET", "EDM", "FLA", "LAK", "MIN", "MTL", "NJD",
+            "NSH", "NYI", "NYR", "OTT", "PHI", "PIT", "SEA", "SJS",
+            "STL", "TBL", "TOR", "UTA", "VAN", "VGK", "WPG", "WSH"
+        ]
+        try:
+            rs = session.get("https://api-web.nhle.com/v1/standings/now", timeout=10)
+            if rs.status_code == 200:
+                st_list = rs.json().get("standings", [])
+                found = [x.get("teamAbbrev", {}).get("default") for x in st_list if x.get("teamAbbrev", {}).get("default")]
+                if len(found) >= 30:
+                    team_abbrevs = found
+        except Exception:
+            pass
+
+        def get_team_data(tm):
+            cs_data, ros_data = {}, {}
+            try:
+                r1 = session.get(f"https://api-web.nhle.com/v1/club-stats/{tm}/{SAISON}/{GAME_TYPE}", timeout=12)
+                if r1.status_code == 200:
+                    cs_data = r1.json()
+            except Exception:
+                pass
+            try:
+                r2 = session.get(f"https://api-web.nhle.com/v1/roster/{tm}/{SAISON}", timeout=12)
+                if r2.status_code == 200:
+                    ros_data = r2.json()
+            except Exception:
+                pass
+            return tm, cs_data, ros_data
+
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            results = list(ex.map(get_team_data, team_abbrevs))
+
+        age_by_pid = {}
+        for tm, cs_data, ros_data in results:
+            for grp in ("forwards", "defensemen", "goalies"):
+                for rp in ros_data.get(grp, []):
+                    pid = rp.get("id")
+                    bdate = rp.get("birthDate")
+                    if pid and bdate:
+                        try:
+                            b_dt = datetime.strptime(bdate, "%Y-%m-%d").date()
+                            age_by_pid[pid] = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
+                        except Exception:
+                            pass
+
+            for p in cs_data.get("skaters", []):
+                pid = p.get("playerId")
+                fn = p.get("firstName", {}).get("default", "") if isinstance(p.get("firstName"), dict) else str(p.get("firstName", ""))
+                ln = p.get("lastName", {}).get("default", "") if isinstance(p.get("lastName"), dict) else str(p.get("lastName", ""))
+                full = clean_str(f"{fn} {ln}")
+                if not full:
+                    continue
+                key = pid or full
+                if key not in sk_by_pid:
+                    sk_by_pid[key] = {
+                        "name": full, "pj": 0, "pts": 0, "teams": [],
+                        "age": age_by_pid.get(pid), "posCode": p.get("positionCode", "")
+                    }
+                sk_by_pid[key]["pj"] += int(p.get("gamesPlayed", 0) or 0)
+                sk_by_pid[key]["pts"] += int(p.get("points", 0) or 0)
+                if tm not in sk_by_pid[key]["teams"]:
+                    sk_by_pid[key]["teams"].append(tm)
+                if sk_by_pid[key]["age"] is None and pid in age_by_pid:
+                    sk_by_pid[key]["age"] = age_by_pid[pid]
+
+            for g in cs_data.get("goalies", []):
+                pid = g.get("playerId")
+                fn = g.get("firstName", {}).get("default", "") if isinstance(g.get("firstName"), dict) else str(g.get("firstName", ""))
+                ln = g.get("lastName", {}).get("default", "") if isinstance(g.get("lastName"), dict) else str(g.get("lastName", ""))
+                full = clean_str(f"{fn} {ln}")
+                if not full:
+                    continue
+                v = int(g.get("wins", 0) or 0)
+                otl = int(g.get("overtimeLosses", g.get("otLosses", 0)) or 0)
+                so = int(g.get("shutouts", 0) or 0)
+                key = pid or full
+                if key not in g_by_pid:
+                    g_by_pid[key] = {
+                        "name": full, "pj": 0, "pts": 0, "teams": [],
+                        "age": age_by_pid.get(pid), "posCode": "G"
+                    }
+                g_by_pid[key]["pj"] += int(g.get("gamesPlayed", 0) or 0)
+                g_by_pid[key]["pts"] += (v * 2) + (otl * 1) + (so * 1)
+                if tm not in g_by_pid[key]["teams"]:
+                    g_by_pid[key]["teams"].append(tm)
+                if g_by_pid[key]["age"] is None and pid in age_by_pid:
+                    g_by_pid[key]["age"] = age_by_pid[pid]
+
+        sk_out, g_out = {}, {}
+        for rec in sk_by_pid.values():
+            sk_out.setdefault(rec["name"], []).append({
+                "pj": rec["pj"], "pts": rec["pts"],
+                "team": ", ".join(rec["teams"]), "age": rec["age"], "posCode": rec["posCode"]
+            })
+        for rec in g_by_pid.values():
+            g_out.setdefault(rec["name"], []).append({
+                "pj": rec["pj"], "pts": rec["pts"],
+                "team": ", ".join(rec["teams"]), "age": rec["age"], "posCode": "G"
+            })
+        return sk_out, g_out
+
+    total_sk_api, total_g_api = 0, 0
+    err_msg = ""
 
     try:
         # 1. Patineurs (stats)
@@ -156,19 +293,22 @@ def fetch_nhl_stats():
             })
 
         # 2. Patineurs (bios / âge)
-        sk_bio_rows, _ = fetch_all_pages("skater/bios")
-        for p in sk_bio_rows:
-            nom_clean = clean_str(p.get("skaterFullName", ""))
-            if nom_clean in skaters and p.get("birthDate"):
-                try:
-                    b_dt = datetime.strptime(p.get("birthDate"), "%Y-%m-%d").date()
-                    age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
-                    pos = p.get("positionCode", "")
-                    for sk in skaters[nom_clean]:
-                        if sk.get("posCode") == pos or not sk.get("posCode"):
-                            sk["age"] = age
-                except Exception:
-                    pass
+        try:
+            sk_bio_rows, _ = fetch_all_pages("skater/bios")
+            for p in sk_bio_rows:
+                nom_clean = clean_str(p.get("skaterFullName", ""))
+                if nom_clean in skaters and p.get("birthDate"):
+                    try:
+                        b_dt = datetime.strptime(p.get("birthDate"), "%Y-%m-%d").date()
+                        age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
+                        pos = p.get("positionCode", "")
+                        for sk in skaters[nom_clean]:
+                            if sk.get("posCode") == pos or not sk.get("posCode"):
+                                sk["age"] = age
+                    except Exception:
+                        pass
+        except Exception:
+            pass
 
         # 3. Gardiens (stats)
         g_rows, total_g_api = fetch_all_pages("goalie/summary")
@@ -186,23 +326,42 @@ def fetch_nhl_stats():
             })
 
         # 4. Gardiens (bios / âge)
-        g_bio_rows, _ = fetch_all_pages("goalie/bios")
-        for g in g_bio_rows:
-            nom_clean = clean_str(g.get("goalieFullName", ""))
-            if nom_clean in goalies and g.get("birthDate"):
-                try:
-                    b_dt = datetime.strptime(g.get("birthDate"), "%Y-%m-%d").date()
-                    age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
-                    for go in goalies[nom_clean]:
-                        go["age"] = age
-                except Exception:
-                    pass
+        try:
+            g_bio_rows, _ = fetch_all_pages("goalie/bios")
+            for g in g_bio_rows:
+                nom_clean = clean_str(g.get("goalieFullName", ""))
+                if nom_clean in goalies and g.get("birthDate"):
+                    try:
+                        b_dt = datetime.strptime(g.get("birthDate"), "%Y-%m-%d").date()
+                        age = today.year - b_dt.year - ((today.month, today.day) < (b_dt.month, b_dt.day))
+                        for go in goalies[nom_clean]:
+                            go["age"] = age
+                    except Exception:
+                        pass
+        except Exception:
+            pass
 
     except Exception as e:
-        return skaters, goalies, f"Erreur API : {e}"
+        err_msg = str(e)
 
     total_pat = sum(len(v) for v in skaters.values())
     total_gard = sum(len(v) for v in goalies.values())
+
+    # Sécurité anti-coupure : si <= 150 patineurs, bascule automatique sur les 32 équipes
+    if total_pat <= 150:
+        sk_b, g_b = fetch_via_club_stats()
+        if sum(len(v) for v in sk_b.values()) > total_pat:
+            skaters = sk_b
+            total_pat = sum(len(v) for v in skaters.values())
+            total_sk_api = total_pat
+        if sum(len(v) for v in g_b.values()) > total_gard:
+            goalies = g_b
+            total_gard = sum(len(v) for v in goalies.values())
+            total_g_api = total_gard
+
+    if total_pat == 0 and err_msg:
+        return skaters, goalies, f"Erreur API : {err_msg}"
+
     return skaters, goalies, f"Connecté à la LNH : {total_pat}/{total_sk_api} patineurs et {total_gard}/{total_g_api} gardiens."
 nhl_skaters, nhl_goalies, api_status = fetch_nhl_stats()
 
@@ -976,7 +1135,61 @@ for yr in DRAFT_YEARS:
         init_drafts_from_excel()
         break
 for slug in SLUG_MAP.values(): enforce_roster_limits(slug)
+def _find_1_to_1_swaps_global(df_act, df_banc):
+    k = 0
+    for i in range(min(len(df_act), len(df_banc))):
+        if df_banc.iloc[i]["Pts"] > df_act.iloc[len(df_act) - 1 - i]["Pts"]:
+            k += 1
+        else:
+            break
+    if k == 0:
+        return [], []
+    cutoff_pts = df_banc.iloc[k - 1]["Pts"]
+    cands = df_banc[df_banc["Pts"] >= cutoff_pts]["Joueurs"].tolist()
+    return df_act.iloc[len(df_act) - k:]["Joueurs"].tolist(), cands[:k]
 
+if is_admin:
+    with st.sidebar:
+        st.divider()
+        if st.button("⚡ PERMUTATIONS (1 POUR 1) — TOUTES LES ÉQUIPES", use_container_width=True):
+            total_swaps = 0
+            equipes_touchees = []
+            for t_name, slg in SLUG_MAP.items():
+                swaps_team = 0
+                for pos_act, pos_banc in [("att", "banc_att"), ("def", "banc_def"), ("gard", "banc_gard")]:
+                    ka, kb = f"{slg}_df_{pos_act}", f"{slg}_df_{pos_banc}"
+                    a_df = st.session_state.get(ka, pd.DataFrame())
+                    b_df = st.session_state.get(kb, pd.DataFrame())
+                    if a_df.empty or b_df.empty:
+                        continue
+                    a_df = a_df.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                    b_df = b_df.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                    rl, gl = _find_1_to_1_swaps_global(a_df, b_df)
+                    if rl and gl:
+                        new_a = pd.concat([a_df[~a_df["Joueurs"].isin(rl)], b_df[b_df["Joueurs"].isin(gl)]]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_b = pd.concat([b_df[~b_df["Joueurs"].isin(gl)], a_df[a_df["Joueurs"].isin(rl)]]).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                        new_a["No"] = range(1, len(new_a) + 1)
+                        new_b["No"] = range(1, len(new_b) + 1)
+                        st.session_state[ka] = new_a
+                        st.session_state[kb] = new_b
+                        swaps_team += len(rl)
+                if swaps_team > 0:
+                    total_swaps += swaps_team
+                    equipes_touchees.append(f"{TEAM_ABBR_MAP.get(t_name, t_name)} ({swaps_team})")
+
+            if total_swaps > 0:
+                save_state()
+                st.session_state["global_perm_feedback"] = ("success", f"✅ {total_swaps} permutation(s) appliquée(s) : {', '.join(equipes_touchees)}")
+                st.rerun()
+            else:
+                st.session_state["global_perm_feedback"] = ("info", "ℹ️ Aucune permutation (1 pour 1) à faire : toutes les équipes sont déjà optimales.")
+
+        if "global_perm_feedback" in st.session_state:
+            lvl, msg = st.session_state.pop("global_perm_feedback")
+            if lvl == "success":
+                st.success(msg)
+            else:
+                st.info(msg)
 # =========================================================
 # 5. THÈME DYNAMIQUE DE L'ÉQUIPE (DARK MODE)
 # =========================================================
