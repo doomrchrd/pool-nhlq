@@ -846,9 +846,8 @@ def enforce_roster_limits(slug):
             df_b["No"] = range(1, len(df_b) + 1)
             st.session_state[f"{slug}_df_{pos}"] = df_p
             st.session_state[f"{slug}_df_banc_{pos}"] = df_b
-
-# =========================================================
-# 4B. MOTEUR D'ÉCHANGES DIRECTS
+         # =========================================================
+# 4B. MOTEUR D'ÉCHANGES DIRECTS (CONCESSION + CHOIX)
 # =========================================================
 def get_team_trade_assets(team_name):
     slug = SLUG_MAP[team_name]
@@ -861,8 +860,7 @@ def get_team_trade_assets(team_name):
         ("def", "def", True, "DEF - Partant"),
         ("banc_def", "def", False, "DEF - Banc"),
         ("gard", "gard", True, "GARD - Partant"),
-        ("banc_gard", "gard", False, "GARD - Banc"),
-        ("recrues", "recrues", False, "Recrue")
+        ("banc_gard", "gard", False, "GARD - Banc")
     ]
 
     for role_key, pos_group, is_partant, badge in role_labels:
@@ -871,14 +869,9 @@ def get_team_trade_assets(team_name):
         for idx, row in df_r.iterrows():
             nom = str(row.get("Joueurs", "")).strip()
             if not nom or nom == "[Carreau Libre]": continue
-            if role_key == "recrues":
-                lnh = str(row.get("Équipe LNH (Réelle)", "")).strip()
-                pos_r = str(row.get("Pos", "")).strip()
-                label = f"[{badge}] {nom} ({pos_r} - {lnh})"
-            else:
-                pts = int(row.get("Pts", 0)) if pd.notna(row.get("Pts", 0)) else 0
-                t_lnh = str(row.get("T", "")).strip()
-                label = f"[{badge}] {nom} ({t_lnh} · {pts} pts)"
+            pts = int(row.get("Pts", 0)) if pd.notna(row.get("Pts", 0)) else 0
+            t_lnh = str(row.get("T", "")).strip()
+            label = f"[{badge}] {nom} ({t_lnh} · {pts} pts)"
             players.append({
                 "label": label,
                 "name": nom,
@@ -914,15 +907,27 @@ def clone_team_rosters(slug):
         res[r] = df_cur.copy()
     return res
 
-def simulate_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, auto_fill_starters=True):
+def simulate_trade(team_a, team_b, out_a, out_b, picks_a, picks_b):
     slug_a, slug_b = SLUG_MAP[team_a], SLUG_MAP[team_b]
     abbr_a, abbr_b = TEAM_ABBR_MAP[team_a], TEAM_ABBR_MAP[team_b]
 
     ros_a = clone_team_rosters(slug_a)
     ros_b = clone_team_rosters(slug_b)
 
-    before_part_a = {pos: len(ros_a[pos]) for pos in ["att", "def", "gard"]}
-    before_part_b = {pos: len(ros_b[pos]) for pos in ["att", "def", "gard"]}
+    def get_counts(ros):
+        res = {}
+        tot = 0
+        for pos in ["att", "def", "gard"]:
+            df_p = ros[pos]
+            n_p = len(df_p[df_p["Joueurs"] != "[Carreau Libre]"]) if (not df_p.empty and "Joueurs" in df_p.columns) else len(df_p)
+            n_tot = n_p + len(ros[f"banc_{pos}"])
+            res[pos] = (n_p, n_tot)
+            tot += n_tot
+        res["total"] = tot
+        return res
+
+    before_a = get_counts(ros_a)
+    before_b = get_counts(ros_b)
 
     def extract_players(ros_src, assets):
         extracted = []
@@ -931,8 +936,9 @@ def simulate_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, auto_fill_sta
             df_src = ros_src[rk]
             mask = df_src["Joueurs"].astype(str).str.strip() == asset["name"]
             if mask.any():
-                row_df = df_src[mask].iloc[[0]].copy()
-                ros_src[rk] = df_src[~mask].reset_index(drop=True)
+                first_idx = df_src.index[mask][0]
+                row_df = df_src.loc[[first_idx]].copy()
+                ros_src[rk] = df_src.drop(index=first_idx).reset_index(drop=True)
                 extracted.append((asset, row_df))
         return extracted
 
@@ -941,60 +947,38 @@ def simulate_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, auto_fill_sta
 
     def inject_players(ros_dest, dest_team_name, incoming_list):
         notes = []
+        dest_abbr = TEAM_ABBR_MAP[dest_team_name]
         for asset, row_df in incoming_list:
             pos_g = asset["pos_group"]
-            if pos_g == "recrues":
-                row_df["Équipe NHLQ"] = dest_team_name
-                if "Standard_NHLQ" in row_df.columns:
-                    row_df["Standard_NHLQ"] = dest_team_name
-                ros_dest["recrues"] = pd.concat([ros_dest["recrues"], row_df], ignore_index=True)
-                notes.append(f"🌱 {asset['name']} ajouté aux recrues de {TEAM_ABBR_MAP[dest_team_name]}.")
+            if asset["is_partant"]:
+                df_clean_p = ros_dest[pos_g]
+                if not df_clean_p.empty and "Joueurs" in df_clean_p.columns:
+                    df_clean_p = df_clean_p[df_clean_p["Joueurs"] != "[Carreau Libre]"]
+                ros_dest[pos_g] = pd.concat([df_clean_p, row_df], ignore_index=True)
+                notes.append(f"🏒 {asset['name']} arrive PARTANT ({ROSTER_RULES[pos_g]['label']}) chez {dest_abbr}.")
             else:
                 banc_key = f"banc_{pos_g}"
                 ros_dest[banc_key] = pd.concat([ros_dest[banc_key], row_df], ignore_index=True)
-                ros_dest[banc_key] = ros_dest[banc_key].sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                notes.append(f"📋 {asset['name']} arrive sur le banc ({ROSTER_RULES[pos_g]['label']}) de {TEAM_ABBR_MAP[dest_team_name]}.")
+                notes.append(f"📋 {asset['name']} arrive sur le BANC ({ROSTER_RULES[pos_g]['label']}) chez {dest_abbr}.")
         return notes
 
     notes_a = inject_players(ros_b, team_b, moved_from_a)
     notes_b = inject_players(ros_a, team_a, moved_from_b)
     all_notes = notes_a + notes_b
 
-    def rebalance_starters(ros, before_counts, team_abbr):
-        auto_promos = []
-        for pos, rules in ROSTER_RULES.items():
-            df_p = ros[pos]
-            df_b = ros[f"banc_{pos}"]
-            if not df_p.empty:
-                df_p = df_p.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-            if not df_b.empty:
-                df_b = df_b.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+    def sort_and_renumber(ros):
+        for pos in ["att", "def", "gard"]:
+            for k in [pos, f"banc_{pos}"]:
+                df_k = ros[k]
+                if not df_k.empty:
+                    if k == pos and "Joueurs" in df_k.columns:
+                        df_k = df_k[df_k["Joueurs"] != "[Carreau Libre]"].copy()
+                    df_k = df_k.sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
+                    df_k["No"] = range(1, len(df_k) + 1)
+                ros[k] = df_k
 
-            cur_p = len(df_p)
-            target_p = before_counts[pos] if auto_fill_starters else max(cur_p, rules["min"])
-            target_p = max(rules["min"], min(rules["max"], target_p))
-
-            needed = max(0, target_p - cur_p)
-            if needed > 0 and not df_b.empty:
-                to_promote = min(needed, len(df_b))
-                promoted_rows = df_b.iloc[:to_promote].copy()
-                df_b = df_b.iloc[to_promote:].reset_index(drop=True)
-                df_p = pd.concat([df_p, promoted_rows], ignore_index=True).sort_values(by=["Pts", "PJ"], ascending=[False, False]).reset_index(drop=True)
-                for p_nom in promoted_rows["Joueurs"].tolist():
-                    auto_promos.append(f"⬆️ {team_abbr} : {p_nom} monte partant ({rules['label']}) pour combler un départ.")
-
-            if not df_p.empty: df_p["No"] = range(1, len(df_p) + 1)
-            if not df_b.empty: df_b["No"] = range(1, len(df_b) + 1)
-            ros[pos] = df_p
-            ros[f"banc_{pos}"] = df_b
-        if not ros["recrues"].empty:
-            ros["recrues"] = ros["recrues"].sort_values(by="Joueurs").reset_index(drop=True)
-            ros["recrues"]["No"] = range(1, len(ros["recrues"]) + 1)
-        return auto_promos
-
-    promos_a = rebalance_starters(ros_a, before_part_a, abbr_a)
-    promos_b = rebalance_starters(ros_b, before_part_b, abbr_b)
-    auto_promos = promos_a + promos_b
+    sort_and_renumber(ros_a)
+    sort_and_renumber(ros_b)
 
     def check_quotas(ros, t_name):
         errors = []
@@ -1002,20 +986,37 @@ def simulate_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, auto_fill_sta
         stats = {}
         tot_conc = 0
         for pos, rules in ROSTER_RULES.items():
-            n_p = len(ros[pos])
+            df_p = ros[pos]
+            n_p = len(df_p[df_p["Joueurs"] != "[Carreau Libre]"]) if (not df_p.empty and "Joueurs" in df_p.columns) else len(df_p)
             n_b = len(ros[f"banc_{pos}"])
             n_tot = n_p + n_b
             tot_conc += n_tot
             stats[pos] = (n_p, n_tot)
             if n_p < rules["min"]:
-                errors.append(f"❌ {t_name} ({rules['label']}) : {n_p} partants (minimum requis : {rules['min']}). Pas assez de joueurs sur le banc!")
+                manque = rules["min"] - n_p
+                errors.append(
+                    f"❌ {t_name} ({rules['label']}) : tomberait à {n_p} partant(s) "
+                    f"(minimum requis : {rules['min']}). Il manque {manque} partant(s) : "
+                    f"l'équipe doit céder moins de partants ou en recevoir en retour."
+                )
             if n_p > rules["max"]:
-                errors.append(f"❌ {t_name} ({rules['label']}) : {n_p} partants (maximum : {rules['max']}).")
+                surplus = n_p - rules["max"]
+                errors.append(
+                    f"❌ {t_name} ({rules['label']}) : monterait à {n_p} partant(s) "
+                    f"(maximum permis : {rules['max']}). Il y a {surplus} partant(s) en trop : "
+                    f"l'équipe doit céder au moins {surplus} partant(s) en retour."
+                )
             if n_tot > rules["max_tot"]:
-                warnings.append(f"⚠️ {t_name} ({rules['label']}) : {n_tot} joueurs au total (max : {rules['max_tot']}).")
+                warnings.append(
+                    f"⚠️ {t_name} ({rules['label']}) : {n_tot} / {rules['max_tot']} au total "
+                    f"(sera affiché en rouge dans Alignements & Équipes)."
+                )
         stats["total"] = tot_conc
         if tot_conc > 128:
-            warnings.append(f"⚠️ {t_name} : {tot_conc} joueurs dans la concession (max : 128).")
+            warnings.append(
+                f"⚠️ {t_name} : {tot_conc} / 128 joueurs dans la concession "
+                f"(sera affiché en rouge dans Alignements & Équipes)."
+            )
         return errors, warnings, stats
 
     err_a, warn_a, stats_a = check_quotas(ros_a, team_a)
@@ -1037,9 +1038,9 @@ def simulate_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, auto_fill_sta
         "ros_a": ros_a, "ros_b": ros_b,
         "drafts_sim": drafts_sim,
         "notes": all_notes,
-        "auto_promos": auto_promos,
         "errors": err_a + err_b,
         "warnings": warn_a + warn_b,
+        "before_a": before_a, "before_b": before_b,
         "stats_a": stats_a, "stats_b": stats_b
     }
 
@@ -1063,22 +1064,6 @@ def execute_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, sim_result):
     for r, df_new in sim_result["ros_b"].items():
         st.session_state[f"{slug_b}_df_{r}"] = df_new
 
-    if "df_all_recrues" in st.session_state and not st.session_state["df_all_recrues"].empty:
-        df_rec_master = st.session_state["df_all_recrues"].copy()
-        for asset in out_a:
-            if asset["pos_group"] == "recrues":
-                mask = df_rec_master["Joueurs"].apply(clean_str) == clean_str(asset["name"])
-                df_rec_master.loc[mask, "Équipe NHLQ"] = team_b
-                if "Standard_NHLQ" in df_rec_master.columns:
-                    df_rec_master.loc[mask, "Standard_NHLQ"] = team_b
-        for asset in out_b:
-            if asset["pos_group"] == "recrues":
-                mask = df_rec_master["Joueurs"].apply(clean_str) == clean_str(asset["name"])
-                df_rec_master.loc[mask, "Équipe NHLQ"] = team_a
-                if "Standard_NHLQ" in df_rec_master.columns:
-                    df_rec_master.loc[mask, "Standard_NHLQ"] = team_a
-        st.session_state["df_all_recrues"] = df_rec_master
-
     for yr, df_d in sim_result["drafts_sim"].items():
         st.session_state[f"df_draft_{yr}"] = df_d
 
@@ -1094,7 +1079,7 @@ def execute_trade(team_a, team_b, out_a, out_b, picks_a, picks_b, sim_result):
         "A cédé": ", ".join(a_items) if a_items else "Rien",
         "Équipe B": team_b,
         "B a cédé": ", ".join(b_items) if b_items else "Rien",
-        "Ajustements auto": " | ".join(sim_result["auto_promos"]) if sim_result["auto_promos"] else "Aucun"
+        "Ajustements auto": "Aucun (Partant → Partant / Banc → Banc)"
     })
 
     save_state()
@@ -1636,7 +1621,7 @@ with tab_transactions:
 
     # --- BLOC 1 : CONSOLE D'ÉCHANGE DIRECT (COMMISSAIRE UNIQUEMENT) ---
     if is_admin:
-        with st.expander("🔁 EFFECTUER UN NOUVEL ÉCHANGE DIRECT (JOUEURS, RECRUES & CHOIX 2027-2028)", expanded=True):
+        with st.expander("🔁 EFFECTUER UN NOUVEL ÉCHANGE DIRECT (JOUEURS DE CONCESSION & CHOIX 2027-2028)", expanded=True):
             team_list = list(POOLERS.keys())
             col_t1, col_t2, col_undo = st.columns([2, 2, 1.3], vertical_alignment="bottom")
 
@@ -1663,12 +1648,12 @@ with tab_transactions:
             col_a_box, col_b_box = st.columns(2)
             with col_a_box:
                 st.markdown(f"#### 📤 Ce que **{trade_team_a}** cède :")
-                sel_p_a_labels = st.multiselect("Joueurs / Recrues de l'équipe A :", options=list(map_p_a.keys()), key=f"ms_p_a_{SLUG_MAP[trade_team_a]}")
+                sel_p_a_labels = st.multiselect("Joueurs de l'équipe A (Concession) :", options=list(map_p_a.keys()), key=f"ms_p_a_{SLUG_MAP[trade_team_a]}")
                 sel_pk_a_labels = st.multiselect("Choix de repêchage (2027/2028) de l'équipe A :", options=list(map_pk_a.keys()), key=f"ms_pk_a_{SLUG_MAP[trade_team_a]}")
 
             with col_b_box:
                 st.markdown(f"#### 📤 Ce que **{trade_team_b}** cède :")
-                sel_p_b_labels = st.multiselect("Joueurs / Recrues de l'équipe B :", options=list(map_p_b.keys()), key=f"ms_p_b_{SLUG_MAP[trade_team_b]}")
+                sel_p_b_labels = st.multiselect("Joueurs de l'équipe B (Concession) :", options=list(map_p_b.keys()), key=f"ms_p_b_{SLUG_MAP[trade_team_b]}")
                 sel_pk_b_labels = st.multiselect("Choix de repêchage (2027/2028) de l'équipe B :", options=list(map_pk_b.keys()), key=f"ms_pk_b_{SLUG_MAP[trade_team_b]}")
 
             out_a = [map_p_a[l] for l in sel_p_a_labels]
@@ -1680,49 +1665,50 @@ with tab_transactions:
 
             if has_selection:
                 st.markdown("---")
-                auto_fill = st.checkbox("⚡ Combler automatiquement les postes de partants libérés avec les meilleurs joueurs du banc", value=True)
-                sim = simulate_trade(trade_team_a, trade_team_b, out_a, out_b, pk_out_a, pk_out_b, auto_fill_starters=auto_fill)
+                sim = simulate_trade(trade_team_a, trade_team_b, out_a, out_b, pk_out_a, pk_out_b)
 
                 st.markdown("### 🔍 APERÇU & VÉRIFICATION AVANT CONFIRMATION")
 
                 prev1, prev2 = st.columns(2)
                 with prev1:
-                    sa = sim["stats_a"]
+                    ba, sa = sim["before_a"], sim["stats_a"]
                     st.info(
-                        f"**Impact sur {trade_team_a} (Après échange) :**\n\n"
-                        f"• Attaquants : **{sa['att'][0]}** partants / {sa['att'][1]} total\n\n"
-                        f"• Défenseurs : **{sa['def'][0]}** partants / {sa['def'][1]} total\n\n"
-                        f"• Gardiens : **{sa['gard'][0]}** partants / {sa['gard'][1]} total\n\n"
+                        f"**Impact sur {trade_team_a} (Avant → Après) :**\n\n"
+                        f"• Attaquants : **{ba['att'][0]} → {sa['att'][0]}** partants [19-25] / {sa['att'][1]} total (80 max)\n\n"
+                        f"• Défenseurs : **{ba['def'][0]} → {sa['def'][0]}** partants [7-11] / {sa['def'][1]} total (30 max)\n\n"
+                        f"• Gardiens : **{ba['gard'][0]} → {sa['gard'][0]}** partants [2-4] / {sa['gard'][1]} total (18 max)\n\n"
                         f"• Concession : **{sa['total']} / 128**"
                     )
                 with prev2:
-                    sb = sim["stats_b"]
+                    bb, sb = sim["before_b"], sim["stats_b"]
                     st.info(
-                        f"**Impact sur {trade_team_b} (Après échange) :**\n\n"
-                        f"• Attaquants : **{sb['att'][0]}** partants / {sb['att'][1]} total\n\n"
-                        f"• Défenseurs : **{sb['def'][0]}** partants / {sb['def'][1]} total\n\n"
-                        f"• Gardiens : **{sb['gard'][0]}** partants / {sb['gard'][1]} total\n\n"
+                        f"**Impact sur {trade_team_b} (Avant → Après) :**\n\n"
+                        f"• Attaquants : **{bb['att'][0]} → {sb['att'][0]}** partants [19-25] / {sb['att'][1]} total (80 max)\n\n"
+                        f"• Défenseurs : **{bb['def'][0]} → {sb['def'][0]}** partants [7-11] / {sb['def'][1]} total (30 max)\n\n"
+                        f"• Gardiens : **{bb['gard'][0]} → {sb['gard'][0]}** partants [2-4] / {sb['gard'][1]} total (18 max)\n\n"
                         f"• Concession : **{sb['total']} / 128**"
                     )
 
-                if sim["notes"] or sim["auto_promos"]:
-                    details_txt = "\n".join([f"- {n}" for n in sim["notes"] + sim["auto_promos"]])
-                    st.markdown(f"**Mouvements automatiques prévus :**\n{details_txt}")
+                if sim["notes"]:
+                    details_txt = "\n".join([f"- {n}" for n in sim["notes"]])
+                    st.markdown(f"**Mouvements de l'échange :**\n{details_txt}")
 
                 for err in sim["errors"]:
                     st.error(err)
                 for wrn in sim["warnings"]:
                     st.warning(wrn)
 
-                force_quota = False
-                if sim["warnings"] and not sim["errors"]:
-                    force_quota = st.checkbox("⚠️ Forcer la transaction malgré le dépassement de quota maximum (Mode Commissaire)")
-
-                can_execute = (len(sim["errors"]) == 0) and (len(sim["warnings"]) == 0 or force_quota)
+                can_execute = (len(sim["errors"]) == 0)
 
                 if st.button("✅ CONFIRMER ET ENREGISTRER LA TRANSACTION", type="primary", use_container_width=True, disabled=not can_execute):
                     execute_trade(trade_team_a, trade_team_b, out_a, out_b, pk_out_a, pk_out_b, sim)
-                    st.success("🎉 Transaction enregistrée! Alignements, choix de repêchage et banque des recrues mis à jour.")
+                    for k_ms in [
+                        f"ms_p_a_{SLUG_MAP[trade_team_a]}", f"ms_pk_a_{SLUG_MAP[trade_team_a]}",
+                        f"ms_p_b_{SLUG_MAP[trade_team_b]}", f"ms_pk_b_{SLUG_MAP[trade_team_b]}"
+                    ]:
+                        if k_ms in st.session_state:
+                            del st.session_state[k_ms]
+                    st.success("🎉 Transaction enregistrée! Alignements et choix de repêchage mis à jour.")
                     st.rerun()
     else:
         st.info("ℹ️ **Mode Consultation** : Connectez-vous avec le mot de passe commissaire dans le menu latéral pour enregistrer un échange en direct.")
@@ -1780,8 +1766,7 @@ with tab_transactions:
             st.warning(f"Impossible de lire le fichier de transactions : {e}")
     else:
         st.info("Fichier `gestion_nhlq.xlsx` introuvable.")
-
-# =========================================================
+     # =========================================================
 # ONGLET 3 : RÈGLEMENTS DU POOL (SYNCHRONISÉ AVEC EXCEL)
 # =========================================================
 with tab_reglements:
@@ -2107,4 +2092,4 @@ with tab_recrues:
                 if df_eq.empty: continue
                 logo, color = get_nhl_team_branding(eq)
                 st.markdown(f'''<div style="display:flex;align-items:center;background:rgba(15,23,42,0.6);padding:10px 15px;border-left:6px solid {color};border-radius:8px;margin:30px 0 10px;box-shadow:0 2px 10px rgba(0,0,0,0.2);"><img src="{logo}" width="40" style="margin-right: 15px; filter: drop-shadow(0px 0px 3px rgba(255,255,255,0.1));"><h4 style="margin: 0; color: #F8FAFC; font-weight:800; text-transform: uppercase; letter-spacing:1px;">{eq} <span style="color:{t['primary']}; font-size:0.9rem;">({len(df_eq)})</span></h4></div>''', unsafe_allow_html=True)
-                st.dataframe(df_eq.style.apply(lambda r: ['background-color: transparent; color: #E2E8F0'] * len(r), axis=1), hide_index=True, use_container_width=True, column_config=CONF_REC)
+                st.dataframe(df_eq.style.apply(lambda r: ['background-color: transparent; color: #E2E8F0'] * len(r), axis=1), hide_index=True, use_container_width=True, column_config=CONF_REC)      
