@@ -537,7 +537,7 @@ Toronto Maple Leafs	Partant	DEF	Samuelsson Mattias	BUF	26	4
 Toronto Maple Leafs	Partant	DEF	Sanderson Jake	OTT	24	4
 Toronto Maple Leafs	Partant	DEF	Wilsby Adam	NSH	26	4
 Toronto Maple Leafs	Partant	GARD	Daccord Joel	SEA	30	4
-Toronto Maple Leafs	Partant	GARD	Hellebuyck Connor	NJ	33	4
+Toronto Maple Leafs	Partant	GARD	Hellebuyck Conor	NJ	33	4
 Toronto Maple Leafs	Partant	GARD	Skinner Stuart	WIN	28	4
 Toronto Maple Leafs	Banc	ATT	Anoshko Ivan		22	3
 Toronto Maple Leafs	Banc	ATT	Bains Arshdeep	VAN	25	4
@@ -908,6 +908,7 @@ Montréal Canadiens	Partant	ATT	Maccelli Matias	NYI	26	3
 Montréal Canadiens	Partant	ATT	Rossi Marco	VAN	25	4
 Montréal Canadiens	Partant	ATT	Sasson Max	VAN	26	2
 Montréal Canadiens	Partant	ATT	Suniev Aydar	CGY	22	3
+Montréal Canadiens	Partant	ATT	Yurov Danila	MIN	23	4
 Montréal Canadiens	Partant	ATT	Winterton Ryan	SEA	23	4
 Montréal Canadiens	Partant	DEF	Dahlin Rasmus	BUF	26	4
 Montréal Canadiens	Partant	DEF	Chabot Thomas	OTT	30	1
@@ -918,11 +919,10 @@ Montréal Canadiens	Partant	DEF	McAvoy Charlie	BOS	29	3
 Montréal Canadiens	Partant	DEF	Raddysh Darren	TOR	30	2
 Montréal Canadiens	Partant	DEF	Mintyukov Pavel	ANA	23	4
 Montréal Canadiens	Partant	DEF	Werenski Zach	CLB	28	4
+Montréal Canadiens	Partant	DEF	Gostisbehere S	CAR	33	1
 Montréal Canadiens	Partant	GARD	Allen Jake	NJ	36	3
 Montréal Canadiens	Partant	GARD	Jarry Tristan	EDM	31	3
-Montréal Canadiens	Partant	GARD	Swayman Jeremy	BOS	28	3
-Montréal Canadiens	Banc	ATT	Barzal Mathew	NYI	29	4
-Montréal Canadiens	Banc	ATT	Bear Carter	DET	20	1
+Montréal Canadiens	Banc	ATT	Barzal Matthew	NYI	29	4
 Montréal Canadiens	Banc	ATT	Belchetz Ethan	UTH	18	0
 Montréal Canadiens	Banc	ATT	Blumel Matej		26	2
 Montréal Canadiens	Banc	ATT	Carbonneau Justin	STL	20	1
@@ -1393,9 +1393,7 @@ New York Rangers	Partant	ATT	Roslovic Jack	TOR	30	4
 New York Rangers	Partant	ATT	Sennecke Beckett	ANA	21	2
 New York Rangers	Partant	ATT	Slafkovsky Juraj	MTL	22	3
 New York Rangers	Partant	ATT	Stephenson Chandler	SEA	32	4
-New York Rangers	Partant	ATT	Yurov Danila	MIN	23	4
 New York Rangers	Partant	DEF	Mikkola Niko	FLA	30	1
-New York Rangers	Partant	DEF	Gostisbehere S	CAR	33	1
 New York Rangers	Partant	DEF	Hughes Luke	NJ	24	4
 New York Rangers	Partant	DEF	Luneau Tristan	ANA	23	2
 New York Rangers	Partant	DEF	Matheson Mike	MTL	33	1
@@ -1403,11 +1401,13 @@ New York Rangers	Partant	DEF	McNabb Brayden	VGK	35	4
 New York Rangers	Partant	DEF	Perbix Nick	NSH	28	4
 New York Rangers	Partant	DEF	Shea Ryan	EDM	30	0
 New York Rangers	Partant	DEF	Trouba Jacob	SJ	33	4
+New York Rangers	Partant	GARD	Swayman Jeremy	BOS	28	3
 New York Rangers	Partant	GARD	Blackwood Mack	COL	30	1
 New York Rangers	Partant	GARD	Garand Dylan	NYR	24	4
 New York Rangers	Partant	GARD	Kochetkov Pyotr	CAR	27	4
 New York Rangers	Banc	ATT	Appleton Mason	DET	31	3
 New York Rangers	Banc	ATT	Aspinall Nathan	NYR	20	0
+New York Rangers	Banc	ATT	Bear Carter	DET	20	1
 New York Rangers	Banc	ATT	Bednarik Kamil	NYI	20	2
 New York Rangers	Banc	ATT	Bourque Mavrik	NSH	24	4
 New York Rangers	Banc	ATT	Carcone Michael	UTH	30	2
